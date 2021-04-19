@@ -166,7 +166,7 @@ body{
     height: 44px;
     margin-left: 175px;
     margin-bottom: 5px;
- 	background-image: url("../Recursos/icon-quote-before.svg");
+ 	background-image: url("../Recursos/Icons/icon-quote-before.svg");
    	background-size: cover;
    	background-repeat: no-repeat;
     display: block;
@@ -294,7 +294,7 @@ body{
 	.content-quote{
 		margin-bottom: 40px;
 	}
-	#quote-2{
+	#quote-2, #quote-3{
 	background: none;
 	margin-top: 0px;
 	}
