@@ -1,0 +1,450 @@
+/*@font-face{
+	font-family: 'Canterpids';
+	src: url(../../../Fonts/Canterpids Signature.ttf) format(truetype);
+	unicode-range: "U+0-10FFFF";
+}*/
+* {
+	box-sizing: border-box;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Inter', sans-serif;
+	padding-top: 170px;
+}
+/* STYLES-COMENTARY */
+.container{
+	max-width: 100%;
+	display: block;
+	margin: auto;
+	padding: 25px;
+}
+/* HEADER */
+.header{
+	position: fixed;
+	background: #fff;
+	color: #4d4d4dff;
+	top: 0;
+	width: 100%;
+	padding: 10px;
+	height: 75px;
+	display: flex;
+	justify-content: space-between;
+	z-index: 3;
+	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
+}
+.header a img{
+	width: 80px;
+	margin-left: 20px;
+	margin-top: 10px;
+	padding: 0px;
+}
+/* BTN - MENU */
+#btn_menu{
+	display: none;
+}
+.menu_navbar label{
+	position: absolute;
+	display: none;
+	right: 32px;
+	top: 25px;
+	font-size: 1.3em;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .1s all;
+}
+/* NAVBAR */
+.navbar{
+	background: none;
+}
+.navbar ul{
+	display: flex;
+}
+.navbar ul li{
+	list-style: none;
+	padding: 0px 5px; 
+	margin-right: 20px;
+  }
+.inicio, .lecciones, .material-adicional, .sobre-mi{
+	color: #4d4d4dff;
+	text-decoration: none;
+	font-size: .8em;
+	font-weight: 600;
+	text-transform: uppercase;
+	transition: .3s all;
+}
+.inicio:hover {color: #ff7f2aff;}
+.lecciones:hover {color: #ff7f2aff;}
+.material-adicional:hover {color: #ff7f2aff;}
+.sobre-mi:hover {color: #ff7f2aff;}
+.navbar li i{
+	display: none;
+}
+/* RESPONSIVE NAVBAR */
+@media (max-width: 615px){
+	.navbar{
+		position: fixed;
+		background: #fff;
+		border-top: 1px solid #eee;
+		width: 100%;
+		height: 100%;
+		top: 74px;
+		right: -700px;
+		padding: 5px;
+		transition: .4s all;
+	}
+	.navbar ul{
+		display: block;
+		padding: 3px;
+		margin-left: 0px;
+	}
+	.navbar li{
+		margin-left: 10px;
+	}
+	.inicio, .lecciones, .material-adicional, .sobre-mi{
+		display: block;
+		background: none;
+		color: #4d4d4dff;
+		letter-spacing: 1px;
+		margin-top: 15px;
+		margin-bottom: 30px;
+		margin-left: 10px;
+		font-size: 14px;
+		transition: .3s all;
+		text-align: center;
+	}
+	.inicio:hover {color: #ff7f2aff;}
+	.lecciones:hover {color: #ff7f2aff;}
+	.material-adicional:hover {color: #ff7f2aff;}
+	.sobre-mi:hover {color: #ff7f2aff;}
+	.menu_navbar label{
+		display: inline;
+		cursor: pointer;
+		transition: .1s all;
+	}
+	.menu_navbar label:active {
+		transform: scale(1.1);
+	}
+	#btn_menu:checked ~ .navbar{
+    right: 0px;
+	}
+}
+/* SECTION - LECCION1 */
+.leccion1{
+	background: none;
+	padding: 50px;
+}
+.leccion1-quo-tesla{
+	background: none;
+	display: flex;
+	align-items: stretch;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding: 0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	transition: .3s all;
+}
+.leccion1-quo-tesla:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(1.010);
+}
+.leccion1-img-tesla{
+	width: 50%;
+}
+.nikola-tesla{
+	width: 100%;
+	display: block;
+	pointer-events: none;
+}
+.leccion1-desopt-tesla{
+	background: #fff;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.description-tesla{
+	background: none;
+}
+.description-tesla h4{
+	color: #333333ff;
+	letter-spacing: 3px;
+	font-size: 18px;
+	margin-top: 50px;
+}
+.description-tesla p{
+	background: none;
+	color: #666666ff;
+	font-size: 15px;
+	margin-left: 130px;
+	margin-right: 130px;
+	margin-top: 100px;
+}
+/* RESPONSIVE MAX-WIDTH: 800PX */
+@media (max-width: 800px){
+	.description-tesla p{
+		margin-left: 22px;
+		margin-right: 22px;
+		margin-top: 60px;
+		font-size: 13px;
+	}
+}
+@media (max-width: 823px){
+	.description-tesla p{
+		margin-left: 30px;
+		margin-right: 30px;
+		margin-top: 70px;
+		font-size: 13px;
+	}
+}
+@media (max-width: 731px){
+	.description-tesla p{
+		margin-top: 37px;
+	}
+}
+@media (max-width: 736px){
+	.description-tesla p{
+		margin-top: 50px;
+	}
+}
+@media (max-width: 700px){
+	.leccion1{
+	padding: 30px;
+	}
+	.description-tesla p{
+		margin-left: 22px;
+		margin-right: 22px;
+		margin-top: 40px;
+		font-size: 12px;
+	}
+	.description-tesla h4{
+		font-size: 15px;
+		margin-top: 40px;
+	}
+}
+.description-tesla p i{
+	font-family: 'Lato', sans-serif;
+}
+.dowloand-lesson{
+	margin-top: auto;
+	margin-bottom: 50px;
+	justify-content: center;
+	background: none;
+}
+.dowloand-lesson a{
+	background: #333333ff;
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 11px;
+	text-decoration: none;
+	padding: 10px 25px;
+	border-radius: 7px;
+}
+@media (max-width: 650px){
+	.leccion1{
+		padding: 20px;
+	}
+	.leccion1-quo-tesla{
+		flex-direction: column;
+	}
+	.leccion1-img-tesla{
+		width: 100%;
+	}
+	.leccion1-desopt-tesla{
+		width: 100%;
+	}
+	.dowloand-lesson{
+		margin-bottom: 40px;
+		padding: 0px;
+	}
+	.description-tesla p{
+		margin-left: 100px;
+		margin-right: 100px;
+		padding: 0px;
+		margin-top: 30px;
+		margin-bottom: 40px;
+		font-size: 14px;
+	}
+	.description-tesla h4{
+		margin-top: 30px;
+	}
+}
+@media (max-width: 460px){
+	.description-tesla p{
+		margin-right: 20px;
+		margin-left: 20px;
+		font-size: 12px;
+	}
+	.description-tesla h4{
+		margin-top: 25px;
+	}
+}
+/* GLX FOLD */
+@media (max-width: 280px){
+	.dowloand-lesson a{
+		padding: 10px 13px;
+		font-size: 10px;
+	}
+}
+/* CONTENT-SECTION */
+.content-section-divide{
+	background: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	padding: 0;
+	margin-top: 180px;
+}
+.content-section-divide h4{
+	background: #ff7f2aff;
+	color: #fff;
+	padding: ;
+	margin: 0;
+	border-radius: 5px;
+	font-size: 13px;
+	width: 260px;
+	height: 40px;
+	margin-left: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content-section-divide div{
+	padding: 1px;
+	width: 100%;
+	height: 2px;
+	margin-right: 60px;
+	margin-top: 19px;
+	background: #ff7f2aff;
+	border-radius: 0px 10px 10px 0px;
+}
+@media (max-width: 615px){
+	.content-section-divide{
+		margin-top: 105px;
+	}
+	.content-section-divide h4{
+		margin-left: 30px;
+		font-size: 11px;
+		width: 310px;
+		height: 33px;
+	}
+	.content-section-divide div{
+		margin-right: 30px;
+		margin-top: 15px;
+	}
+}
+/* QUOTES */
+.content-section-quotes{
+	background: none;
+	height: auto;
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;
+	margin-top: 100px;
+}
+.content-quote{
+	background: #fff;
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	border-radius: 5px;
+	transition: .3s all;
+}
+.content-quote:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: scale(1.010);
+}
+.content-quote img{
+	width: 280px;
+	border-radius: 5px 5px 0px 0px;
+}
+.content-quote a{
+	text-decoration: none;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 800;
+	color: #ff7f2aff;
+	border-radius: 0px 0px 5px 5px;
+	letter-spacing: 3px;
+	transition: .3s all;
+}
+.content-quote a:hover{
+	background: #ff7f2aff;
+	color: #fff;
+}
+@media (max-width: 615px){
+	.content-section-quotes{
+		flex-direction: column;
+		margin-top: 85px;
+	}
+	.content-quote{
+		margin-bottom: 40px;
+	}
+	#quote-2{
+	background: none;
+	margin-top: 0px;
+	}
+}
+#not{
+	pointer-events: none;
+}
+/* STYLES - BTN IR ARRIBA */
+#scroll {
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color: rgba(77, 77, 77, 0.77);
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:13px;
+    -moz-border-radius:13px;
+    border-radius:13px;
+    transition: all .4s;
+}
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-9px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color: ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#scroll span img{
+	width: 23px;
+}
+#scroll:hover {
+    background-color: #4d4d4dff;
+}
+@media (max-width: 615px){
+	#scroll{
+		width:47px;
+    	height:47px;
+	}
+	#scroll span img{
+		width: 25px;
+	}
+	#scroll span{
+		margin-left:-8px;
+    	margin-top:-9px;
+	}
+}
