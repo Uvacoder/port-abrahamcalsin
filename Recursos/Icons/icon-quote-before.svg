@@ -15,7 +15,7 @@
    version="1.1"
    id="svg874"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   sodipodi:docname="icon-quote.svg">
+   sodipodi:docname="icon-quote-before.svg">
   <defs
      id="defs868" />
   <sodipodi:namedview
@@ -26,7 +26,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.7"
-     inkscape:cx="383.86663"
+     inkscape:cx="358.86663"
      inkscape:cy="190.55254"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -47,7 +47,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -60,10 +60,10 @@
        id="text2729-3"
        y="-60.034267"
        x="-70.740639"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:325.43914795px;line-height:1.20000005;font-family:Gubbi;-inkscape-font-specification:'Gubbi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:-8.09516907px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#4d4d4d;fill-opacity:0.94117647;stroke:none;stroke-width:3.69918537;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:325.43914795px;line-height:1.20000005;font-family:Gubbi;-inkscape-font-specification:'Gubbi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:-8.09516907px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#8c8c8c;fill-opacity:0.94117647;stroke:none;stroke-width:3.69918537;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
        xml:space="preserve"
        transform="scale(-1)"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:325.43914795px;font-family:Gubbi;-inkscape-font-specification:'Gubbi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:-38.08230972px;writing-mode:lr-tb;text-anchor:middle;fill:#4d4d4d;fill-opacity:0.94117647;stroke:none;stroke-width:3.69918537;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:325.43914795px;font-family:Gubbi;-inkscape-font-specification:'Gubbi, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:-38.08230972px;writing-mode:lr-tb;text-anchor:middle;fill:#8c8c8c;fill-opacity:0.94117647;stroke:none;stroke-width:3.69918537;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;"
          y="-60.034267"
          x="-89.781792"
          id="tspan2727-6"

@@ -19,7 +19,7 @@ body{
 .header{
 	position: fixed;
 	background: #fff;
-	color: #4d4d4dff;
+	font-family: 'Josefin Sans', sans-serif;
 	top: 0;
 	width: 100%;
 	padding: 10px;
@@ -58,14 +58,14 @@ body{
 }
 .navbar ul li{
 	list-style: none;
-	padding: 0px 5px; 
+	padding: 3px 0px; 
 	margin-right: 20px;
   }
 .inicio, .lecciones, .material-adicional, .sobre-mi{
 	color: #4d4d4dff;
 	text-decoration: none;
-	font-size: .8em;
-	font-weight: 600;
+	font-size: .7em;
+	font-weight: 700;
 	text-transform: uppercase;
 	transition: .3s all;
 }
@@ -102,12 +102,11 @@ body{
 	.inicio, .lecciones, .material-adicional, .sobre-mi{
 		display: block;
 		background: none;
-		color: #4d4d4dff;
 		letter-spacing: 1px;
 		margin-top: 15px;
 		margin-bottom: 30px;
 		margin-left: 10px;
-		font-size: 14px;
+		font-size: .7em;
 		transition: .3s all;
 		text-align: center;
 	}
@@ -138,34 +137,37 @@ body{
 	justify-content: center;
 	align-items: center;
 }
-.layout-quote-ford{
+.layout-quote-musk{
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 }
-.quote-ford{
+.quote-musk{
 	background: none;
 	width: 400px;
-	font-family: 'Roboto Condensed', sans-serif;
-	color: #4d4d4dff;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 600;
+	color: #8c8c8c;
 	font-size: 20px;
 	text-align: center;
 	margin: none;
 }
-.autor-ford{	
-	margin-top: -13px;
-	font-family: 'Lato', sans-serif;
-	font-size: 16px;
+.autor-musk{	
+	margin-top: -10px;
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	color: #8c8c8c;
+	font-size: 17px;
 	letter-spacing: .2em;
 }
-.layout-quote .layout-quote-ford .quote-ford::before {
+.layout-quote .layout-quote-musk .quote-musk::before {
 	content: "";
     width: 44px;
     height: 44px;
     margin-left: 175px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
  	background-image: url("../Recursos/Icons/icon-quote-before.svg");
    	background-size: cover;
    	background-repeat: no-repeat;
@@ -175,17 +177,17 @@ body{
 	body{
 		padding-top: 150px;
 	}
-	.quote-ford{
+	.quote-musk{
 		width:280px;
 		font-size: 17px;
 	}
-	.layout-quote .layout-quote-ford .quote-ford::before {
+	.layout-quote .layout-quote-musk .quote-musk::before {
 	width: 35px;
     height: 35px;
     margin-left: 120px;
     margin-bottom: 5px;
 	}
-	.autor-ford{	
+	.autor-musk{	
 	font-size: 14px;
 	letter-spacing: .2em;
 	margin-top: -11px;
