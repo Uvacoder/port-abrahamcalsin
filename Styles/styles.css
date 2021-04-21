@@ -8,14 +8,6 @@ body{
 	/*font-family: 'Inter', sans-serif;*/
 	padding-top: 200px;
 }
-/* STYLES-COMENTARY */
-.container{
-	max-width: 100%;
-	display: block;
-	margin: auto;
-	padding: 25px;
-}
-
 /* HEADER */
 .header{
 	position: fixed;
@@ -395,20 +387,94 @@ body{
 	}
 }
 /* ------------------ */
+/* FOOTER */
+.footer{
+	background: #333333ff;
+	padding: 25px;
+	color: rgba(255, 255, 255, 0.62);
+	margin-top: 70px;
+}
+.footer-content{
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-bottom: -5px;
+}
+.autor-copyright{
+	line-height: 0px;
+	font-family: 'Josefin Sans', sans-serif;
+}
+.autor-abraham-calsin{
+	font-weight: 700;
+	font-size: 12px;
+	letter-spacing: .5px;
+}
+.frontend-developer{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: none;
+	font-size: 14.4px;
+}
+/* DIVIDE - AUTOR - SOCIAL */
+.divide-autor-social{
+	margin-top: -8px;
+	display: none;
+}
+.divide-autor-social div{
+	width: 80px;
+	height: 1px;
+	background: rgba(255, 255, 255, 0.62);
+	border-radius: 0px 10px 10px 0px;
+}
+/* SOCIAL MEDIA */
+.social-media{
+	background: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 15px;
+}
+.social-media img{
+	width: 16px;
+	transition: .3s all;
+	filter: blur(0) contrast(35%);
+}
+.social-media img:hover{
+	filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
+}
+/* @MEDIA - RESPONSIVE */
+@media (max-width: 516px){
+	.footer-content{
+		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 15px;
+		margin-bottom: -0px;
+	}
+	.autor-copyright{
+		margin-bottom: -5px;
+	}
+	.social-media{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.divide-autor-social{
+		display: inline;
+		margin-bottom: -3px;
+	}
+}
 /* STYLES - BTN IR ARRIBA */
 #scroll {
     position:fixed;
     right:25px;
-    bottom:25px;
+    bottom:0px;
     cursor:pointer;
     width:50px;
     height:50px;
     background-color: rgba(77, 77, 77, 0.77);
     text-indent:-9999px;
     display:none;
-    -webkit-border-radius:13px;
-    -moz-border-radius:13px;
-    border-radius:13px;
+    border-radius:5px 5px 0px 0px;
     transition: all .4s;
 }
 #scroll span {
