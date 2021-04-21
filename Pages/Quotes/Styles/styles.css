@@ -31,7 +31,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	z-index: 3;
-	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2);
+	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
 }
 .header a img{
 	width: 80px;
@@ -45,6 +45,7 @@ body{
 }
 .menu_navbar label{
 	position: absolute;
+	color: #4d4d4dff;
 	display: none;
 	right: 32px;
 	top: 25px;
@@ -56,13 +57,14 @@ body{
 /* NAVBAR */
 .navbar{
 	background: none;
+	margin-right: 5px;
 }
 .navbar ul{
 	display: flex;
 }
 .navbar ul li{
 	list-style: none;
-	padding: 3px 0px; 
+	margin-top: 3px;
 	margin-right: 20px;
   }
 .inicio, .lecciones, .material-adicional, .sobre-mi{
@@ -73,15 +75,33 @@ body{
 	text-transform: uppercase;
 	transition: .3s all;
 }
-.inicio:hover {color: #ff7f2aff;}
+.inicio{
+	color: #ff7f2aff;
+}
 .lecciones:hover {color: #ff7f2aff;}
 .material-adicional:hover {color: #ff7f2aff;}
 .sobre-mi:hover {color: #ff7f2aff;}
-.navbar li i{
-	display: none;
+/* CONTACT */
+.contact-abrahamcalsin{
+	margin-top: 3px;
+}
+.contact-abrahamcalsin a{
+	background: #ff7f2aff;
+	text-decoration: none;
+	color: #fff;
+	font-size: .7em;
+	font-weight: 700;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	padding-left: 12px;
+	padding-right: 12px;
+	border-radius: 7px;
 }
 /* RESPONSIVE NAVBAR */
-@media (max-width: 615px){
+@media (max-width: 650px){
+	.container{
+		max-width: 100%;
+	}
 	.navbar{
 		position: fixed;
 		background: #fff;
@@ -105,14 +125,17 @@ body{
 		display: block;
 		background: none;
 		letter-spacing: 1px;
-		margin-top: 15px;
+		margin-top: 5px;
 		margin-bottom: 30px;
 		margin-left: 10px;
-		font-size: 14px;
+		font-size: .8em;
 		transition: .3s all;
 		text-align: center;
 	}
-	.inicio:hover {color: #ff7f2aff;}
+	.inicio{
+		color: #ff7f2aff;
+		margin-top: 30px;
+	}
 	.lecciones:hover {color: #ff7f2aff;}
 	.material-adicional:hover {color: #ff7f2aff;}
 	.sobre-mi:hover {color: #ff7f2aff;}
@@ -120,6 +143,18 @@ body{
 		display: inline;
 		cursor: pointer;
 		transition: .1s all;
+	}
+	/* CONTACT */
+	.contact-abrahamcalsin{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.contact-abrahamcalsin a{
+		padding-left: 30px;
+		padding-right: 30px;
+		letter-spacing: 1px;
+		font-size: .8em;
 	}
 	.menu_navbar label:active {
 		transform: scale(1.1);
