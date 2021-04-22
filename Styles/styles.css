@@ -4,7 +4,7 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	/*font-family: 'Inter', sans-serif;*/
 	padding-top: 200px;
 }
@@ -12,7 +12,7 @@ body{
 .header{
 	position: fixed;
 	background: #fff;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 	top: 0;
 	width: 100%;
 	padding: 10px;
@@ -53,13 +53,13 @@ body{
 }
 .navbar ul li{
 	list-style: none;
-	margin-top: 3px;
+	margin-top: 0px;
 	margin-right: 20px;
   }
 .inicio, .lecciones, .material-adicional, .sobre-mi{
 	color: #4d4d4dff;
 	text-decoration: none;
-	font-size: .7em;
+	font-size: 0.763em;
 	font-weight: 700;
 	text-transform: uppercase;
 	transition: .3s all;
@@ -72,15 +72,16 @@ body{
 .sobre-mi:hover {color: #ff7f2aff;}
 /* CONTACT */
 .contact-abrahamcalsin{
-	margin-top: 3px;
+	margin-top: 0px;
+	padding: 0px;
 }
 .contact-abrahamcalsin a{
 	background: #ff7f2aff;
 	text-decoration: none;
 	color: #fff;
-	font-size: .7em;
-	font-weight: 700;
-	padding-top: 13px;
+	font-size: 0.763em;
+	font-weight: bold;
+	padding-top: 9px;
 	padding-bottom: 10px;
 	padding-left: 12px;
 	padding-right: 12px;
@@ -88,9 +89,6 @@ body{
 }
 /* RESPONSIVE NAVBAR */
 @media (max-width: 650px){
-	.container{
-		max-width: 100%;
-	}
 	.navbar{
 		position: fixed;
 		background: #fff;
@@ -149,7 +147,7 @@ body{
 		transform: scale(1.1);
 	}
 	#btn_menu:checked ~ .navbar{
-    right: 0px;
+    right: -5px;
 	}
 }
 /* SECTION LAYOUT */
@@ -393,30 +391,31 @@ body{
 	padding: 25px;
 	color: rgba(255, 255, 255, 0.62);
 	margin-top: 70px;
+	margin-bottom: -3px;
 }
 .footer-content{
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	align-items: center;
-	margin-bottom: -5px;
+	margin: 0;
 }
 .autor-copyright{
 	line-height: 0px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 .autor-abraham-calsin{
-	font-weight: 700;
-	font-size: 12px;
-	letter-spacing: .5px;
+	font-weight: bold;
+	font-size: 12.3px;
+	letter-spacing: 0.5px;
 }
 .frontend-developer{
-	font-family: 'Josefin Sans', sans-serif;
-	font-weight: none;
-	font-size: 14.4px;
+	font-size: 12px;
+	margin-top: -1px;
+	letter-spacing: .7px;
 }
 /* DIVIDE - AUTOR - SOCIAL */
 .divide-autor-social{
-	margin-top: -8px;
+	margin-top: -6px;
 	display: none;
 }
 .divide-autor-social div{
@@ -443,70 +442,51 @@ body{
 }
 /* @MEDIA - RESPONSIVE */
 @media (max-width: 516px){
+
 	.footer-content{
 		flex-direction: column;
-		justify-content: center;
-		flex-wrap: wrap;
-		gap: 15px;
-		margin-bottom: -0px;
+		align-items: flex-start;
+		gap: 10px;
 	}
 	.autor-copyright{
 		margin-bottom: -5px;
 	}
+	.social-media a{
+		margin-right: -4px;
+	}
 	.social-media{
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		margin-top: -1px;
+		margin-bottom: 4px;
 	}
 	.divide-autor-social{
 		display: inline;
-		margin-bottom: -3px;
+		
 	}
 }
 /* STYLES - BTN IR ARRIBA */
-#scroll {
-    position:fixed;
-    right:25px;
-    bottom:0px;
-    cursor:pointer;
-    width:50px;
-    height:50px;
-    background-color: rgba(77, 77, 77, 0.77);
-    text-indent:-9999px;
-    display:none;
-    border-radius:5px 5px 0px 0px;
-    transition: all .4s;
+#scroll img{
+	width: 20px;
+	transition: .2s all;
+	filter: blur(0) contrast(35%);
 }
-#scroll span {
-    position:absolute;
-    top:50%;
-    left:50%;
-    margin-left:-8px;
-    margin-top:-9px;
-    height:0;
-    width:0;
-    border:8px solid transparent;
-    border-bottom-color: ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#scroll img:hover{
+    padding-bottom: 2px;
+    filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
 }
-#scroll span img{
-	width: 23px;
-}
-#scroll:hover {
-    background-color: #4d4d4dff;
-}
-@media (max-width: 615px){
+@media (max-width: 516px){
 	#scroll{
-		width:47px;
-    	height:47px;
+		background: #333333ff;
+		position: fixed;
+		bottom: 20px;
+		right: 20px;
+		width: 45px;
+		height: 45px;
+		border-radius: 5px 5px 5px 5px;
 	}
-	#scroll span img{
-		width: 25px;
-	}
-	#scroll span{
-		margin-left:-8px;
-    	margin-top:-9px;
+	#scroll img{
+		position: absolute;
+		display: block;
+		left: 13px;
+		top: 15px;
 	}
 }
