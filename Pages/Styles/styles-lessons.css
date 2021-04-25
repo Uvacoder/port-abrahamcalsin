@@ -377,14 +377,11 @@ body{
 	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 	border-radius: 5px;
 	transition: .3s all;
+	overflow: hidden;
 }
 .content-quote:hover{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transform: scale(1.010)
-}
-.content-quote img{
-	width: 280px;
-	border-radius: 5px 5px 0px 0px;
 }
 .content-quote a{
 	text-decoration: none;
