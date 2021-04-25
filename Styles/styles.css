@@ -20,13 +20,18 @@ body{
 	display: flex;
 	justify-content: space-between;
 	z-index: 3;
-	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
+	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2);
 }
-.header a img{
+.logotype-abrahamcalsin img{
 	width: 80px;
 	margin-left: 20px;
-	margin-top: 10px;
+	margin-top: 0px;
 	padding: 0px;
+}
+.logotype-abrahamcalsin{
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* BTN - MENU */
 #btn_menu{
@@ -38,7 +43,7 @@ body{
 	display: none;
 	right: 32px;
 	top: 25px;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-weight: bold;
 	cursor: pointer;
 	transition: .1s all;
@@ -93,15 +98,21 @@ body{
 .contact-abrahamcalsin a:focus{
 	outline: none;
 }
-/* RESPONSIVE NAVBAR */
+/* RESPONSIVE HEADER AND NAVBAR */
 @media (max-width: 650px){
+	.header{
+		height: 70px;
+	}
+	.logotype-abrahamcalsin img{
+		width: 75px;
+	}
 	.navbar{
 		position: fixed;
 		background: #fff;
 		border-top: 1px solid #eee;
 		width: 100%;
 		height: 100%;
-		top: 74px;
+		top: 69px;
 		right: -700px;
 		padding: 5px;
 		transition: .4s all;
@@ -275,6 +286,10 @@ body{
 .content-quote:hover{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transform: scale(1.010)
+}
+.content-quote img{
+	width: 280px;
+	border-radius: 5px 5px 0px 0px;
 }
 .content-quote a{
 	text-decoration: none;
