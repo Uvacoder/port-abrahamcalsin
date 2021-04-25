@@ -6,7 +6,7 @@ body{
 	margin: 0px;
 	font-family: 'Lato', sans-serif;
 	/*font-family: 'Inter', sans-serif;*/
-	padding-top: 200px;
+	padding-top: 220px;
 }
 /* HEADER */
 .header{
@@ -62,7 +62,7 @@ body{
 	list-style: none;
 	margin-top: 0px;
 	margin-right: 20px;
-  }
+ }
 .navbar ul li a:focus{
 	outline: none;
 }
@@ -203,7 +203,7 @@ body{
 	font-size: 17px;
 	letter-spacing: .2em;
 }
-.layout-quote .layout-quote-musk .quote-musk::before {
+.quote-musk::before {
 	content: "";
     width: 44px;
     height: 44px;
@@ -212,6 +212,7 @@ body{
  	background-image: url("../Recursos/Icons/icon-quote-before.svg");
    	background-size: cover;
    	background-repeat: no-repeat;
+   	background-position: center;
     display: block;
 }
 @media (max-width: 615px){
@@ -222,7 +223,7 @@ body{
 		width:280px;
 		font-size: 17px;
 	}
-	.layout-quote .layout-quote-musk .quote-musk::before {
+	.quote-musk::before {
 	width: 35px;
     height: 35px;
     margin-left: 120px;
@@ -262,7 +263,7 @@ body{
 /* QUOTES */
 .all-content-section{
 	background: #fafafa;
-	margin-top: 180px;
+	margin-top: 170px;
 }
 .content-section-quotes{
 	background: none;
@@ -351,7 +352,7 @@ body{
 	width: auto;
 	height: auto;
 	margin-right: 150px;
-	animation: .7s infinite linear;
+	animation: .4s infinite linear;
 }
 .ver-mas-lecciones a:hover{
 	-webkit-animation-name: yx;

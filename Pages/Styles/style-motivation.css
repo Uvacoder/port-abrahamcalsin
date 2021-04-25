@@ -34,13 +34,14 @@ body{
 	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
 }
 .logotype-abrahamcalsin img{
-	margin-left: 20px;
+	width: 100%;
 	margin-top: 0px;
 	padding: 0px;
 	display: block;
 }
 .logotype-abrahamcalsin{
 	width: 80px;
+	margin-left: 20px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
