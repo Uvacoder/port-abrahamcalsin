@@ -66,7 +66,10 @@ body{
 	list-style: none;
 	margin-top: 0px;
 	margin-right: 20px;
-  }
+ }
+.navbar ul li a:focus{
+	outline: none;
+}
 .navbar-inicio, .navbar-motivacion, .material-adicional, .sobre-mi{
 	color: #4d4d4dff;
 	text-decoration: none;
@@ -97,6 +100,9 @@ body{
 	padding-left: 12px;
 	padding-right: 12px;
 	border-radius: 7px;
+}
+.contact-abrahamcalsin a:focus{
+	outline: none;
 }
 /* RESPONSIVE NAVBAR */
 @media (max-width: 650px){
@@ -398,6 +404,9 @@ body{
 	background: #ff7f2aff;
 	color: #fff;
 }
+.content-quote a:focus{
+	outline: none;
+}
 @media (max-width: 615px){
 	.all-content-section{
 	margin-top: 100px;
@@ -409,7 +418,7 @@ body{
 	.content-quote{
 		margin-bottom: 40px;
 	}
-	#quote-2, #quote-3{
+	#quote-1, #quote-2, #quote-3{
 	background: none;
 	margin-top: 0px;
 	}
@@ -464,6 +473,9 @@ body{
 	justify-content: center;
 	align-items: center;
 	gap: 15px;
+}
+.social-media a:focus{
+	outline: none;
 }
 .social-media img{
 	width: 16px;
