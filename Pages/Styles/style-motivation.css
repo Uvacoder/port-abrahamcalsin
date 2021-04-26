@@ -30,21 +30,19 @@ body{
 	height: 75px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 	z-index: 3;
 	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
 }
 .logotype-abrahamcalsin img{
 	width: 100%;
-	margin-top: 0px;
-	padding: 0px;
 	display: block;
+	object-fit: cover;
+	object-position: right top;
 }
 .logotype-abrahamcalsin{
 	width: 80px;
 	margin-left: 20px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 }
 /* BTN - MENU */
 #btn_menu{
@@ -73,6 +71,9 @@ body{
 	list-style: none;
 	margin-top: 0px;
 	margin-right: 20px;
+	display: flex;
+ 	justify-content: center;
+	align-items: center;
  }
 .navbar ul li a:focus{
 	outline: none;
@@ -93,7 +94,7 @@ body{
 .sobre-mi:hover {color: #ff7f2aff;}
 /* CONTACT */
 .contact-abrahamcalsin{
-	margin-top: 0px;
+	margin-top: -5px;
 	padding: 0px;
 }
 .contact-abrahamcalsin a{
