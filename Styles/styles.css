@@ -6,7 +6,7 @@ body{
 	margin: 0px;
 	font-family: 'Lato', sans-serif;
 	/*font-family: 'Inter', sans-serif;*/
-	padding-top: 220px;
+	padding-top: 210px;
 }
 /* HEADER */
 .header{
@@ -204,15 +204,11 @@ body{
 	letter-spacing: .2em;
 }
 .quote-musk::before {
-	content: "";
-    width: 44px;
-    height: 44px;
-    margin-left: 175px;
-    margin-bottom: 10px;
- 	background-image: url("../Recursos/Icons/icon-quote-before.svg");
-   	background-size: cover;
-   	background-repeat: no-repeat;
-   	background-position: center;
+	font-family: 'Noto Serif TC', serif;
+	content: ' “ ';
+    font-size: 4.3em;
+    margin-bottom: -55px;
+    margin-left: -40px;
     display: block;
 }
 @media (max-width: 615px){
@@ -226,8 +222,9 @@ body{
 	.quote-musk::before {
 	width: 35px;
     height: 35px;
-    margin-left: 120px;
-    margin-bottom: 10px;
+    font-size: 4em;
+    margin-bottom: 17px;
+    margin-left: 95px;
 	}
 	.autor-musk{	
 	font-size: 14px;
