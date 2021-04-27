@@ -26,8 +26,7 @@ body{
 .logotype-abrahamcalsin img{
 	width: 100%;
 	display: block;
-	object-fit: cover;
-	object-position: right top;
+	padding: 3px;
 }
 .logotype-abrahamcalsin{
 	width: 80px;
@@ -105,8 +104,9 @@ body{
 	.header{
 		height: 70px;
 	}
-	.logotype-abrahamcalsin{
-		width: 75px;
+	.logotype-abrahamcalsin img{
+		width: 100%;
+		padding: 4px;
 	}
 	.navbar{
 		position: fixed;

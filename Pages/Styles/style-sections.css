@@ -1,0 +1,75 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+	padding-top: 30px;
+}
+.select-sections{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: repeat(1, .1fr);
+	grid-gap: 10px 15px;
+	justify-items: center;
+	padding: 145px;
+	background: none;
+}
+.select-sections div{
+	color: #fff;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	border-radius: 7px;
+	overflow: hidden;
+	cursor: pointer;
+	align-self: center;
+	justify-self: center;
+}
+.select-sections div a{
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+	font-size: .7em;
+	width: 100%;
+	height: 100%;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-bottom: 13px;
+	padding-top: 13px;
+	background: #4d4d4dff;
+}
+.select-sections div i{
+	height: 100%;
+	width: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #262626;
+}
+@media (max-width: 800px){
+	.select-sections{
+		padding: 65px;
+	}
+	.select-sections div a{
+		font-size: .6em;
+	}
+	.select-sections div i{
+		font-size: .8em;
+		width: 55px;
+	}
+}
+@media (max-width: 760px){
+	.select-sections{
+		padding: 55px;
+	}
+}
+@media (max-width: 416px){
+	.select-sections{
+		padding: 40px;
+		grid-template-columns: repeat(1, 1fr);
+	}
+}

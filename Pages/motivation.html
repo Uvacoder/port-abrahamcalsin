@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Motivacion - Abraham Calsin</title>
@@ -8,10 +8,12 @@
 	<meta data-react-helmet="true" name="robots" content="index,follow">
 	<meta data-react-helmet="true" name="googlebot" content="index,follow">
 	<meta data-react-helmet="true" name="description" content="Lecciones del dia, Libros de desarrollo personal recomendados, Libros gratis en PDF, Frases motivadoras, Frases celebres, Frases para emprendedores, Motivacion personal.">
+	<meta data-react-helmet="true" name="image" content="https://avatars.githubusercontent.com/u/77748010?v=4">
 	<meta data-react-helmet="true" property="og:url" content="http://abrahamcalsin.vercel.app">
 	<meta data-react-helmet="true" property="og:type" content="website">
 	<meta data-react-helmet="true" property="og:title" content="Motivacion - Abraham Calsin">
 	<meta data-react-helmet="true" property="og:description" content="Lecciones del dia, Libros de desarrollo personal recomendados, Libros gratis en PDF, Frases motivadoras, Frases celebres, Frases para emprendedores, Motivacion personal.">
+	<meta data-react-helmet="true" property="og:image" content="https://avatars.githubusercontent.com/u/77748010?v=4">
 	<meta data-react-helmet="true" name="twitter:card" content="summary_large_image">
 	<meta data-react-helmet="true" name="twitter:creator" content="@abraham_calsin">
 	<meta data-react-helmet="true" name="twitter:title" content="Abraham Calsin - Frontend Developer">
@@ -25,6 +27,7 @@
 	<script src="https://kit.fontawesome.com/d79f00ee22.js" crossorigin="anonymous"></script>
 	<!-- LINK STYLES -->
 	<link rel="stylesheet" href="Styles/style-motivation.css">
+	<link rel="stylesheet" href="Styles/style-sections.css">
 	<!-- BTN IR ARIIBA -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script type='text/javascript'>
@@ -46,33 +49,19 @@ $(document).ready(function(){
 <body>
 	<!-- HEADER - NAVBAR -->
 	<div class="header">
-		<a href="../../index.html" class="logotype-abrahamcalsin"><img src="../Recursos/Img - Logotype/logotype.svg" alt=""></a>
+		<a href="../index.html" class="logotype-abrahamcalsin"><img src="../Recursos/Img - Logotype/logotype.svg" alt=""></a>
 		<div class="menu_navbar">
 			<input type="checkbox" id="btn_menu">
 			<label for="btn_menu" class="btn_menu"><i class="fa fa-bars active"></i></label>
 			<nav class="navbar">
 				<ul>
 					<li><a href="../index.html" class="navbar-inicio">Inicio</a></li>
-					<li><a href="#" class="navbar-motivacion">motivación</a></li>
+					<li><a href="motivation.html" class="navbar-motivacion">motivación</a></li>
 					<li><a href="#" class="material-adicional">desarrollo web</a></li>
 					<li><a href="#" class="sobre-mi">sobre mi</a></li>
 					<div class="contact-abrahamcalsin"><a href="#">CONTACTO</a></div>
 				</ul>
 			</nav>
-		</div>
-	</div>
-	<!-- SECTION - LECCION1 -->
-	<div class="leccion1">
-		<div class="leccion1-quo-tesla">
-			<div class="leccion1-img-tesla">
-				<img src="../Recursos/Quotes/ESTAR_SOLO_ES_EL_SECRETO_DE_LA_INVENCION_ESTANDO_SOLO_ES_CUANDO_NACEN_LAS_IDEAS__dia_16_de_abril_2021-1.png" alt="" class="nikola-tesla">
-			</div>
-			<div class="leccion1-desopt-tesla">
-				<div class="description-tesla"><h4>- LECCIÓN 5 -</h4><p>"Estar solo, es el secreto de la invención; estando solo, es cuando nacen las ideas."<br><i>- Nikola Tesla -</i></p></div>
-				<div class="dowloand-lesson">
-					<a href="#">DESCARGAR LECCÍON</a>
-				</div>
-			</div>
 		</div>
 	</div>
 <!-- CONTENT - SECTION - QUOTES -->
@@ -113,32 +102,37 @@ $(document).ready(function(){
 	</div>
 </div>
 </div>
+<!-- SELECT SECTION -->
+<div class="select-sections">
+	<div class="icon1"><i class="fas fa-quote-left"></i><a href="Motivation/motivational-phrases.html" id="ic-0">FRASES MOTIVADORAS</a></div>
+	<div class="icon2"><i class="fas fa-book"></i><a href="#" id="ic-0">LIBROS RECOMENDADOS</a></div>
+	<div class="icon3"><i class="fas fa-tablet-alt"></i><a href="#" id="ic-0">LIBROS GRATIS - PDF</a></div>
 </div>
-<!-- SCRIPT COMMENTS -->
+<!------>
 <div class="container">
 	<div id="disqus_thread"></div>
 </div>
+</div>
+<!-- SCRIPT COMMENTS -->
+<div id="disqus_thread"></div>
 <script>
     /**
     *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
     *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
     
     var disqus_config = function () {
-    this.page.url = "https://abrahamcalsin.com/";  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = "abraham-calsin"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    this.page.url = 'https://abrahamcalsin.vercel.app';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = 'motivation-abraham-calsin'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     
     (function() { // DON'T EDIT BELOW THIS LINE
     var d = document, s = d.createElement('script');
-    s.src = 'https://abraham-calsin.disqus.com/embed.js';
+    s.src = 'https://motivation-abraham-calsin.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
 <!-- FOOTER -->
 <div class="footer">
 	<div class="footer-content">

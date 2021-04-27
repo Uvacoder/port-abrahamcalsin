@@ -1,19 +1,9 @@
-* {
+*{
 	box-sizing: border-box;
 }
 body{
-	padding: 0px;
-	margin: 0px;
-	font-family: 'Poppins', sans-serif;
-	padding-top: 80px;
-	background: #fafafa;
-}
-/* STYLES-COMENTARY */
-.container{
-	max-width: 90%;
-	display: block;
-	margin: auto;
-	padding: 10px;
+	margin: 0;
+	padding: 0;
 }
 /* HEADER */
 .header{
@@ -31,11 +21,11 @@ body{
 	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
 }
 .logotype-abrahamcalsin img{
+	padding: 3px;
 	width: 100%;
 	display: block;
 	object-fit: cover;
 	object-position: right top;
-	padding: 3px;
 }
 .logotype-abrahamcalsin{
 	width: 80px;
@@ -79,7 +69,7 @@ body{
 	color: #4d4d4dff;
 	text-decoration: none;
 	font-size: 0.763em;
-	font-weight: 700;
+	font-weight: 600;
 	text-transform: uppercase;
 	transition: .3s all;
 }
@@ -99,7 +89,7 @@ body{
 	text-decoration: none;
 	color: #fff;
 	font-size: 0.763em;
-	font-weight: bold;
+	font-weight: 600;
 	padding-top: 9px;
 	padding-bottom: 10px;
 	padding-left: 12px;
@@ -184,103 +174,67 @@ body{
     right: -5px;
 	}
 }
-/* CONTENT-SECTION */
-.content-section-divide{
-	background: none;
-	display: flex;
-	justify-content: center;
-	padding: 0;
-}
-.content-section-divide h4{
-	color: #4d4d4dff;
-	font-weight: 400;
-	margin-top: 100px;
-	border-radius: 5px 5px 0px 0px;
-	font-size: 1.5em;
-	width: 100%;
-	height: auto;
-	text-align: center;
+/* MOTIVATIONAL PHRASES SECTION */
+.motivational-phrases-section{
+	display: grid;
+	padding: 80px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-gap: 20px 35px;
+	align-items: start;
 	font-family: 'Poppins', sans-serif;
 }
-@media (max-width: 615px){
-	.content-section-divide h4{
-		margin-top: 70px;
-		font-size: 1.2em;
-	}
+.motivational-phrase{
+	background: #fafafa;
+	color: #4d4d4dff;
+	border-left: 5px solid #d9d9d9;
+	padding: 15px;
+	font-size: calc(11px + 8 * ((100vw - 320px) / 960)));
+
 }
-/* QUOTES */
-.all-content-section{
-	margin-top: 100px;
-}
-.content-section-quotes{
-	background: none;
-	height: auto;
-	width: 100%;
+.motivational-phrase div{
 	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
 	flex-direction: row;
-	margin-top: 50px;
-}
-.content-quote{
-	background: #fff;
-	width: auto;
-	height: auto;
-	display: flex;
-	flex-direction: column;
-	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-	border-radius: 5px;
-	transition: .3s all;
-	overflow: hidden;
-}
-.content-quote:hover{
-	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-	transform: scale(1.010)
-}
-.content-quote img{
-	width: 280px;
-}
-.content-quote a{
-	text-decoration: none;
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	font-size: 14px;
-	font-weight: 800;
-	color: #ff7f2aff;
-	border-radius: 0px 0px 5px 5px;
-	letter-spacing: 2.1px;
-	transition: .3s all;
 }
-.content-quote a:hover{
-	background: #ff7f2aff;
+.motivational-phrase::selection{
+	background-color: #4d4d4dff;
 	color: #fff;
 }
-.content-quote a:focus{
-	outline: none;
+.motivational-phrase span::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
 }
-@media (max-width: 615px){
-	.all-content-section{
-	margin-top: 100px;
-	}
-	.content-section-quotes{
-		flex-direction: column;
-		margin-top: 47px;
-	}
-	.content-quote{
-		margin-bottom: 40px;
-	}
-	#quote-1, #quote-2, #quote-3{
-	background: none;
-	margin-top: 0px;
+.motivational-phrase div a{
+	align-self: flex-end;
+	text-decoration: none;
+	color: #737373;
+	transition: .3s all;
+}
+.motivational-phrase div a:hover{
+	transform: rotate(-4deg) scale(1.1);
+	color: #4d4d4dff;
+}
+.author-mot-phrase{
+	color: #4d4d4dff;
+	font-weight: bolder;
+	font-style: italic;
+	margin-top: 13px;
+}
+@media (max-width: 800px){
+	.motivational-phrases-section{
+		grid-template-columns: repeat(1, 1fr);
+		grid-template-rows: auto;
+		grid-gap: 15px 0px;
 	}
 }
-#not{
-	pointer-events: none;
+@media (max-width: 500px){
+	.motivational-phrases-section{
+		padding: 40px;
+		
+	}
 }
-/* ------------------ */
 /* FOOTER */
 .footer{
 	background: #333333ff;
