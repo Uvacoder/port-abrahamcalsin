@@ -447,10 +447,10 @@ body{
 	}
 	.divide-autor-social{
 		display: inline;
-		margin-bottom: 3px;	
+		margin-bottom: 5px;	
 	}
-	.social-media{
-		column-gap: 12px;
+	.social-media a{
+		margin-right: 12px;
 	}
 }
 /* STYLES - BTN IR ARRIBA */
