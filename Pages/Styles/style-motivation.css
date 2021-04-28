@@ -14,6 +14,7 @@ body{
 	display: block;
 	margin: auto;
 	padding: 10px;
+	margin-bottom: -80px;
 }
 /* HEADER */
 .header{
@@ -32,13 +33,9 @@ body{
 }
 .logotype-abrahamcalsin img{
 	width: 100%;
-	display: block;
-	object-fit: cover;
-	object-position: right top;
-	padding: 3px;
 }
 .logotype-abrahamcalsin{
-	width: 80px;
+	width: 75px;
 	margin-left: 20px;
 }
 /* BTN - MENU */
@@ -117,9 +114,9 @@ body{
 	.header{
 		height: 70px;
 	}
-	.logotype-abrahamcalsin img{
-		width: 100%;
-		padding: 4px;
+	.logotype-abrahamcalsin{
+		width: 72px;
+		margin-left: 20px;
 	}
 	.navbar{
 		position: fixed;
@@ -286,18 +283,19 @@ body{
 	background: #333333ff;
 	padding: 25px;
 	color: rgba(255, 255, 255, 0.62);
-	margin-top: 0px;
+	margin-top: 70px;
 	margin-bottom: -3px;
+	font-family: 'Poppins', sans-serif;
 }
 .footer-content{
+	padding: 0px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0;
 }
 .autor-copyright{
-	line-height: 0px;
-	font-family: 'Poppins', sans-serif;
+	line-height: 0;
+	margin-bottom: 10px;
 }
 .autor-abraham-calsin{
 	font-weight: bold;
@@ -306,33 +304,27 @@ body{
 }
 .frontend-developer{
 	font-size: 12px;
-	margin-top: -1px;
 	letter-spacing: .7px;
 }
 /* DIVIDE - AUTOR - SOCIAL */
 .divide-autor-social{
-	margin-top: -6px;
 	display: none;
 }
 .divide-autor-social div{
 	width: 80px;
 	height: 1px;
 	background: rgba(255, 255, 255, 0.62);
-	border-radius: 0px 10px 10px 0px;
 }
 /* SOCIAL MEDIA */
 .social-media{
-	background: none;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 15px;
-}
-.social-media a:focus{
-	outline: none;
+	gap: 12px;
+	width: 125px;
 }
 .social-media img{
-	width: 16px;
+	width: 100%;
 	transition: .3s all;
 	filter: blur(0) contrast(35%);
 }
@@ -345,16 +337,30 @@ body{
 		flex-direction: column;
 		align-items: flex-start;
 	}
-	.autor-copyright{
-		margin-bottom: 3px;
+	.autor-abraham-calsin{
+		font-size: 11px;
+		letter-spacing: 0.4px;
+	}
+	.frontend-developer{
+		font-size: 10.3px;
+		letter-spacing: .7px;
 	}
 	.divide-autor-social{
 		display: inline;
-		margin-bottom: 3px;	
+		line-height: 0;
+		padding-bottom: 8px;
 	}
 	.social-media{
-		column-gap: 12px;
+		justify-content: flex-start;
+		width: 105px;
+		gap: 9px;
 	}
+	.social-media img{
+		width: 100%;
+		transition: .3s all;
+		filter: blur(0) contrast(35%);
+		display: block;
+	}	
 }
 /* STYLES - BTN IR ARRIBA */
 #scroll img{

@@ -28,6 +28,11 @@ body{
 	cursor: pointer;
 	align-self: center;
 	justify-self: center;
+	transition: .3s all;
+}
+.select-sections div:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: translateY(-1px);
 }
 .select-sections div a{
 	text-decoration: none;
@@ -49,6 +54,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	background: #262626;
+	cursor: none;
 }
 @media (max-width: 800px){
 	.select-sections{
