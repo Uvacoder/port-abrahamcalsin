@@ -5,16 +5,15 @@ body{
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Poppins', sans-serif;
-	padding-top: 30px;
 }
 .select-sections{
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-auto-rows: repeat(1, .1fr);
-	grid-gap: 10px 15px;
+	grid-gap: 10px;
 	justify-items: center;
-	padding: 145px;
-	background: none;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .select-sections div{
 	color: #fff;
@@ -54,11 +53,11 @@ body{
 	justify-content: center;
 	align-items: center;
 	background: #262626;
-	cursor: none;
+	cursor: default;
 }
 @media (max-width: 800px){
 	.select-sections{
-		padding: 65px;
+		margin-bottom: 30px;
 	}
 	.select-sections div a{
 		font-size: .6em;
@@ -68,14 +67,8 @@ body{
 		width: 55px;
 	}
 }
-@media (max-width: 760px){
+@media (max-width: 600px){
 	.select-sections{
-		padding: 55px;
-	}
-}
-@media (max-width: 416px){
-	.select-sections{
-		padding: 40px;
 		grid-template-columns: repeat(1, 1fr);
 	}
 }

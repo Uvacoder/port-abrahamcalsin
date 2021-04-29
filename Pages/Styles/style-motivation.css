@@ -4,182 +4,7 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	font-family: 'Poppins', sans-serif;
-	padding-top: 80px;
 	background: #fafafa;
-}
-/* STYLES-COMENTARY */
-.container{
-	max-width: 90%;
-	display: block;
-	margin: auto;
-	padding: 10px;
-	margin-bottom: -80px;
-}
-/* HEADER */
-.header{
-	position: fixed;
-	background: #fff;
-	font-family: 'Lato', sans-serif;
-	top: 0;
-	width: 100%;
-	padding: 10px;
-	height: 75px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	z-index: 3;
-	box-shadow: 2px 2px 2rem -0.6rem rgba(57,62,75,.2)
-}
-.logotype-abrahamcalsin img{
-	width: 100%;
-}
-.logotype-abrahamcalsin{
-	width: 75px;
-	margin-left: 20px;
-}
-/* BTN - MENU */
-#btn_menu{
-	display: none;
-}
-.menu_navbar label{
-	position: absolute;
-	color: #4d4d4dff;
-	display: none;
-	right: 32px;
-	top: 25px;
-	font-size: 1.1em;
-	font-weight: bold;
-	cursor: pointer;
-	transition: .1s all;
-}
-/* NAVBAR */
-.navbar{
-	background: none;
-	margin-right: 5px;
-}
-.navbar ul{
-	display: flex;
-}
-.navbar ul li{
-	list-style: none;
-	margin-top: 0px;
-	margin-right: 20px;
-	display: flex;
- 	justify-content: center;
-	align-items: center;
- }
-.navbar ul li a:focus{
-	outline: none;
-}
-.navbar-inicio, .navbar-motivacion, .material-adicional, .sobre-mi{
-	color: #4d4d4dff;
-	text-decoration: none;
-	font-size: 0.763em;
-	font-weight: 700;
-	text-transform: uppercase;
-	transition: .3s all;
-}
-.navbar-motivacion{
-		color: #ff7f2aff;
-}
-.navbar-inicio:hover {color: #ff7f2aff;}
-.material-adicional:hover {color: #ff7f2aff;}
-.sobre-mi:hover {color: #ff7f2aff;}
-/* CONTACT */
-.contact-abrahamcalsin{
-	margin-top: -5px;
-	padding: 0px;
-}
-.contact-abrahamcalsin a{
-	background: #ff7f2aff;
-	text-decoration: none;
-	color: #fff;
-	font-size: 0.763em;
-	font-weight: bold;
-	padding-top: 9px;
-	padding-bottom: 10px;
-	padding-left: 12px;
-	padding-right: 12px;
-	border-radius: 7px;
-}
-.contact-abrahamcalsin a:focus{
-	outline: none;
-}
-/* RESPONSIVE NAVBAR */
-@media (max-width: 650px){
-	.container{
-		max-width: 95%;
-	}
-	.header{
-		height: 70px;
-	}
-	.logotype-abrahamcalsin{
-		width: 72px;
-		margin-left: 20px;
-	}
-	.navbar{
-		position: fixed;
-		background: #fff;
-		border-top: 1px solid #eee;
-		width: 100%;
-		height: 100%;
-		top: 69px;
-		right: -700px;
-		padding: 5px;
-		transition: .4s all;
-	}
-	.navbar ul{
-		display: block;
-		padding: 3px;
-		margin-left: 0px;
-	}
-	.navbar li{
-		margin-left: 10px;
-	}
-	.navbar-inicio, .navbar-motivacion, .material-adicional, .sobre-mi{
-		display: block;
-		background: none;
-		letter-spacing: 1px;
-		margin-top: 5px;
-		margin-bottom: 30px;
-		margin-left: 10px;
-		font-size: .8em;
-		transition: .3s all;
-		text-align: center;
-	}
-	.navbar-inicio{
-		margin-top: 30px;
-	}
-	.navbar-motivacion{
-		color: #ff7f2aff;
-	}
-	.navbar-inicio:hover {color: #ff7f2aff;}
-	.material-adicional:hover {color: #ff7f2aff;}
-	.sobre-mi:hover {color: #ff7f2aff;}
-	.menu_navbar label{
-		display: inline;
-		cursor: pointer;
-		transition: .1s all;
-	}
-	/* CONTACT */
-	.contact-abrahamcalsin{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.contact-abrahamcalsin a{
-		padding-left: 30px;
-		padding-right: 30px;
-		letter-spacing: 1px;
-		font-size: .8em;
-	}
-	.menu_navbar label:active {
-		transform: scale(1.1);
-	}
-	#btn_menu:checked ~ .navbar{
-    right: -5px;
-	}
 }
 /* CONTENT-SECTION */
 .content-section-divide{
@@ -187,27 +12,36 @@ body{
 	display: flex;
 	justify-content: center;
 	padding: 0;
+	margin-bottom: 120px;
 }
 .content-section-divide h4{
+	font-family: 'Poppins', sans-serif;
 	color: #4d4d4dff;
 	font-weight: 400;
-	margin-top: 100px;
+	text-transform: uppercase;
 	border-radius: 5px 5px 0px 0px;
 	font-size: 1.5em;
 	width: 100%;
 	height: auto;
 	text-align: center;
-	font-family: 'Poppins', sans-serif;
+}
+@media (max-width: 650px){
+	.content-section-divide h4{
+		margin-top: 30px;
+	}
 }
 @media (max-width: 615px){
 	.content-section-divide h4{
-		margin-top: 70px;
+		margin-top: 50px;
 		font-size: 1.2em;
+	}
+	.content-section-divide{
+		margin-bottom: 80px;
 	}
 }
 /* QUOTES */
 .all-content-section{
-	margin-top: 100px;
+	margin-top: 180px;
 }
 .content-section-quotes{
 	background: none;
@@ -234,10 +68,10 @@ body{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 	transform: scale(1.010)
 }
-.content-quote img{
+.image-lesson{
 	width: 280px;
 }
-.content-quote a{
+.download-lesson{
 	text-decoration: none;
 	width: 100%;
 	height: 50px;
@@ -251,11 +85,11 @@ body{
 	letter-spacing: 2.1px;
 	transition: .3s all;
 }
-.content-quote a:hover{
+.download-lesson:hover{
 	background: #ff7f2aff;
 	color: #fff;
 }
-.content-quote a:focus{
+.download-lesson:focus{
 	outline: none;
 }
 @media (max-width: 615px){
@@ -301,6 +135,7 @@ body{
 	font-weight: bold;
 	font-size: 12.7px;
 	letter-spacing: 0.5px;
+	margin-bottom: 10px;
 }
 .frontend-developer{
 	font-size: 12px;
@@ -340,6 +175,7 @@ body{
 	.autor-abraham-calsin{
 		font-size: 11px;
 		letter-spacing: 0.4px;
+		margin-bottom: 9px;
 	}
 	.frontend-developer{
 		font-size: 10.3px;
