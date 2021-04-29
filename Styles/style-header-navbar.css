@@ -37,16 +37,12 @@
 	transition: .1s all;
 }
 /* NAVBAR */
-.navbar{
-
-}
 .navbar ul{
 	display: flex;
 }
 .navbar ul li{
 	list-style: none;
 	margin-top: 0px;
-	
 	display: flex;
  	justify-content: center;
 	align-items: center;
@@ -57,7 +53,10 @@
 .navbar ul li a:focus{
 	outline: none;
 }
-.navbar-inicio, .navbar-motivacion, .sobre-mi, .contact-abrahamcalsin{
+.navbar-inicio,
+.navbar-motivacion,
+.sobre-mi,
+.contact-abrahamcalsin{
 	color: #4d4d4dff;
 	text-decoration: none;
 	font-size: 0.763em;
@@ -82,9 +81,6 @@
 }
 /* RESPONSIVE NAVBAR */
 @media (max-width: 650px){
-	.container{
-		max-width: 95%;
-	}
 	.header{
 		height: 70px;
 	}
@@ -98,28 +94,29 @@
 		width: 100%;
 		height: 100%;
 		top: 69px;
-		right: -700px;
-		padding: 5px;
+		right: -600px;
+		padding: 0px;
 		transition: .4s all;
 	}
 	.navbar ul{
 		display: block;
 		padding: 3px;
-		margin-left: 0px;
 	}
-	.navbar li{
-		margin-left: 10px;
-	}
-	.navbar-inicio, .navbar-motivacion, .material-adicional, .sobre-mi{
+	.navbar ul li:not(:last-child){
+ 		margin-right: 0px;
+ 	}
+	.navbar-inicio,
+	.navbar-motivacion,
+	.material-adicional,
+	.sobre-mi,
+	.contact-abrahamcalsin{
 		display: block;
 		background: none;
 		letter-spacing: 1px;
 		margin-top: 5px;
 		margin-bottom: 30px;
-		margin-left: 10px;
 		font-size: .8em;
 		transition: .3s all;
-		text-align: center;
 	}
 	.navbar-inicio{
 		margin-top: 30px;
@@ -136,6 +133,6 @@
 		transform: scale(1.1);
 	}
 	#btn_menu:checked ~ .navbar{
-    right: -5px;
+    right: 0px;
 	}
 }

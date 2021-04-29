@@ -62,16 +62,9 @@ body{
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: auto;
 		grid-gap: 15px 0px;
-		padding: 30px;
 	}
 	.motivational-phrase{
 		font-size: .9em;
-	}
-}
-@media (max-width: 500px){
-	.motivational-phrases-section{
-		padding: 25px;
-		
 	}
 }
 /* FOOTER */
