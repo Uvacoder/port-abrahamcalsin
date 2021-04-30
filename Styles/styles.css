@@ -5,15 +5,13 @@ body{
 	padding: 0px;
 	margin: 0px;
 	font-family: 'Lato', sans-serif;
-	padding-top: 210px;
+	padding-top: 70px;
 }
 /* SECTION LAYOUT */
 .layout-quote{
 	width: 100%;
-	background-color: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 .layout-quote-musk{
 	width: 100%;
@@ -57,9 +55,6 @@ body{
     display: block;
 }
 @media (max-width: 615px){
-	body{
-		padding-top: 150px;
-	}
 	.quote-musk{
 		width:280px;
 		font-size: 17px;
@@ -89,7 +84,7 @@ body{
 	color: #4d4d4dff;
 	font-weight: 400;
 	margin-top: 100px;
-	border-radius: 5px 5px 0px 0px;
+	margin-bottom: 100px;
 	font-size: 1.5em;
 	width: 100%;
 	height: auto;
@@ -100,27 +95,25 @@ body{
 	background-color: #4d4d4dff;
 	color: #fff;
 }
-@media (max-width: 615px){
+@media (max-width: 576px){
 	.content-section-divide h4{
-		margin-top: 70px;
-		font-size: 1.2em;
+		font-size: 1.4em;
+		margin-top: 90px;
+		margin-bottom: 90px;
 	}
 }
 /* QUOTES */
 .all-content-section{
 	background: #fafafa;
-	margin-top: 170px;
-	margin-bottom: -70px;
+	margin-bottom: 0px;
 }
 .content-section-quotes{
-	background: none;
 	height: auto;
 	width: 100%;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
 	flex-direction: row;
-	margin-top: 50px;
 }
 .content-quote{
 	background: #fff;
@@ -132,6 +125,7 @@ body{
 	border-radius: 5px;
 	transition: .3s all;
 	overflow: hidden;
+	margin-bottom: 45px;
 }
 .content-quote:hover{
 	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -170,11 +164,10 @@ body{
 }
 @media (max-width: 615px){
 	.all-content-section{
-	margin-top: 100px;
+	margin-bottom: 0px;
 	}
 	.content-section-quotes{
 		flex-direction: column;
-		margin-top: 50px;
 	}
 	.content-quote{
 		margin-bottom: 40px;
@@ -190,25 +183,27 @@ body{
 /* VER MAS LECCIONES */
 .ver-mas-lecciones{
 	display: flex;
+	padding-bottom: 45px;
+	padding-right: 154px;
 	justify-content: flex-end;
-	margin-top: 75px;
-	padding-bottom: 65px;
+	align-items: center;
+	width: 100%;
 }
 .ver-mas-lecciones a{
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
-	color: #8c8c8c;
+	color: #63636363;
 	font-size: 13px;
 	font-weight: 700;
-	text-align: right;
 	margin: 0;
 	width: auto;
 	height: auto;
-	margin-right: 150px;
+	transition: .3s all;
 	animation: .4s infinite linear;
 }
 .ver-mas-lecciones a:hover{
 	-webkit-animation-name: yx;
+	color: #8c8c8c;
 }
 .ver-mas-lecciones a::selection{
 	background-color: #4d4d4dff;
@@ -227,9 +222,9 @@ body{
 }
 @media (max-width: 615px){
 	.ver-mas-lecciones{
-		margin-top: 15px;
-		padding-bottom: 50px;
-		display: flex;
+		margin-top: 5px;
+		padding-bottom: 45px;
+		padding-right: 0px;
 		justify-content: center;
 	}
 	.ver-mas-lecciones a{

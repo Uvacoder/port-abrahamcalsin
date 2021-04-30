@@ -1,10 +1,10 @@
-* {
+*{
 	box-sizing: border-box;
 }
 body{
-	padding: 0px;
-	margin: 0px;
 	background: #fafafa;
+	margin: 0px;
+	padding-top: 70px;
 }
 /* CONTENT-SECTION */
 .content-section-divide{
@@ -12,7 +12,8 @@ body{
 	display: flex;
 	justify-content: center;
 	padding: 0;
-	margin-bottom: 120px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
 .content-section-divide h4{
 	font-family: 'Poppins', sans-serif;
@@ -29,24 +30,16 @@ body{
 	background-color: #4d4d4dff;
 	color: #fff;
 }
-@media (max-width: 650px){
-	.content-section-divide h4{
-		margin-top: 90px;
-	}
-}
-@media (max-width: 615px){
-	.content-section-divide h4{
-		margin-top: 20px;
-		font-size: 1.2em;
-	}
+@media (max-width: 576px){
 	.content-section-divide{
-		margin-bottom: 70px;
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+	.content-section-divide h4{
+		font-size: 1.4em;
 	}
 }
 /* QUOTES */
-.all-content-section{
-	margin-top: 210px;
-}
 .content-section-quotes{
 	background: none;
 	height: auto;
@@ -104,12 +97,6 @@ body{
 	color: #fff;
 }
 @media (max-width: 768px){
-	.all-content-section{
-	margin-top: 150px;
-	}
-	.content-section-divide{
-		margin-bottom: 60px;
-	}
 	.content-section-quotes{
 		flex-direction: column;
 	}
