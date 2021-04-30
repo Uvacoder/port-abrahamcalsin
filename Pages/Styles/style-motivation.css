@@ -31,16 +31,16 @@ body{
 }
 @media (max-width: 650px){
 	.content-section-divide h4{
-		margin-top: 30px;
+		margin-top: 90px;
 	}
 }
 @media (max-width: 615px){
 	.content-section-divide h4{
-		margin-top: 50px;
+		margin-top: 20px;
 		font-size: 1.2em;
 	}
 	.content-section-divide{
-		margin-bottom: 80px;
+		margin-bottom: 70px;
 	}
 }
 /* QUOTES */
@@ -103,18 +103,20 @@ body{
 	background-color: #ff7f2aff;
 	color: #fff;
 }
-@media (max-width: 615px){
+@media (max-width: 768px){
 	.all-content-section{
-	margin-top: 100px;
+	margin-top: 150px;
+	}
+	.content-section-divide{
+		margin-bottom: 60px;
 	}
 	.content-section-quotes{
 		flex-direction: column;
-		margin-top: 47px;
 	}
 	.content-quote{
 		margin-bottom: 40px;
 	}
-	#quote-1, #quote-2, #quote-3{
+	#quote-1, #quote-2, #quote-3, #quote-4{
 	background: none;
 	margin-top: 0px;
 	}

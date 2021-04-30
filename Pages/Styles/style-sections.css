@@ -8,9 +8,9 @@ body{
 }
 .select-sections{
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: repeat(1, .1fr);
-	grid-gap: 10px;
+	grid-gap: 50px;
 	justify-items: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
@@ -45,6 +45,7 @@ body{
 	padding-bottom: 13px;
 	padding-top: 13px;
 	background: #4d4d4dff;
+	letter-spacing: 2px;
 }
 .select-sections a::selection{
 	background-color: #fff;
@@ -60,12 +61,6 @@ body{
 	cursor: default;
 }
 @media (max-width: 800px){
-	.select-sections{
-		margin-bottom: 30px;
-	}
-	.select-sections div a{
-		font-size: .6em;
-	}
 	.select-sections div i{
 		font-size: .8em;
 		width: 55px;
@@ -74,5 +69,8 @@ body{
 @media (max-width: 600px){
 	.select-sections{
 		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 10px ;
+		margin-bottom: 50px;
+		margin-top: 50px;
 	}
 }

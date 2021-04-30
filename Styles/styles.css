@@ -174,12 +174,12 @@ body{
 	}
 	.content-section-quotes{
 		flex-direction: column;
-		margin-top: 47px;
+		margin-top: 50px;
 	}
 	.content-quote{
 		margin-bottom: 40px;
 	}
-	#quote-1, #quote-2{
+	#quote-1, #quote-2, #quote-3, #quote-4{
 	background: none;
 	margin-top: 0px;
 	}
@@ -197,7 +197,7 @@ body{
 .ver-mas-lecciones a{
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
-	color: #63636363;
+	color: #8c8c8c;
 	font-size: 13px;
 	font-weight: 700;
 	text-align: right;

@@ -3,7 +3,7 @@
 	background: #333333ff;
 	padding: 25px;
 	color: rgba(255, 255, 255, 0.62);
-	margin-top: 70px;
+	margin-top: 0px;
 	margin-bottom: -3px;
 	font-family: 'Poppins', sans-serif;
 }
@@ -64,6 +64,20 @@
 	background-color: transparent;
 }
 /* @MEDIA - RESPONSIVE */
+@media (max-width: 370px){
+	.social-media{
+		justify-content: flex-start;
+		width: 105px;
+		gap: 9px;
+	}
+}
+@media (max-width: 490px){
+	.social-media{
+		justify-content: flex-start;
+		width: 100px;
+		margin-right: 9px;
+	}
+}
 @media (max-width: 516px){
 	.footer-content{
 		flex-direction: column;
@@ -82,11 +96,6 @@
 		display: inline;
 		line-height: 0;
 		padding-bottom: 8px;
-	}
-	.social-media{
-		justify-content: flex-start;
-		width: 105px;
-		gap: 9px;
 	}
 	.social-media img{
 		width: 100%;

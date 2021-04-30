@@ -32,7 +32,7 @@
 	position: absolute;
 	color: #4d4d4dff;
 	display: none;
-	right: 32px;
+	right: 30px;
 	top: 25px;
 	font-size: 1.1em;
 	font-weight: bold;
@@ -87,6 +87,11 @@
 	outline: none;
 }
 /* RESPONSIVE NAVBAR */
+@media (max-width:  576px){
+	.logotype-abrahamcalsin{
+		margin-left: 15px;
+	}
+}
 @media (max-width: 650px){
 	.header{
 		height: 70px;
@@ -101,7 +106,7 @@
 		width: 100%;
 		height: 100%;
 		top: 69px;
-		right: -600px;
+		right: -900px;
 		padding: 0px;
 		transition: .4s all;
 	}
