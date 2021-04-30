@@ -25,6 +25,10 @@ body{
 	height: auto;
 	text-align: center;
 }
+.content-section-divide h4::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
 @media (max-width: 650px){
 	.content-section-divide h4{
 		margin-top: 30px;
@@ -71,6 +75,9 @@ body{
 .image-lesson{
 	width: 280px;
 }
+.image-lesson::selection{
+	background-color: transparent;
+}
 .download-lesson{
 	text-decoration: none;
 	width: 100%;
@@ -92,6 +99,10 @@ body{
 .download-lesson:focus{
 	outline: none;
 }
+.download-lesson::selection{
+	background-color: #ff7f2aff;
+	color: #fff;
+}
 @media (max-width: 615px){
 	.all-content-section{
 	margin-top: 100px;
@@ -112,116 +123,3 @@ body{
 	pointer-events: none;
 }
 /* ------------------ */
-/* FOOTER */
-.footer{
-	background: #333333ff;
-	padding: 25px;
-	color: rgba(255, 255, 255, 0.62);
-	margin-top: 70px;
-	margin-bottom: -3px;
-	font-family: 'Poppins', sans-serif;
-}
-.footer-content{
-	padding: 0px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-}
-.autor-copyright{
-	line-height: 0;
-	margin-bottom: 10px;
-}
-.autor-abraham-calsin{
-	font-weight: bold;
-	font-size: 12.7px;
-	letter-spacing: 0.5px;
-	margin-bottom: 10px;
-}
-.frontend-developer{
-	font-size: 12px;
-	letter-spacing: .7px;
-}
-/* DIVIDE - AUTOR - SOCIAL */
-.divide-autor-social{
-	display: none;
-}
-.divide-autor-social div{
-	width: 80px;
-	height: 1px;
-	background: rgba(255, 255, 255, 0.62);
-}
-/* SOCIAL MEDIA */
-.social-media{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 12px;
-	width: 125px;
-}
-.social-media img{
-	width: 100%;
-	transition: .3s all;
-	filter: blur(0) contrast(35%);
-}
-.social-media img:hover{
-	filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
-}
-/* @MEDIA - RESPONSIVE */
-@media (max-width: 516px){
-	.footer-content{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.autor-abraham-calsin{
-		font-size: 11px;
-		letter-spacing: 0.4px;
-		margin-bottom: 9px;
-	}
-	.frontend-developer{
-		font-size: 10.3px;
-		letter-spacing: .7px;
-	}
-	.divide-autor-social{
-		display: inline;
-		line-height: 0;
-		padding-bottom: 8px;
-	}
-	.social-media{
-		justify-content: flex-start;
-		width: 105px;
-		gap: 9px;
-	}
-	.social-media img{
-		width: 100%;
-		transition: .3s all;
-		filter: blur(0) contrast(35%);
-		display: block;
-	}	
-}
-/* STYLES - BTN IR ARRIBA */
-#scroll img{
-	width: 20px;
-	transition: .2s all;
-	filter: blur(0) contrast(35%);
-}
-#scroll img:hover{
-    padding-bottom: 2px;
-    filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
-}
-@media (max-width: 516px){
-	#scroll{
-		background: #333333ff;
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		width: 45px;
-		height: 45px;
-		border-radius: 5px 5px 5px 5px;
-	}
-	#scroll img{
-		position: absolute;
-		display: block;
-		left: 13px;
-		top: 15px;
-	}
-}

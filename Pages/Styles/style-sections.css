@@ -46,6 +46,10 @@ body{
 	padding-top: 13px;
 	background: #4d4d4dff;
 }
+.select-sections a::selection{
+	background-color: #fff;
+	color: #4d4d4dff;
+}
 .select-sections div i{
 	height: 100%;
 	width: 50px;

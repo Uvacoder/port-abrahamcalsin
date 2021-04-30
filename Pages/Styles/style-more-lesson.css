@@ -17,6 +17,10 @@
 	margin-right: 10px;
 	margin-bottom: 6px;
 }
+.text-more-lessons-of-the-day p::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
 /* ------------------- */
 .more-lessons-of-the-day{
 	display: grid;
@@ -59,6 +63,10 @@
 	padding-top: 8px;
 	font-weight: 400px;
 	font-style: italic;
+}
+.author-of-lesson::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
 }
 .link-download-share{
 	width: 100%;

@@ -32,6 +32,10 @@ body{
 	text-align: center;
 	margin: none;
 }
+.quote-musk::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
 .autor-musk{	
 	margin-top: -10px;
 	font-family: 'Josefin Sans', sans-serif;
@@ -39,6 +43,10 @@ body{
 	color: #8c8c8c;
 	font-size: 17px;
 	letter-spacing: .2em;
+}
+.autor-musk::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
 }
 .quote-musk::before {
 	font-family: 'Noto Serif TC', serif;
@@ -88,6 +96,10 @@ body{
 	text-align: center;
 	font-family: 'Poppins', sans-serif;
 }
+.content-section-divide h4::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
 @media (max-width: 615px){
 	.content-section-divide h4{
 		margin-top: 70px;
@@ -128,6 +140,9 @@ body{
 .image-lesson{
 	width: 280px;
 }
+.image-lesson::selection{
+	background-color: transparent;
+}
 .download-lesson{
 	text-decoration: none;
 	width: 100%;
@@ -148,6 +163,10 @@ body{
 }
 .download-lesson:focus{
 	outline: none;
+}
+.download-lesson::selection{
+	background-color: #ff7f2aff;
+	color: #fff;
 }
 @media (max-width: 615px){
 	.all-content-section{
@@ -190,6 +209,10 @@ body{
 }
 .ver-mas-lecciones a:hover{
 	-webkit-animation-name: yx;
+}
+.ver-mas-lecciones a::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
 }
 .ver-mas-lecciones a:focus{
 	outline: none;

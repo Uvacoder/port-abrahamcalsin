@@ -18,6 +18,9 @@
 	width: 100%;
 	display: block;
 }
+.logotype-abrahamcalsin img::selection{
+	background-color: transparent;
+}
 .logotype-abrahamcalsin{
 	width: 75px;
 }
@@ -52,6 +55,10 @@
  }
 .navbar ul li a:focus{
 	outline: none;
+}
+.navbar ul li a::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
 }
 .navbar-inicio,
 .navbar-motivacion,
