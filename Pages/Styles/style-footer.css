@@ -49,13 +49,16 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: 12px;
-	width: 125px;
+	width: 110px;
+}
+.social-media a{
+		margin-right: 10px;
 }
 .social-media img{
 	width: 100%;
 	transition: .3s all;
 	filter: blur(0) contrast(35%);
+	display: block;
 }
 .social-media img:hover{
 	filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
@@ -64,20 +67,6 @@
 	background-color: transparent;
 }
 /* @MEDIA - RESPONSIVE */
-@media (max-width: 370px){
-	.social-media{
-		justify-content: flex-start;
-		width: 105px;
-		gap: 9px;
-	}
-}
-@media (max-width: 490px){
-	.social-media{
-		justify-content: flex-start;
-		width: 100px;
-		margin-right: 9px;
-	}
-}
 @media (max-width: 516px){
 	.footer-content{
 		flex-direction: column;
@@ -98,10 +87,8 @@
 		padding-bottom: 8px;
 	}
 	.social-media img{
-		width: 100%;
 		transition: .3s all;
 		filter: blur(0) contrast(35%);
-		display: block;
 	}	
 }
 /* STYLES - BTN IR ARRIBA */
