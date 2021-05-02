@@ -1,0 +1,85 @@
+* {
+	box-sizing: border-box;
+}
+body{
+	padding: 0px;
+	margin: 0px;
+	padding-top: 100px;
+}
+/* FREE BOOKS */
+.free-books-content{
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+.free-books{
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-gap: 40px 40px;
+	align-items: start;
+}
+.book{
+	background: #fff;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
+	padding: 10px;
+	height: 100%;
+	transition: .3s all;
+	overflow: hidden;
+}
+.book:hover{
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	transform: translateY(-2px);
+}
+.book-image{
+	width: 100%;
+	overflow: hidden;
+}
+.book-image img{
+	width: 100%;
+	max-height: 100%;
+	display: block;
+}
+.book-download{
+	margin-top: 3px;
+}
+.book-download a{
+	font-size: .7em;
+	text-decoration: none;
+	color: #ff7f2aff;
+	font-weight: bold;
+	letter-spacing: .2px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(255, 126, 41, 0.1);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-radius: 0px 0px 4px 4px;
+	transition: .3s all;
+}
+.book-download a:hover{
+	background: #ff7f2aff;
+	color: #fff;
+}
+@media (max-width: 992px){
+	.free-books{
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(auto, 1fr);
+		grid-gap: 40px 40px;
+	}
+}
+@media (max-width: 768px){
+	.free-books{
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(auto, 1fr);
+		grid-gap: 40px 40px;
+	}
+}
+@media (max-width: 576px){
+	.free-books{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(auto, 1fr);
+		grid-gap: 20px 20px;
+	}
+}
