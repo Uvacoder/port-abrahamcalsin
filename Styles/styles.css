@@ -74,6 +74,11 @@ body{
 }
 
 /* CONTENT-SECTION */
+.backg-content-section{
+	background: #fafafa;
+	padding: 0;
+	margin: 0;
+}
 .content-section-divide{
 	background: none;
 	display: flex;
@@ -107,7 +112,7 @@ body{
 	background: #fafafa;
 	margin-bottom: 0px;
 }
-.content-section-quotes{
+/*.content-section-quotes{
 	height: auto;
 	width: 100%;
 	display: flex;
@@ -176,17 +181,17 @@ body{
 	background: none;
 	margin-top: 0px;
 	}
-}
+}*/
 #not{
 	pointer-events: none;
 }
 /* VER MAS LECCIONES */
 .ver-mas-lecciones{
 	display: flex;
+	padding-top: 45px;
 	padding-bottom: 45px;
-	padding-right: 154px;
-	justify-content: flex-end;
 	align-items: center;
+	justify-content: flex-end;
 	width: 100%;
 }
 .ver-mas-lecciones a{

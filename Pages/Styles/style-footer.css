@@ -52,7 +52,7 @@
 	width: 120px;
 }
 .social-media a{
-		margin-right: 10px;
+	gap: 10px;
 }
 .social-media img{
 	width: 100%;
