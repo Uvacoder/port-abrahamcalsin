@@ -24,6 +24,9 @@
 	width: 100%;
 	display: block;
 }
+.lesson-image img::selection{
+	background-color: transparent;
+}
 .download-lesson-of-the-day{
 	width: 100%;
 }
@@ -43,12 +46,17 @@
 	background: #ff7f2aff;
 	color: #fff;
 }
+.download-lesson-of-the-day a::selection{
+	background-color: #ff7f2aff;
+	color: #fff;
+}
 @media (max-width: 992px) {
   .content-section-quotes-lessons{
 		grid-template-columns: repeat(2, 1fr);
 		grid-template-rows: repeat(auto, 1fr);
 		grid-gap: 50px 50px;
 		align-items: center;
+		padding: 0px;
 	}
 }
 @media (max-width: 768px){
@@ -61,10 +69,18 @@
 		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(auto, 1fr);
 		grid-gap: 30px 0;
+		padding-left: 25px;
+		padding-right: 25px;
 	}	
 }
 @media (max-width: 416px){
 	.content-section-quotes-lessons{
-		grid-gap: 15px;
+		grid-gap: 25px;
 	}	
+}
+@media (max-width: 280px){
+	.content-section-quotes-lessons{
+		padding-left: 5px;
+		padding-right: 5px;
+	}
 }

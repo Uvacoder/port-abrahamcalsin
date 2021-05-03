@@ -3,7 +3,6 @@
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: repeat(1, .1fr);
 	grid-gap: 50px;
-	justify-items: center;
 	margin-top: 100px;
 	margin-bottom: 100px;
 	font-family: 'Poppins', sans-serif;
@@ -18,8 +17,6 @@
 	border-radius: 7px;
 	overflow: hidden;
 	cursor: pointer;
-	align-self: center;
-	justify-self: center;
 	transition: .3s all;
 }
 .select-sections div:hover{

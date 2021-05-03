@@ -6,6 +6,37 @@ body{
 	margin: 0px;
 	padding-top: 100px;
 }
+/* TEXT IDENTIFY BOOKS */
+#divide-identifier-books{
+	margin-top: 100px;
+}
+/* ------------ */
+.book-identifier-by-section{
+	color: #4d4d4dff;
+	margin-bottom: 15px;
+	font-size: 1.2em;
+	font-family: 'Poppins', sans-serif;
+}
+.book-identifier-by-section p:before{
+	content: '';
+	width: 5%;
+	padding: 0px;
+	height: 1px;
+	border-bottom: 1px solid #737373;
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 6px;
+}
+.book-identifier-by-section p::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
+@media (max-width: 416px){
+	.book-identifier-by-section{
+		font-size: 1em;
+	}
+}
+/* ------------ */
 /* FREE BOOKS */
 .free-books{
 	display: grid;
@@ -34,9 +65,6 @@ body{
 	max-height: 100%;
 	display: block;
 }
-.book-download{
-	margin-top: 3px;
-}
 .book-download a{
 	font-size: .7em;
 	font-family: 'Poppins', sans-serif;
@@ -48,10 +76,9 @@ body{
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background: rgba(255, 126, 41, 0.1);
 	padding-top: 10px;
 	padding-bottom: 10px;
-	border-radius: 4px;
+	border-radius: 0px 0px 4px 4px;
 	transition: .3s all;
 }
 .book-download a:hover{
