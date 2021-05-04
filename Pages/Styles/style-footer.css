@@ -52,6 +52,8 @@
 }
 .social-media a {
   width: 13px;
+  min-width: 13px;
+  max-width: 13px;
   margin-right: 10px;
 }
 .social-media img {
@@ -88,6 +90,8 @@
   }
   .social-media a {
     width: 11px;
+    min-width: 11px;
+    max-width: 11px;
   }
   .social-media img {
     transition: 0.3s all;
