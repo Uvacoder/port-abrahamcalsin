@@ -1,217 +1,217 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-	margin: 0;
-	margin-top: 175px;
+body {
+  margin: 0;
+  margin-top: 175px;
 }
 /* CONTENT-SECTION */
-.content-section-divide{
-	background: none;
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin-top: 100px;
-	margin-bottom: 100px;
+.content-section-divide {
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.content-section-divide h4{
-	font-family: 'Poppins', sans-serif;
-	color: #4d4d4dff;
-	font-weight: 400;
-	text-transform: uppercase;
-	border-radius: 5px 5px 0px 0px;
-	font-size: 1.5em;
-	width: 100%;
-	height: auto;
-	text-align: center;
+.content-section-divide h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #4d4d4dff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
-.content-section-divide h4::selection{
-	background-color: #4d4d4dff;
-	color: #fff;
+.content-section-divide h4::selection {
+  background-color: #4d4d4dff;
+  color: #fff;
 }
-@media (max-width: 650px){
-	body{
-		margin-top: 120px;
-	}
-	.content-section-divide{
-		margin-bottom: 50px;
-		margin-top: 50px;
-	}
-	.content-section-divide h4{
-		font-size: 1.4em;
-	}
+@media (max-width: 650px) {
+  body {
+    margin-top: 120px;
+  }
+  .content-section-divide {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .content-section-divide h4 {
+    font-size: 1.4em;
+  }
 }
 /* MOTIVATIONAL PHRASES SECTION */
-.motivational-phrases-section{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: repeat(auto, 1fr);
-	grid-gap: 20px 35px;
-	align-items: start;
-	font-family: 'Poppins', sans-serif;
+.motivational-phrases-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 20px 35px;
+  align-items: start;
+  font-family: 'Poppins', sans-serif;
 }
-.motivational-phrase{
-	background: #fafafa;
-	color: #4d4d4dff;
-	border-left: 5px solid #d9d9d9;
-	padding: 15px;
-	font-size: 1em;
+.motivational-phrase {
+  background: #fafafa;
+  color: #4d4d4dff;
+  border-left: 5px solid #d9d9d9;
+  padding: 15px;
+  font-size: 1em;
 }
-@media (max-width: 400px){
-	.motivational-phrase{
-		font-size: .8em;
-	}
+@media (max-width: 400px) {
+  .motivational-phrase {
+    font-size: 0.8em;
+  }
 }
-.motivational-phrase div{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+.motivational-phrase div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-.motivational-phrase::selection{
-	background-color: #4d4d4dff;
-	color: #fff;
+.motivational-phrase::selection {
+  background-color: #4d4d4dff;
+  color: #fff;
 }
-.motivational-phrase span::selection{
-	background-color: #4d4d4dff;
-	color: #fff;
+.motivational-phrase span::selection {
+  background-color: #4d4d4dff;
+  color: #fff;
 }
-.motivational-phrase div a{
-	align-self: flex-end;
-	text-decoration: none;
-	color: #737373;
-	transition: .3s all;
+.motivational-phrase div a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: #737373;
+  transition: 0.3s all;
 }
-.motivational-phrase div a:hover{
-	transform: rotate(-4deg) scale(1.1);
-	color: #4d4d4dff;
+.motivational-phrase div a:hover {
+  transform: rotate(-4deg) scale(1.1);
+  color: #4d4d4dff;
 }
-.author-mot-phrase{
-	color: #4d4d4dff;
-	font-weight: bolder;
-	font-style: italic;
-	margin-top: 13px;
+.author-mot-phrase {
+  color: #4d4d4dff;
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 13px;
 }
-@media (max-width: 800px){
-	.motivational-phrases-section{
-		grid-template-columns: repeat(1, 1fr);
-		grid-template-rows: auto;
-		grid-gap: 15px 0px;
-	}
-	.motivational-phrase{
-		font-size: .9em;
-	}
+@media (max-width: 800px) {
+  .motivational-phrases-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px 0px;
+  }
+  .motivational-phrase {
+    font-size: 0.9em;
+  }
 }
 /* FOOTER */
-.footer{
-	background: #333333ff;
-	padding: 25px;
-	color: rgba(255, 255, 255, 0.62);
-	margin-top: 70px;
-	margin-bottom: -3px;
-	font-family: 'Poppins', sans-serif;
+.footer {
+  background: #333333ff;
+  padding: 25px;
+  color: rgba(255, 255, 255, 0.62);
+  margin-top: 70px;
+  margin-bottom: -3px;
+  font-family: 'Poppins', sans-serif;
 }
-.footer-content{
-	padding: 0px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.footer-content {
+  padding: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.autor-copyright{
-	line-height: 0;
-	margin-bottom: 10px;
+.autor-copyright {
+  line-height: 0;
+  margin-bottom: 10px;
 }
-.autor-abraham-calsin{
-	font-weight: bold;
-	font-size: 12.7px;
-	letter-spacing: 0.5px;
-	margin-bottom: 10px;
+.autor-abraham-calsin {
+  font-weight: bold;
+  font-size: 12.7px;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
 }
-.frontend-developer{
-	font-size: 12px;
-	letter-spacing: .7px;
+.frontend-developer {
+  font-size: 12px;
+  letter-spacing: 0.7px;
 }
 /* DIVIDE - AUTOR - SOCIAL */
-.divide-autor-social{
-	display: none;
+.divide-autor-social {
+  display: none;
 }
-.divide-autor-social div{
-	width: 80px;
-	height: 1px;
-	background: rgba(255, 255, 255, 0.62);
+.divide-autor-social div {
+  width: 80px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.62);
 }
 /* SOCIAL MEDIA */
-.social-media{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	gap: 12px;
-	width: 125px;
+.social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 125px;
 }
-.social-media img{
-	width: 100%;
-	transition: .3s all;
-	filter: blur(0) contrast(35%);
+.social-media img {
+  width: 100%;
+  transition: 0.3s all;
+  filter: blur(0) contrast(35%);
 }
-.social-media img:hover{
-	filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
+.social-media img:hover {
+  filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
 }
 /* @MEDIA - RESPONSIVE */
-@media (max-width: 516px){
-	.footer-content{
-		flex-direction: column;
-		align-items: flex-start;
-	}
-	.autor-abraham-calsin{
-		font-size: 11px;
-		letter-spacing: 0.4px;
-		margin-bottom: 9px;
-	}
-	.frontend-developer{
-		font-size: 10.3px;
-		letter-spacing: .7px;
-	}
-	.divide-autor-social{
-		display: inline;
-		line-height: 0;
-		padding-bottom: 8px;
-	}
-	.social-media{
-		justify-content: flex-start;
-		width: 105px;
-		gap: 9px;
-	}
-	.social-media img{
-		width: 100%;
-		transition: .3s all;
-		filter: blur(0) contrast(35%);
-		display: block;
-	}	
+@media (max-width: 516px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .autor-abraham-calsin {
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    margin-bottom: 9px;
+  }
+  .frontend-developer {
+    font-size: 10.3px;
+    letter-spacing: 0.7px;
+  }
+  .divide-autor-social {
+    display: inline;
+    line-height: 0;
+    padding-bottom: 8px;
+  }
+  .social-media {
+    justify-content: flex-start;
+    width: 105px;
+    gap: 9px;
+  }
+  .social-media img {
+    width: 100%;
+    transition: 0.3s all;
+    filter: blur(0) contrast(35%);
+    display: block;
+  }
 }
 /* STYLES - BTN IR ARRIBA */
-#scroll img{
-	width: 20px;
-	transition: .2s all;
-	filter: blur(0) contrast(35%);
+#scroll img {
+  width: 20px;
+  transition: 0.2s all;
+  filter: blur(0) contrast(35%);
 }
-#scroll img:hover{
-    padding-bottom: 2px;
-    filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
+#scroll img:hover {
+  padding-bottom: 2px;
+  filter: blur(0) contrast(100%) drop-shadow(0px 0px 2px #fff);
 }
-@media (max-width: 516px){
-	#scroll{
-		background: #333333ff;
-		position: fixed;
-		bottom: 20px;
-		right: 20px;
-		width: 45px;
-		height: 45px;
-		border-radius: 5px 5px 5px 5px;
-	}
-	#scroll img{
-		position: absolute;
-		display: block;
-		left: 13px;
-		top: 15px;
-	}
+@media (max-width: 516px) {
+  #scroll {
+    background: #333333ff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  #scroll img {
+    position: absolute;
+    display: block;
+    left: 13px;
+    top: 15px;
+  }
 }

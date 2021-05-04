@@ -1,45 +1,45 @@
-*{
-	box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
-body{
-	background: #fafafa;
-	margin: 0px;
-	padding-top: 70px;
+body {
+  background: #fafafa;
+  margin: 0px;
+  padding-top: 70px;
 }
 /* CONTENT-SECTION */
-.content-section-divide{
-	background: none;
-	display: flex;
-	justify-content: center;
-	padding: 0;
-	margin-top: 100px;
-	margin-bottom: 100px;
+.content-section-divide {
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
-.content-section-divide h4{
-	font-family: 'Poppins', sans-serif;
-	color: #4d4d4dff;
-	font-weight: 400;
-	text-transform: uppercase;
-	border-radius: 5px 5px 0px 0px;
-	font-size: 1.5em;
-	width: 100%;
-	height: auto;
-	text-align: center;
+.content-section-divide h4 {
+  font-family: 'Poppins', sans-serif;
+  color: #4d4d4dff;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
-.content-section-divide h4::selection{
-	background-color: #4d4d4dff;
-	color: #fff;
+.content-section-divide h4::selection {
+  background-color: #4d4d4dff;
+  color: #fff;
 }
-@media (max-width: 576px){
-	.content-section-divide{
-		margin-bottom: 50px;
-		margin-top: 50px;
-	}
-	.content-section-divide h4{
-		font-size: 1.4em;
-	}
+@media (max-width: 576px) {
+  .content-section-divide {
+    margin-bottom: 50px;
+    margin-top: 50px;
+  }
+  .content-section-divide h4 {
+    font-size: 1.4em;
+  }
 }
-#not{
-	pointer-events: none;
+#not {
+  pointer-events: none;
 }
 /* ------------------ */
