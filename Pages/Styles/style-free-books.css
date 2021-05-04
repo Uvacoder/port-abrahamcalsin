@@ -43,7 +43,7 @@ body {
   }
 }
 /* AUTHORS RIGHTS */
-.author-right-source-img{
+.author-right-source-img {
   background: #f2f2f2;
   color: #4d4d4dff;
   padding: 7px 20px;
@@ -54,11 +54,11 @@ body {
   margin: auto;
   margin-bottom: 30px;
 }
-.important-read{
+.important-read {
   margin-bottom: -10px;
   font-weight: 700;
 }
-.float-right{
+.float-right {
   float: right;
   font-size: 1.3em;
 }
