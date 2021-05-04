@@ -1,0 +1,36 @@
+name: Prettier Formatter
+
+on: push
+
+jobs:
+  build_and_testing:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up node environment
+        uses: actions/setup-node@v2-beta
+        with:
+          node-version: 14.15.4
+
+      - name: Cache node modules
+        id: node-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - if: steps.node-modules.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Static Testing
+        run: npm run format
+
+      - name: Persist changes in repository
+        uses: mikeal/publish-to-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # this parameter is optional and defaults to master but I am using main
+          BRANCH_NAME: "master"
