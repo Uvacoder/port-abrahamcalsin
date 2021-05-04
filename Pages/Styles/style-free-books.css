@@ -22,9 +22,9 @@ body {
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
   font-size: 1.5em;
+  text-align: center;
   width: 100%;
   height: auto;
-  text-align: center;
 }
 .content-section-divide h4::selection {
   background-color: #4d4d4dff;

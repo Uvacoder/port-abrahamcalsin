@@ -49,10 +49,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
 }
 .social-media a {
   width: 13px;
+  margin-right: 10px;
 }
 .social-media img {
   width: 100%;
@@ -86,11 +86,8 @@
     line-height: 0;
     padding-bottom: 8px;
   }
-  .social-media {
-    gap: 8px;
-  }
   .social-media a {
-    width: 10px;
+    width: 11px;
   }
   .social-media img {
     transition: 0.3s all;

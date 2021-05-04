@@ -75,6 +75,8 @@
   justify-content: space-evenly;
   border-top: 2px solid #e9e9e9;
   padding-top: 10px;
+  width: 240px;
+  max-width: 250px;
 }
 .link-download-share a {
   text-decoration: none;
