@@ -4,13 +4,50 @@
 body{
 	padding: 0px;
 	margin: 0px;
-	padding-top: 100px;
+	padding-top: 78px;
 }
-/* TEXT IDENTIFY BOOKS */
+/* CONTENT-SECTION */
+.content-section-divide{
+	background: none;
+	display: flex;
+	justify-content: center;
+	padding: 0;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.content-section-divide h4{
+	font-family: 'Poppins', sans-serif;
+	color: #4d4d4dff;
+	font-weight: 400;
+	text-transform: uppercase;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 1.5em;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.content-section-divide h4::selection{
+	background-color: #4d4d4dff;
+	color: #fff;
+}
+@media (max-width: 576px){
+	body{
+		padding-top: 71px;
+	}
+	.content-section-divide{
+		margin-bottom: 50px;
+		margin-top: 50px;
+	}
+	.content-section-divide h4{
+		font-size: 1.4em;
+	}
+}
+/* DIVIDE IDENTIFIER BOOKS */
 #divide-identifier-books{
 	margin-top: 100px;
 }
-/* ------------ */
+/* ----------------------- */
+/* TEXT IDENTIFY BOOKS */
 .book-identifier-by-section{
 	color: #4d4d4dff;
 	margin-bottom: 15px;
@@ -59,6 +96,11 @@ body{
 	width: 100%;
 	border-radius: 4px 4px 0 0;
 	overflow: hidden;
+	transition: .3s all;
+	opacity: .9;
+}
+.book:hover .book-image{
+	opacity: 1;
 }
 .book-image img{
 	width: 100%;
