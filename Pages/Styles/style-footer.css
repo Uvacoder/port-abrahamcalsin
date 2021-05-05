@@ -12,6 +12,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: auto;
+}
+@media (min-width: 1200px) {
+  .footer-content {
+    max-width: 1350px;
+  }
 }
 .autor-copyright {
   line-height: 0;
