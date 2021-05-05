@@ -22,11 +22,11 @@ body {
 }
 .bible-verse {
   background: none;
-  width: 400px;
+  width: 420px;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 600;
   color: #8c8c8c;
-  font-size: 22px;
+  font-size: 20px;
   text-align: center;
   margin: none;
 }
@@ -39,7 +39,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
   color: #8c8c8c;
-  font-size: 15px;
+  font-size: 13px;
   letter-spacing: 0.2em;
 }
 .verse-proverbios::selection {
