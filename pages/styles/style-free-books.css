@@ -48,7 +48,7 @@ body {
   margin-bottom: 20px;
   width: 100%;
 }
-.right-source-image{
+.right-source-image {
   background: #f2f2f2;
   border-radius: 5px;
   width: 290px;
@@ -62,18 +62,18 @@ body {
   font-size: 1em;
   margin-right: 7px;
 }
-.description-important{
-  font-size: .8em;
+.description-important {
+  font-size: 0.8em;
 }
-.description-important::selection{
+.description-important::selection {
   background: #4d4d4dff;
   color: #fff;
 }
-.description-important span{
+.description-important span {
   font-weight: bolder;
   font-style: italic;
 }
-.description-important span::selection{
+.description-important span::selection {
   background: #4d4d4dff;
   color: #fff;
 }
@@ -81,7 +81,7 @@ body {
   .right-source-image {
     width: 390px;
   }
-  .description-important{
+  .description-important {
     font-size: 1.1em;
   }
 }
