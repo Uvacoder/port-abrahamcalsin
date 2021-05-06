@@ -80,7 +80,7 @@
 .question-of-lesson p {
   color: #ff7900;
   font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 0;
 }
 .question-of-lesson p::selection {
