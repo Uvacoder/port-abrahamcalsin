@@ -44,23 +44,46 @@ body {
 }
 /* AUTHORS RIGHTS */
 .author-right-source-img {
-  background: #f2f2f2;
   color: #4d4d4dff;
-  padding: 7px 20px;
-  border-radius: 7px;
-  width: 85%;
+  margin-bottom: 20px;
+  width: 100%;
+}
+.right-source-image{
+  background: #f2f2f2;
+  border-radius: 5px;
+  width: 290px;
   font-family: 'Poppins', sans-serif;
-  display: block;
-  margin: auto;
-  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.important-read {
-  margin-bottom: -10px;
+.check-icon-imp {
   font-weight: 700;
+  font-size: 1em;
+  margin-right: 7px;
 }
-.float-right {
-  float: right;
-  font-size: 1.3em;
+.description-important{
+  font-size: .8em;
+}
+.description-important::selection{
+  background: #4d4d4dff;
+  color: #fff;
+}
+.description-important span{
+  font-weight: bolder;
+  font-style: italic;
+}
+.description-important span::selection{
+  background: #4d4d4dff;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .right-source-image {
+    width: 390px;
+  }
+  .description-important{
+    font-size: 1.1em;
+  }
 }
 /* DIVIDE IDENTIFIER BOOKS */
 #divide-identifier-books {

@@ -67,4 +67,28 @@
 /* COMMENT SISTEM */
 .comment-sistem-config {
   font-family: 'Poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.question-of-lesson{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+}
+.question-of-lesson p{
+  color: #ff7900;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+}
+.question-of-lesson p::selection{
+  background: #ff7f2aff;
+  color: #fff;
+}
+@media (max-width: 768px){
+  .question-of-lesson p{
+    font-size: .8em;
+  }
 }
