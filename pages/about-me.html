@@ -1,1 +1,223 @@
-leccion3.html
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <title>Sobre mi - Abraham Calsin</title>
+    <link rel="shortcut icon" href="../resources/icons/fav-icon-logotype.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta data-react-helmet="true" name="robots" content="index,follow" />
+    <meta data-react-helmet="true" name="googlebot" content="index,follow" />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Frontend developer, creator of open source projects and writing in modern JavaScript, HTML, CSS, Sass, Bootstrap."
+    />
+    <meta
+      data-react-helmet="true"
+      name="image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:url"
+      content="http://abrahamcalsin.vercel.app"
+    />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="Abraham Calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Frontend developer, creator of open source projects and writing in modern JavaScript, HTML, CSS, Sass, Bootstrap."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:creator"
+      content="@abraham_calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:title"
+      content="Abraham Calsin - Frontend Developer"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Frontend developer, creator of open source projects and writing in modern JavaScript, HTML, CSS, Sass, Bootstrap."
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <!-- LINKS - FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK - STYLE -->
+    <link rel="stylesheet" href="../styles/style-responsive.css" />
+    <link rel="stylesheet" href="../styles/style-global.css" />
+    <link rel="stylesheet" href="styles/style-about-me.css">
+    <link rel="stylesheet" href="../styles/style-header-navbar.css">
+    <link rel="stylesheet" href="styles/style-footer.css">
+    <!-- FONT AWESOME -->
+    <script
+      src="https://kit.fontawesome.com/d79f00ee22.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BTN IR ARIIBA -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $('#scroll').fadeIn()
+          } else {
+            $('#scroll').fadeOut()
+          }
+        })
+        $('#scroll').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600)
+          return false
+        })
+      })
+    </script>
+</head>
+<body>
+	<!-- HEADER - NAVBAR -->
+    <div class="header">
+      <div class="container header-container">
+        <a
+          href="https://abrahamcalsin.vercel.app/"
+          class="logotype-abrahamcalsin"
+          ><img
+            src="../resources/img-logotype/logotype-vector.svg"
+            alt=""
+            class="img-lo-ac"
+        /></a>
+        <div class="menu_navbar">
+          <input type="checkbox" id="btn_menu" />
+          <label for="btn_menu" class="btn_menu"
+            ><i class="fa fa-bars active"></i
+          ></label>
+          <nav class="navbar">
+            <ul>
+              <li>
+                <a
+                  href="https://abrahamcalsin.vercel.app/"
+                  class="navbar-inicio">Inicio</a
+                >
+              </li>
+              <li>
+                <a href="../pages/motivation.html" class="navbar-motivacion"
+                  >motivación</a
+                >
+              </li>
+              <li><a href="about-me.html" class="sobre-mi" style="color: #ff7f2aff"
+                  >sobre mi</a></li>
+              <li class="contact-abrahamcalsin"><a href="#">contacto</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!--------->
+    <!-- ABOUT ME -->
+    <div class="about-me-cont">
+    	<div class="about-me">
+    		<div class="me-profile-img"><img src="" alt=""></div>
+    		<div class="me-resume"><p>Hey, hola, soy Abraham Calsin; un individuo autodidacta, apasionado por el desarrollo web - {Frontend Developer}; con habilidades especializadas en JavaScript - HTML - CSS - Sass - SQL - PHP, y en constante aprendizaje con frameworks y/o librerias como Svelte - Bootstrap - Stylus; me fascina el asunto del trabajo en equipo, a lo largo de mi aventura en el mundo del desarrollo web, me involucre en el desarrollo de varios proyectos basado en mis conocimientos, proponiéndome retos, los cuales me enseñaron a corregir mis propios errores al desarrollar un Sitio Web. Actualmente desarrollo proyectos de código abierto.
+
+"Nunca dejes de aprender" esta frase es el pilar de mi vida, la repito a diario, lo que me permitió adentrarme en el mundo de la Motivación Personal formando parte de mi Hobby, amo ayudar y/o motivar a las personas a seguir adelante, estoy Certificado en Liderazgo por el equipo John C. Maxwell, formando parte del mismo; doy charlas(conferencias virtuales), capacitaciones privadas/publicas; hoy dirijo mi propio equipo de Líderes Triunfadores - LT, los mismos que también me enseñaron muchas cosas, enseñar en cualquier ámbito es hermoso, por que no solo aprende tu equipo, sino sobre todo, ¡aprendes tú!.
+
+- Abraham Calsin -</p><div class="skill-img"><img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt="">
+<img src="" alt=""></div></div>
+    	</div>
+    </div>
+    <!-- FOOTER -->
+    <div class="footer">
+      <div class="footer-content">
+        <div class="autor-copyright">
+          <p class="autor-abraham-calsin">©ABRAHAM CALSIN</p>
+          <span class="frontend-developer">Frontend Developer</span>
+        </div>
+        <!-- LINE - AUTOR AND SOCIAL -->
+        <div class="divide-autor-social"><div></div></div>
+        <!-- BTN IR ARRIBA -->
+        <a href="javascript:void(0);" id="scroll" style="display: none"
+          ><img src="../resources/icons/arrow-up-icon.svg" alt=""
+        /></a>
+        <!-- SOCIAL MEDIA -->
+        <div class="social-media">
+          <a
+            href="https://github.com/abrahamcalsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="../resources/social-media/fa-github.svg" alt=""
+          /></a>
+          <a
+            href="https://twitter.com/abraham_calsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="../resources/social-media/fa-twitter.svg" alt=""
+          /></a>
+          <a
+            href="https://www.instagram.com/abrahamcalsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="../resources/social-media/fa-instagram.svg" alt=""
+          /></a>
+          <a
+            href="https://www.facebook.com/abrahamcalsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="../resources/social-media/fa-facebook.svg" alt=""
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/abrahamcalsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="../resources/social-media/fa-linkedin.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </div>
+    <!----------------------->
+</body>
+</html>
