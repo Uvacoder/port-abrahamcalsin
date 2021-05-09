@@ -88,7 +88,10 @@
     <link rel="stylesheet" href="../styles/style-global.css" />
     <link rel="stylesheet" href="styles/style-about-me.css" />
     <link rel="stylesheet" href="../styles/style-header-navbar.css" />
+    <link rel="stylesheet" href="styles/style-boots-mod.css">
     <link rel="stylesheet" href="styles/style-footer.css" />
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/d79f00ee22.js"
@@ -114,8 +117,8 @@
   </head>
   <body>
     <!-- HEADER - NAVBAR -->
-    <div class="header">
-      <div class="container header-container">
+    <div class="header-top">
+      <div class="container-rsp header-container">
         <a
           href="https://abrahamcalsin.vercel.app/"
           class="logotype-abrahamcalsin"
@@ -129,7 +132,7 @@
           <label for="btn_menu" class="btn_menu"
             ><i class="fa fa-bars active"></i
           ></label>
-          <nav class="navbar">
+          <nav class="navbar-men-resp">
             <ul>
               <li>
                 <a
@@ -151,7 +154,6 @@
                   >sobre mi</a
                 >
               </li>
-              <li class="contact-abrahamcalsin"><a href="#">contacto</a></li>
             </ul>
           </nav>
         </div>
@@ -159,46 +161,58 @@
     </div>
     <!--------->
     <!-- ABOUT ME -->
-    <div class="about-me-cont">
-      <div class="about-me">
-        <div class="me-profile-img"><img src="" alt="" /></div>
-        <div class="me-resume">
-          <p>
-            Hey, hola, soy Abraham Calsin; un individuo autodidacta, apasionado
-            por el desarrollo web - {Frontend Developer}; con habilidades
-            especializadas en JavaScript - HTML - CSS - Sass - SQL - PHP, y en
-            constante aprendizaje con frameworks y/o librerias como Svelte -
-            Bootstrap - Stylus; me fascina el asunto del trabajo en equipo, a lo
-            largo de mi aventura en el mundo del desarrollo web, me involucre en
-            el desarrollo de varios proyectos basado en mis conocimientos,
-            proponiéndome retos, los cuales me enseñaron a corregir mis propios
-            errores al desarrollar un Sitio Web. Actualmente desarrollo
-            proyectos de código abierto. "Nunca dejes de aprender" esta frase es
-            el pilar de mi vida, la repito a diario, lo que me permitió
-            adentrarme en el mundo de la Motivación Personal formando parte de
-            mi Hobby, amo ayudar y/o motivar a las personas a seguir adelante,
-            estoy Certificado en Liderazgo por el equipo John C. Maxwell,
-            formando parte del mismo; doy charlas(conferencias virtuales),
-            capacitaciones privadas/publicas; hoy dirijo mi propio equipo de
-            Líderes Triunfadores - LT, los mismos que también me enseñaron
-            muchas cosas, enseñar en cualquier ámbito es hermoso, por que no
-            solo aprende tu equipo, sino sobre todo, ¡aprendes tú!. - Abraham
-            Calsin -
-          </p>
-          <div class="skill-img">
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-          </div>
-        </div>
+   <div class="container">
+	  <div class="about-me-cont">
+	    <div class="about-me-profile">
+	      	<aside class="profile-image"><img src="../resources/profile-image/profile-image-abrahamcalsin.jpg" alt=""></aside>
+	      	<h5 class="me-abrahamcalsin">— Abraham Calsin —</h5><span class="front-end-about-me"><a href="https://www.github.com/abrahamcalsin" rel="noreferrer" target="_blank" title="Ver perfil"><i class="fas fa-link"></i></a>{Frontend Developer}</span>
+          <!--- BOTT MOD -->
+          <button type="button" class="btn-mod-boots non-mobile" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  CONTACTO
+</button>
+          <!------->
+	      	<p class="about-me">Hey, hola, soy Abraham Calsin; un individuo autodidacta, apasionado por el desarrollo web - {Frontend Developer}; con habilidades especializadas en JavaScript - HTML - CSS - Sass - PHP, y en constante aprendizaje con frameworks y/o librerias como Svelte - Bootstrap - Stylus; me fascina el asunto del trabajo en equipo, a lo largo de mi aventura en el mundo del desarrollo web, me involucre en el desarrollo de varios proyectos basado en mis conocimientos, proponiéndome retos, los cuales me enseñaron a corregir mis propios errores al desarrollar un Sitio Web. Actualmente desarrollo proyectos de código abierto. </br></br>
+
+<b class="about-me"><i>"Nunca dejes de aprender";</i></b> esta frase es el pilar de mi vida, la repito a diario, lo que me permitió adentrarme tambien en el mundo de la Motivación Personal formando parte de mi Hobby, amo ayudar y/o motivar a las personas a seguir adelante, estoy Certificado en Liderazgo por el equipo John C. Maxwell, formando parte del mismo; doy charlas(conferencias virtuales), capacitaciones privadas/publicas; hoy dirijo mi propio equipo de Líderes Triunfadores - LT, los mismos que también me enseñaron muchas cosas. Enseñar en cualquier ámbito es hermoso, por que no solo aprende tu equipo, sino sobre todo, ¡aprendes tú!.</p>
+	    </div>
+	    <div class="skills">
+	    	<h5>Habilidades:</h5>
+	    	<aside class="skill-imgs">
+		    	<img src="../resources/skills-logo/logo-javascript.svg" alt="JavaScript" title="JavaScript">
+		    	<img src="../resources/skills-logo/logo-HTML.svg" alt="HTML5" title="HTML5">
+		    	<img src="../resources/skills-logo/logo-css.svg" alt="CSS3" title="CSS3">
+		    	<img src="../resources/skills-logo/logo-sass.svg" alt="Sass" title="Sass">
+		    	<img src="../resources/skills-logo/logo-php.svg" alt="PHP" title="PHP">
+		    	<img src="../resources/skills-logo/logo-svelte.svg" alt="Svelte" title="Svelte">
+		    	<img src="../resources/skills-logo/logo-bootstrap.svg" alt="Bootstrap" title="Bootstrap">
+		    	<img src="../resources/skills-logo/logo-stylus.svg" alt="Stylus" title="Stylus">
+		    </aside>
+	    </div>
+      <!-- Button trigger modal -->
+<button type="button" class="btn-mod-boots inlin-deskt" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  CONTACTO
+</button>
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Conacto:</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+      <!------>
+    </div>
+	</div>
+  <!----------------->
     <!-- FOOTER -->
     <div class="footer">
       <div class="footer-content">
@@ -248,5 +262,8 @@
       </div>
     </div>
     <!----------------------->
+    <!-- BOOSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <!---->
   </body>
 </html>

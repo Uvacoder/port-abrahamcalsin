@@ -1,5 +1,5 @@
 /* HEADER */
-.header {
+.header-top {
   position: fixed;
   background: #fff;
   font-family: 'Lato', sans-serif;
@@ -40,30 +40,31 @@
   transition: 0.1s all;
 }
 /* NAVBAR */
-.navbar ul {
+.navbar-men-resp ul {
   display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
 }
-.navbar ul li {
+.navbar-men-resp ul li {
   list-style: none;
   margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.navbar ul li:not(:last-child) {
+.navbar-men-resp ul li:not(:last-child) {
   margin-right: 20px;
 }
-.navbar ul li a:focus {
+.navbar-men-resp ul li a:focus {
   outline: none;
 }
-.navbar ul li a::selection {
+.navbar-men-resp ul li a::selection {
   background-color: #4d4d4dff;
   color: #fff;
 }
 .navbar-inicio,
 .navbar-motivacion,
-.sobre-mi,
-.contact-abrahamcalsin {
+.sobre-mi {
   color: #4d4d4dff;
   text-decoration: none;
   font-size: 0.763em;
@@ -80,18 +81,6 @@
 .sobre-mi:hover {
   color: #ff7f2aff;
 }
-/* CONTACT */
-.contact-abrahamcalsin a {
-  background: #ff7f2aff;
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  padding: 10px 12px;
-  border-radius: 7px;
-}
-.contact-abrahamcalsin a:focus {
-  outline: none;
-}
 /* RESPONSIVE NAVBAR */
 @media (max-width: 576px) {
   .logotype-abrahamcalsin {
@@ -99,13 +88,13 @@
   }
 }
 @media (max-width: 650px) {
-  .header {
+  .header-top {
     height: 70px;
   }
   .logotype-abrahamcalsin {
     width: 72px;
   }
-  .navbar {
+  .navbar-men-resp {
     position: fixed;
     background: #fff;
     border-top: 1px solid #eee;
@@ -116,18 +105,17 @@
     padding: 0px;
     transition: 0.4s all;
   }
-  .navbar ul {
+  .navbar-men-resp ul {
     display: block;
     padding: 3px;
   }
-  .navbar ul li:not(:last-child) {
+  .navbar-men-resp ul li:not(:last-child) {
     margin-right: 0px;
   }
   .navbar-inicio,
   .navbar-motivacion,
   .material-adicional,
-  .sobre-mi,
-  .contact-abrahamcalsin {
+  .sobre-mi {
     display: block;
     background: none;
     letter-spacing: 1px;
@@ -156,7 +144,7 @@
   .menu_navbar label:active {
     transform: scale(1.1);
   }
-  #btn_menu:checked ~ .navbar {
+  #btn_menu:checked ~ .navbar-men-resp {
     right: 0px;
   }
 }
