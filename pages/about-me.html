@@ -108,12 +108,12 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 50) {
-            $('#scroll').fadeIn()
+            $('#scroll-up').fadeIn()
           } else {
-            $('#scroll').fadeOut()
+            $('#scroll-up').fadeOut()
           }
         })
-        $('#scroll').click(function () {
+        $('#scroll-up').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 600)
           return false
         })
@@ -199,8 +199,8 @@
             Hey, hola, soy Abraham Calsin; un individuo autodidacta, apasionado
             por el desarrollo web - {Frontend Developer}; con habilidades
             especializadas en JavaScript - HTML - CSS - Sass - PHP, y en
-            constante aprendizaje con frameworks y/o librerias como Svelte -
-            Bootstrap - Stylus; me fascina el asunto del trabajo en equipo, a lo
+            constante aprendizaje con frameworks y/o librerias como Bootstrap -
+            Svelte - Stylus; me fascina el asunto del trabajo en equipo, a lo
             largo de mi aventura en el mundo del desarrollo web, me involucre en
             el desarrollo de varios proyectos basado en mis conocimientos,
             proponiéndome retos, los cuales me enseñaron a corregir mis propios
@@ -250,14 +250,14 @@
               title="PHP"
             />
             <img
-              src="../resources/skills-logo/logo-svelte.svg"
-              alt="Svelte"
-              title="Svelte"
-            />
-            <img
               src="../resources/skills-logo/logo-bootstrap.svg"
               alt="Bootstrap"
               title="Bootstrap"
+            />
+            <img
+              src="../resources/skills-logo/logo-svelte.svg"
+              alt="Svelte"
+              title="Svelte"
             />
             <img
               src="../resources/skills-logo/logo-stylus.svg"
@@ -277,7 +277,7 @@
         </button>
         <!-- Modal -->
         <div
-          class="modal fade"
+          class="modal fade styl-col-font"
           id="staticBackdrop"
           data-bs-backdrop="static"
           data-bs-keyboard="false"
@@ -296,14 +296,18 @@
                   aria-label="Close"
                 ></button>
               </div>
-              <div class="modal-body">...</div>
+              <div class="modal-body">
+                <div class="contact-icon-link"><aside class="contact-cont-mod"><i class="fas fa-envelope send-envelop"></i><a href="mailto:contact.abrahamcalsin@gmail.com" class="contact-mail-send" rel="noreferrer" target="_blank">contact.abrahamcalsin@gmail.com</a></aside></div>
+                <div class="contact-icon-link mrgn-top-cntc"><aside class="contact-cont-mod"><i class="fab fa-github send-envelop"></i><a href="https://github.com/abrahamcasin" class="contact-mail-send" rel="noreferrer" target="_blank">github.com/abrahamcasin</a></aside></div>
+                <div class="contact-icon-link mrgn-top-cntc"><aside class="contact-cont-mod"><i class="fab fa-twitter send-envelop"></i><a href="https://twitter.com/abraham_calsin" class="contact-mail-send" rel="noreferrer" target="_blank">twitter.com/abraham_casin</a></aside></div>
+              </div>
               <div class="modal-footer">
                 <button
                   type="button"
-                  class="btn btn-secondary"
+                  class="close-mod-contact"
                   data-bs-dismiss="modal"
                 >
-                  Close
+                  CERRAR
                 </button>
               </div>
             </div>
@@ -323,7 +327,7 @@
         <!-- LINE - AUTOR AND SOCIAL -->
         <div class="divide-autor-social"><div></div></div>
         <!-- BTN IR ARRIBA -->
-        <a href="javascript:void(0);" id="scroll" style="display: none"
+        <a href="javascript:void(0);" id="scroll-up" style="display: none"
           ><img src="../resources/icons/arrow-up-icon.svg" alt=""
         /></a>
         <!-- SOCIAL MEDIA -->
