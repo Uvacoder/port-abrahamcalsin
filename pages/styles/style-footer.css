@@ -82,7 +82,6 @@
   .autor-abraham-calsin {
     font-size: 11px;
     letter-spacing: 0.4px;
-    margin-bottom: 9px;
   }
   .frontend-developer {
     font-size: 10.3px;
@@ -90,7 +89,7 @@
   }
   .divide-autor-social {
     display: inline;
-    line-height: 0;
+    padding-top: 8px;
     padding-bottom: 8px;
   }
   .social-media a {
