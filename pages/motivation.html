@@ -105,12 +105,12 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 50) {
-            $('#scroll').fadeIn()
+            $('#scroll-up').fadeIn()
           } else {
-            $('#scroll').fadeOut()
+            $('#scroll-up').fadeOut()
           }
         })
-        $('#scroll').click(function () {
+        $('#scroll-up').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 600)
           return false
         })
@@ -757,7 +757,7 @@
       <!----->
     </div>
     <!-- FOOTER -->
-    <div class="footer">
+    <div class="footer-design-site">
       <div class="footer-content">
         <div class="autor-copyright">
           <p class="autor-abraham-calsin">©ABRAHAM CALSIN</p>
@@ -766,7 +766,7 @@
         <!-- LINE - AUTOR AND SOCIAL -->
         <div class="divide-autor-social"><div></div></div>
         <!-- BTN IR ARRIBA -->
-        <a href="javascript:void(0);" id="scroll" style="display: none"
+        <a href="javascript:void(0);" id="scroll-up" style="display: none"
           ><img src="../resources/icons/arrow-up-icon.svg" alt=""
         /></a>
         <!-- SOCIAL MEDIA -->
@@ -774,31 +774,31 @@
           <a
             href="https://github.com/abrahamcalsin"
             target="_blank"
-            rel="referrer"
+            rel="noreferrer"
             ><img src="../resources/social-media/fa-github.svg" alt=""
           /></a>
           <a
             href="https://twitter.com/abraham_calsin"
             target="_blank"
-            rel="referrer"
+            rel="noreferrer"
             ><img src="../resources/social-media/fa-twitter.svg" alt=""
           /></a>
           <a
             href="https://www.instagram.com/abrahamcalsin"
             target="_blank"
-            rel="referrer"
+            rel="noreferrer"
             ><img src="../resources/social-media/fa-instagram.svg" alt=""
           /></a>
           <a
             href="https://www.facebook.com/abrahamcalsin"
             target="_blank"
-            rel="referrer"
+            rel="noreferrer"
             ><img src="../resources/social-media/fa-facebook.svg" alt=""
           /></a>
           <a
             href="https://www.linkedin.com/in/abrahamcalsin"
             target="_blank"
-            rel="referrer"
+            rel="noreferrer"
             ><img src="../resources/social-media/fa-linkedin.svg" alt=""
           /></a>
         </div>

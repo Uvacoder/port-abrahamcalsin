@@ -1,5 +1,5 @@
 /* FOOTER */
-.footer {
+.footer-design-site {
   background: #333333ff;
   padding: 25px;
   color: rgba(255, 255, 255, 0.62);
@@ -20,8 +20,7 @@
   }
 }
 .autor-copyright {
-  line-height: 0;
-  margin-bottom: 10px;
+  line-height: .7;
 }
 .autor-copyright p::selection {
   background-color: #fff;
@@ -35,7 +34,7 @@
   font-weight: bold;
   font-size: 12.7px;
   letter-spacing: 0.5px;
-  margin-bottom: 10px;
+  margin: 0;
 }
 .frontend-developer {
   font-size: 12px;
