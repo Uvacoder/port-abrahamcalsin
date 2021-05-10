@@ -20,7 +20,7 @@
   }
 }
 .autor-copyright {
-  line-height: .7;
+  line-height: 0.7;
 }
 .autor-copyright p::selection {
   background-color: #fff;
