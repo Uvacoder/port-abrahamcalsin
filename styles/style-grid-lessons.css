@@ -1,13 +1,13 @@
 /*-- STYLE DISABLED OPTIONAL --*/
-#disabled-style-optional{
+#disabled-style-optional {
   cursor: not-allowed;
 }
-#disabled-style-optional a{
+#disabled-style-optional a {
   color: #7a7a7a;
   pointer-events: none;
   cursor: default;
 }
-#disabled-style-optional a:hover{
+#disabled-style-optional a:hover {
   color: #fff;
 }
 /* --------------------------- */
@@ -98,11 +98,11 @@
   }
 }
 /* ---- */
-.sable{
+.sable {
   color: #7a7a7a;
   pointer-events: none;
   cursor: default;
 }
-.sable:hover{
+.sable:hover {
   color: #fff;
 }
