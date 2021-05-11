@@ -114,8 +114,9 @@ body {
 }
 .skill-imgs {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-gap: 0 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px 30px;
 }
 .skill-imgs img {
   width: 50px;
@@ -125,7 +126,9 @@ body {
   filter: grayscale(1);
   opacity: 0.7;
   transition: 0.3s all;
-  display: block;
+    display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .skill-imgs img:hover {
   filter: grayscale(0);
@@ -139,6 +142,8 @@ body {
   .skill-imgs {
     grid-template-columns: repeat(7, 0.3fr);
     grid-template-rows: repeat(auto, 0.3fr);
+    justify-content: center;
+    align-items: center;
     grid-gap: 30px 30px;
   }
 }
@@ -146,6 +151,8 @@ body {
   .skill-imgs {
     grid-template-columns: repeat(5, 0.2fr);
     grid-template-rows: repeat(auto, 0.2fr);
+    justify-content: center;
+    align-items: center;
     grid-gap: 30px 30px;
   }
 }
@@ -160,7 +167,7 @@ body {
     min-height: 40px;
   }
 }
-@media (max-width: 393px) {
+@media (max-width: 395px) {
   .profile-image {
     width: 150px;
     height: 150px;
@@ -171,6 +178,8 @@ body {
   .skill-imgs {
     grid-template-columns: repeat(4, 0.2fr);
     grid-template-rows: repeat(auto, 0.2fr);
+    justify-content: center;
+    align-items: center;
     grid-gap: 20px 20px;
   }
   .about-me {
@@ -189,7 +198,7 @@ body {
 }
 @media (max-width: 280px) {
   .skill-imgs {
-    grid-template-columns: repeat(3, 0.2fr);
+    grid-template-columns: repeat(2, 0.2fr);
     grid-template-rows: repeat(auto, 0.2fr);
     grid-gap: 10px 20px;
   }
