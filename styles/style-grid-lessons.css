@@ -1,3 +1,16 @@
+/*-- STYLE DISABLED OPTIONAL --*/
+#disabled-style-optional{
+  cursor: not-allowed;
+}
+#disabled-style-optional a{
+  color: #7a7a7a;
+  pointer-events: none;
+  cursor: default;
+}
+#disabled-style-optional a:hover{
+  color: #fff;
+}
+/* --------------------------- */
 .content-section-quotes-lessons {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -83,4 +96,13 @@
     padding-left: 5px;
     padding-right: 5px;
   }
+}
+/* ---- */
+.sable{
+  color: #7a7a7a;
+  pointer-events: none;
+  cursor: default;
+}
+.sable:hover{
+  color: #fff;
 }
