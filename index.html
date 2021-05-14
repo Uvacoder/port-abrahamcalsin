@@ -91,6 +91,8 @@
     <link rel="stylesheet" href="styles/style-header-navbar.css" />
     <link rel="stylesheet" href="pages/styles/style-footer.css" />
     <!-- FONT AWESOME -->
+    <script type="text/javascript" src="app.js"></script>
+    
     <script
       src="https://kit.fontawesome.com/d79f00ee22.js"
       crossorigin="anonymous"
@@ -113,7 +115,7 @@
       })
     </script>
   </head>
-  <body>
+  <body onload="init()">
     <!-- HEADER - NAVBAR -->
     <div class="header-top">
       <div class="container-rsp header-container">
@@ -172,7 +174,25 @@
         <div class="content-section-divide"><h4>- Lecciones del Día -</h4></div>
         <!-- QUOTES -->
         <div class="content-section-quotes-lessons">
-          <div class="content-quote" id="">
+          <div class="content-quote">
+            <aside class="lesson-image">
+              <img
+                src="resources/quotes/leccion4-mayo.png"
+                alt=""
+                id="not"
+                class="image-lesson"
+              />
+            </aside>
+            <aside class="download-lesson-of-the-day notCursor">
+              <a
+                href="https://drive.google.com/uc?export=download&id="
+                class="download-lesson sabled"
+                title="Descargar Lección del Día" id="linkDisabled"
+                >DESCARGAR LECCIÓN</a
+              >
+            </aside>
+          </div>
+          <div class="content-quote">
             <aside class="lesson-image">
               <img
                 src="resources/quotes/leccion3-mayo.png"
@@ -357,16 +377,16 @@
         <!-- SOCIAL MEDIA -->
         <div class="social-media">
           <a
-            href="https://github.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-github.svg" alt=""
-          /></a>
-          <a
             href="https://twitter.com/abraham_calsin"
             target="_blank"
             rel="noreferrer"
             ><img src="resources/social-media/fa-twitter.svg" alt=""
+          /></a>
+          <a
+            href="https://github.com/abrahamcalsin"
+            target="_blank"
+            rel="noreferrer"
+            ><img src="resources/social-media/fa-github.svg" alt=""
           /></a>
           <a
             href="https://www.instagram.com/abrahamcalsin"

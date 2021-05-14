@@ -1,15 +1,3 @@
-/*-- STYLE DISABLED OPTIONAL --*/
-#disabled-style-optional {
-  cursor: not-allowed;
-}
-#disabled-style-optional a {
-  color: #7a7a7a;
-  pointer-events: none;
-  cursor: default;
-}
-#disabled-style-optional a:hover {
-  color: #fff;
-}
 /* --------------------------- */
 .content-section-quotes-lessons {
   display: grid;
@@ -97,12 +85,13 @@
     padding-right: 5px;
   }
 }
-/* ---- */
-.sable {
-  color: #7a7a7a;
-  pointer-events: none;
-  cursor: default;
+/*-- DISABLED --*/
+.notCursor {
+  cursor: not-allowed;
 }
-.sable:hover {
-  color: #fff;
+.sabled{
+  pointer-events: none;
+}
+#linkDisabled{
+  color: #7a7a7a;
 }
