@@ -1,60 +1,60 @@
 /*-- DATE PUBLICATION --*/
-.date-public{
-	font-family: 'Poppins', sans-serif;
-	color: #fff;
-	background: #4d4d4dff;
-	font-size: 0.706em;
-	margin: 0;
-	height: 37px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.date-public {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #4d4d4dff;
+  font-size: 0.706em;
+  margin: 0;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.date-public i{
-	margin-right: 5px;
+.date-public i {
+  margin-right: 5px;
 }
-.date-public::selection{
-	background: #fff;
-	color: #4d4d4dff;
+.date-public::selection {
+  background: #fff;
+  color: #4d4d4dff;
 }
 /*-- UBDATE DATE --*/
-.update-pag{
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin-bottom: 100px;
+.update-pag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
 }
 .update-pag p {
-	font-family: 'Poppins', sans-serif;
-	color: #fff;
-	background: #4d4d4dff;
-	font-size: 0.706em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0;
-	width: 17rem;
-	height: 35px;
-	border-radius: 0 0 3px 3px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #4d4d4dff;
+  font-size: 0.706em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 17rem;
+  height: 35px;
+  border-radius: 0 0 3px 3px;
 }
-.update-pag img{
-	width: 1.2em;
-	margin-right: 5px;
-	display: block;
+.update-pag img {
+  width: 1.2em;
+  margin-right: 5px;
+  display: block;
 }
-.update-pag p::selection{
-	background: #fff;
-	color: #4d4d4d;
+.update-pag p::selection {
+  background: #fff;
+  color: #4d4d4d;
 }
-.update-pag img::selection{
-	background: transparent;
+.update-pag img::selection {
+  background: transparent;
 }
-@media (max-width: 576px){
-	.update-pag{
-		margin-bottom: 70px;
-	}
-	.update-pag p{
-		width: 16rem;
-	}
+@media (max-width: 576px) {
+  .update-pag {
+    margin-bottom: 70px;
+  }
+  .update-pag p {
+    width: 16rem;
+  }
 }
