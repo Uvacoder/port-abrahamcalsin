@@ -20,6 +20,7 @@
 }
 .lesson-image {
   width: 100%;
+  position: relative;
 }
 .lesson-image img {
   width: 100%;
@@ -86,12 +87,44 @@
   }
 }
 /*-- DISABLED --*/
-.notCursor {
+/* ASIDE IMAGE */
+.lessonProgrammed img{
+  filter: blur(3.2px);
+}
+.lessonProgrammed:before{
+  content: "";
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.lessonProgrammed:after{
+    content: " ";
+    background-image: url(../resources/icons/fa-clock.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    width: 20%;
+    max-width: 20%;
+    min-width: 20%;
+    height:30%;
+    max-height: 30%;
+    min-height: 30%;
+}
+/*------*/
+/* ASIDE DOWNLOAD */
+.removeCursorHover {
   cursor: not-allowed;
 }
-.sabled {
-  pointer-events: none;
+.removeCursorHover:hover{
+  background: none !important;
+  color: none;
 }
 #linkDisabled {
   color: #7a7a7a;
 }
+/*--------*/
