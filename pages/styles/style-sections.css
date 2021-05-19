@@ -34,12 +34,12 @@
   padding-right: 5px;
   padding-bottom: 13px;
   padding-top: 13px;
-  background: #4d4d4dff;
+  background: rgba(59, 61, 68, 0.88);
   letter-spacing: 2px;
 }
 .select-sections a::selection {
   background-color: #fff;
-  color: #4d4d4dff;
+  color: #3b3d44;
 }
 .select-sections div i {
   height: 100%;
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #262626;
+  background: #3b3d44;
   cursor: default;
 }
 @media (max-width: 800px) {
@@ -78,13 +78,13 @@
   margin-top: 0;
 }
 .question-of-lesson p {
-  color: #ff7900;
+  color: #f96802;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   margin-top: 0;
 }
 .question-of-lesson p::selection {
-  background: #ff7f2aff;
+  background: #f96802;
   color: #fff;
 }
 @media (max-width: 768px) {

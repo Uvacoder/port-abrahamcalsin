@@ -2,11 +2,11 @@
 .header-top {
   position: fixed;
   background: #fff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Poppins', sans-serif;
   top: 0;
   width: 100%;
   z-index: 3;
-  box-shadow: 2px 2px 2rem -0.6rem rgba(57, 62, 75, 0.2);
+  box-shadow: rgb(0 0 0 / 10%) 0px -1px 17px;
 }
 .header-container {
   height: 75px;
@@ -30,7 +30,7 @@
 }
 .menu_navbar label {
   position: absolute;
-  color: #4d4d4dff;
+  color: #3b3d44;
   display: none;
   right: 30px;
   top: 25px;
@@ -59,27 +59,26 @@
   outline: none;
 }
 .navbar-men-resp ul li a::selection {
-  background-color: #4d4d4dff;
+  background-color: #111827;
   color: #fff;
 }
 .navbar-inicio,
 .navbar-motivacion,
 .sobre-mi {
-  color: #4d4d4dff;
+  color: #3b3d44;
   text-decoration: none;
-  font-size: 0.763em;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: 0.9em;
+  font-weight: bold;
   transition: 0.3s all;
 }
 .navbar-inicio:hover {
-  color: #ff7f2aff;
+  color: #f96802;
 }
 .navbar-motivacion:hover {
-  color: #ff7f2aff;
+  color: #f96802;
 }
 .sobre-mi:hover {
-  color: #ff7f2aff;
+  color: #f96802;
 }
 /* RESPONSIVE NAVBAR */
 @media (max-width: 576px) {
@@ -121,20 +120,20 @@
     letter-spacing: 1px;
     margin-top: 5px;
     margin-bottom: 30px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     transition: 0.3s all;
   }
   .navbar-inicio {
-    margin-top: 30px;
+    margin-top: 40px;
   }
   .navbar-inicio:hover {
-    color: #ff7f2aff;
+    color: #f96802;
   }
   .navbar-motivacion:hover {
-    color: #ff7f2aff;
+    color: #f96802;
   }
   .sobre-mi:hover {
-    color: #ff7f2aff;
+    color: #f96802;
   }
   .menu_navbar label {
     display: inline;

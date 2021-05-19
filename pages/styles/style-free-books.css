@@ -5,6 +5,7 @@ body {
   padding: 0px;
   margin: 0px;
   padding-top: 78px;
+  font-family: 'Poppins', sans-serif;
 }
 /* CONTENT-SECTION */
 .content-section-divide {
@@ -15,8 +16,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  font-family: 'Poppins', sans-serif;
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   font-weight: 400;
   letter-spacing: 3.1px;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ body {
   margin: 0;
 }
 .content-section-divide h4::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 @media (max-width: 576px) {
@@ -44,7 +44,7 @@ body {
 }
 /* AUTHORS RIGHTS */
 .author-right-source-img {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   margin-bottom: 20px;
   width: 100%;
 }
@@ -52,7 +52,6 @@ body {
   background: #f2f2f2;
   border-radius: 5px;
   width: 290px;
-  font-family: 'Poppins', sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,7 +65,7 @@ body {
   font-size: 0.8em;
 }
 .description-important::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 .description-important span {
@@ -74,7 +73,7 @@ body {
   font-style: italic;
 }
 .description-important span::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 @media (min-width: 1200px) {
@@ -92,23 +91,22 @@ body {
 /* ----------------------- */
 /* TEXT IDENTIFY BOOKS */
 .book-identifier-by-section {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   margin-bottom: 15px;
   font-size: 1.2em;
-  font-family: 'Poppins', sans-serif;
 }
 .book-identifier-by-section p:before {
   content: '';
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid #737373;
+  border-bottom: 1px solid rgba(59, 61, 68, 0.70);
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 6px;
 }
 .book-identifier-by-section p::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 @media (max-width: 416px) {
@@ -152,9 +150,8 @@ body {
 }
 .book-download a {
   font-size: 0.7em;
-  font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  color: #ff7f2aff;
+  color: #f96802;
   font-weight: bolder;
   letter-spacing: 0.4px;
   width: 100%;
@@ -167,7 +164,7 @@ body {
   transition: 0.3s all;
 }
 .book-download a:hover {
-  background: #ff7f2aff;
+  background: #f96802;
   color: #fff;
 }
 @media (max-width: 992px) {

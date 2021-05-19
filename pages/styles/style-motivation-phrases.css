@@ -4,6 +4,7 @@
 body {
   margin: 0;
   margin-top: 175px;
+  font-family: 'Poppins', sans-serif;
 }
 /* CONTENT-SECTION */
 .content-section-divide {
@@ -14,8 +15,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  font-family: 'Poppins', sans-serif;
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
@@ -26,7 +26,7 @@ body {
   margin: 0;
 }
 .content-section-divide h4::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 @media (max-width: 650px) {
@@ -47,12 +47,11 @@ body {
   grid-template-rows: repeat(auto, 1fr);
   grid-gap: 30px 40px;
   align-items: start;
-  font-family: 'Poppins', sans-serif;
 }
 .motivational-phrase {
   background: #fafafa;
-  color: #4d4d4dff;
-  border-left: 5px solid #d9d9d9;
+  color: rgba(59, 61, 68, 0.70);
+  border-left: 5px solid rgba(59, 61, 68, 0.70);
   padding: 15px;
   font-size: 1em;
 }
@@ -68,25 +67,25 @@ body {
   align-items: center;
 }
 .motivational-phrase::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 .motivational-phrase span::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 .motivational-phrase div a {
   align-self: flex-end;
   text-decoration: none;
-  color: #737373;
+  color: rgba(59, 61, 68, 0.70);
   transition: 0.3s all;
 }
 .motivational-phrase div a:hover {
   transform: rotate(-4deg) scale(1.1);
-  color: #4d4d4dff;
+  color: #3b3d44;
 }
 .author-mot-phrase {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   font-weight: bolder;
   font-style: italic;
   margin-top: 13px;

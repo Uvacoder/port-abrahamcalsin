@@ -91,9 +91,11 @@
     <link rel="stylesheet" href="styles/style-header-navbar.css" />
     <link rel="stylesheet" href="styles/style-date-public.css" />
     <link rel="stylesheet" href="pages/styles/style-footer.css" />
-    <!-- FONT AWESOME -->
+    
+    <!--- SCRIPT -->
     <script type="text/javascript" src="app.js"></script>
-
+    
+    <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/d79f00ee22.js"
       crossorigin="anonymous"
@@ -104,12 +106,12 @@
       $(document).ready(function () {
         $(window).scroll(function () {
           if ($(this).scrollTop() > 50) {
-            $('#scroll').fadeIn()
+            $('#scroll-up').fadeIn()
           } else {
-            $('#scroll').fadeOut()
+            $('#scroll-up').fadeOut()
           }
         })
-        $('#scroll').click(function () {
+        $('#scroll-up').click(function () {
           $('html, body').animate({ scrollTop: 0 }, 600)
           return false
         })
@@ -137,18 +139,18 @@
                 <a
                   href="https://www.abrahamcalsin.com"
                   class="navbar-inicio"
-                  style="color: #ff7f2aff"
+                  style="color: #f96802;"
                   >Inicio</a
                 >
               </li>
               <li>
                 <a href="pages/motivation.html" class="navbar-motivacion"
-                  >motivación</a
+                  >Motivación</a
                 >
               </li>
               <li>
                 <a href="pages/about-me-contact.html" class="sobre-mi"
-                  >sobre mi</a
+                  >Sobre mi</a
                 >
               </li>
             </ul>
@@ -173,6 +175,27 @@
         <div class="content-section-divide"><h4>- Lecciones del Día -</h4></div>
         <!-- QUOTES -->
         <div class="content-section-quotes-lessons">
+          <div class="content-quote">
+            <p class="date-public">
+              <i class="fas fa-calendar-alt"></i>Publicado el 19 de Mayo 2021
+            </p>
+            <aside class="lesson-image">
+              <img
+                src="resources/quotes/leccion6-mayo.png"
+                alt=""
+                id="not"
+                class="image-lesson"
+              />
+            </aside>
+            <aside class="download-lesson-of-the-day">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1fMjmy5jCCS5rwuL8lyUK6Ys1te2arjdB"
+                class="download-lesson"
+                title="Descargar Lección del Día"
+                >DESCARGAR LECCIÓN</a
+              >
+            </aside>
+          </div>
           <div class="content-quote">
             <p class="date-public">
               <i class="fas fa-calendar-alt"></i>Publicado el 16 de Mayo 2021
@@ -341,7 +364,7 @@
               >
             </aside>
           </div>
-          <div class="content-quote">
+          <!--<div class="content-quote">
             <p class="date-public">
               <i class="fas fa-calendar-alt"></i>Publicado el 16 de Abril 2021
             </p>
@@ -362,7 +385,7 @@
               >
             </aside>
           </div>
-          <!--<div class="content-quote">
+          <div class="content-quote">
             <p class="date-public">
               <i class="fas fa-calendar-alt"></i>Publicado el 13 de Abril 2021
             </p>
@@ -418,7 +441,7 @@
         <!-- LINE - AUTOR AND SOCIAL -->
         <div class="divide-autor-social"><div></div></div>
         <!-- BTN IR ARRIBA -->
-        <a href="javascript:void(0);" id="scroll" style="display: none"
+        <a href="javascript:void(0);" id="scroll-up" style="display: none"
           ><img src="resources/icons/arrow-up-icon.svg" alt=""
         /></a>
         <!-- SOCIAL MEDIA -->

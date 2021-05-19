@@ -5,6 +5,7 @@ body {
   background: #fafafa;
   margin: 0px;
   padding-top: 76px;
+  font-family: 'Poppins', sans-serif;
 }
 /* CONTENT-SECTION */
 .content-section-divide {
@@ -15,8 +16,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  font-family: 'Poppins', sans-serif;
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.88);
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
@@ -27,7 +27,7 @@ body {
   margin: 0;
 }
 .content-section-divide h4::selection {
-  background-color: #4d4d4dff;
+  background-color: #3b3d44;
   color: #fff;
 }
 @media (max-width: 576px) {

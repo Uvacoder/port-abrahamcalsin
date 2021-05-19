@@ -35,21 +35,21 @@
 .download-lesson-of-the-day a {
   text-decoration: none;
   font-size: 0.8em;
-  color: #ff7f2aff;
+  color: #f96802;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 15px 0px;
-  font-weight: bold;
+  font-weight: 700;
   letter-spacing: 1px;
   transition: 0.3s all;
 }
 .download-lesson-of-the-day a:hover {
-  background: #ff7f2aff;
+  background: #f96802;
   color: #fff;
 }
 .download-lesson-of-the-day a::selection {
-  background-color: #ff7f2aff;
+  background-color: #f96802;
   color: #fff;
 }
 @media (max-width: 992px) {

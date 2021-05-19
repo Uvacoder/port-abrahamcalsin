@@ -12,7 +12,7 @@
 /* --------- */
 .btn-mod-boots {
   font-family: 'Poppins', sans-serif;
-  background: #ff7f2aff;
+  background: #f96802;
   border: none;
   color: #fff;
   font-weight: bolder;
@@ -40,11 +40,11 @@
   }
 }
 .modal-title {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.88);
 }
 /* CLOSE MODAL CONTACT */
 .close-mod-contact {
-  background: #4d4d4dff;
+  background: rgba(59, 61, 68, 0.88);
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@
 .send-envelop {
   color: #fff;
   padding: 6px 10px;
-  background: #737373;
+  background: rgba(59, 61, 68, 0.88);
   align-self: start;
   font-size: 0.9em;
   border-radius: 3px 0 0 3px;
@@ -71,7 +71,7 @@
 .contact-cont-mod a {
   text-decoration: none;
   width: auto;
-  color: #737373;
+  color: rgba(59, 61, 68, 0.88);
   padding: 2.3px 10px;
   font-size: 0.9em;
   border-radius: 0 3px 3px 0;
@@ -80,7 +80,7 @@
 }
 .contact-cont-mod a:hover {
   text-decoration: underline;
-  color: #ff7f2aff;
+  color: #f96802;
 }
 .contact-mail-send {
   background: #e8e8e8;

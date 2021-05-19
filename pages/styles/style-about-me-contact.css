@@ -5,6 +5,7 @@ body {
   background: #fafafa !important;
   margin: 0px;
   padding-top: 77px;
+  font-family: 'Poppins', sans-serif;
 }
 /* ********** */
 .about-me-cont {
@@ -41,19 +42,19 @@ body {
   margin-left: -50px;
 }
 .me-abrahamcalsin {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   text-align: center;
-  font-weight: normal;
+  font-weight: 500;
   font-size: 1.1em;
-  padding-top: 10px;
+  padding-top: 15px;
   margin: 0;
 }
 .me-abrahamcalsin::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 .front-end-about-me {
-  color: #4d4d4d;
+  color: rgba(59, 61, 68, 0.70);
   text-align: center;
   font-size: 0.7em;
   letter-spacing: 2px;
@@ -61,14 +62,14 @@ body {
   display: block;
 }
 .front-end-about-me::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 .front-end-about-me a {
   margin-right: 3px;
 }
 .front-end-about-me a i {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   transition: 0.4s all;
 }
 .front-end-about-me a i:hover {
@@ -78,15 +79,15 @@ body {
 .about-me {
   width: 100%;
   font-size: 0.9em;
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   margin-top: 30px;
 }
 .about-me::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 .about-me i::selection {
-  background: #4d4d4dff;
+  background: #3b3d44;
   color: #fff;
 }
 /* ------ */
@@ -97,7 +98,7 @@ body {
   margin-bottom: 40px;
 }
 .skills h5 {
-  color: #4d4d4dff;
+  color: rgba(59, 61, 68, 0.70);
   font-weight: 600;
   font-size: 1em;
   margin-bottom: 20px;
@@ -107,7 +108,7 @@ body {
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid #737373;
+  border-bottom: 1px solid rgba(59, 61, 68, 0.70);
   display: inline-block;
   margin-right: 6px;
   margin-bottom: 5px;

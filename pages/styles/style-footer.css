@@ -1,6 +1,6 @@
 /* FOOTER */
 .footer-design-site {
-  background: #333333ff;
+  background: #3b3d44;
   padding: 25px;
   color: rgba(255, 255, 255, 0.62);
   margin-top: 0px;
@@ -24,11 +24,11 @@
 }
 .autor-copyright p::selection {
   background-color: #fff;
-  color: #4d4d4dff;
+  color: #3b3d44;
 }
 .autor-copyright span::selection {
   background-color: #fff;
-  color: #4d4d4dff;
+  color: #3b3d44;
 }
 .autor-abraham-calsin {
   font-weight: bold;
@@ -117,7 +117,7 @@
 }
 @media (max-width: 516px) {
   #scroll-up {
-    background: #333333ff;
+    background: #3b3d44;
     position: fixed;
     bottom: 20px;
     right: 20px;

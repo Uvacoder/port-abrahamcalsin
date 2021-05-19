@@ -2,7 +2,7 @@
 .date-public {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background: #4d4d4dff;
+  background: #3b3d44;
   font-size: 0.706em;
   margin: 0;
   height: 37px;
@@ -15,7 +15,7 @@
 }
 .date-public::selection {
   background: #fff;
-  color: #4d4d4dff;
+  color: #3b3d44;
 }
 /*-- UBDATE DATE --*/
 .update-pag {
@@ -28,7 +28,7 @@
 .update-pag p {
   font-family: 'Poppins', sans-serif;
   color: #fff;
-  background: #4d4d4dff;
+  background: #3b3d44;
   font-size: 0.706em;
   display: flex;
   justify-content: center;
@@ -45,7 +45,7 @@
 }
 .update-pag p::selection {
   background: #fff;
-  color: #4d4d4d;
+  color: #3b3d44;
 }
 .update-pag img::selection {
   background: transparent;
