@@ -16,7 +16,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   font-weight: 400;
   letter-spacing: 3.1px;
   text-transform: uppercase;
@@ -44,7 +44,7 @@ body {
 }
 /* AUTHORS RIGHTS */
 .author-right-source-img {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   margin-bottom: 20px;
   width: 100%;
 }
@@ -91,7 +91,7 @@ body {
 /* ----------------------- */
 /* TEXT IDENTIFY BOOKS */
 .book-identifier-by-section {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   margin-bottom: 15px;
   font-size: 1.2em;
 }
@@ -100,7 +100,7 @@ body {
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid rgba(59, 61, 68, 0.70);
+  border-bottom: 1px solid rgba(59, 61, 68, 0.7);
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 6px;

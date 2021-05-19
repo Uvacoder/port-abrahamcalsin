@@ -19,7 +19,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
 .bible-verse {
   background: none;
@@ -30,7 +29,6 @@ body {
   font-size: 1.3rem;
   text-align: center;
   margin: 0;
- 
 }
 .bible-verse::selection {
   background-color: #3b3d44;
@@ -135,7 +133,7 @@ body {
 .ver-mas-lecciones a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   font-size: 13px;
   font-weight: 700;
   margin: 0;

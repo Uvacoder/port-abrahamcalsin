@@ -42,7 +42,7 @@ body {
   margin-left: -50px;
 }
 .me-abrahamcalsin {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   text-align: center;
   font-weight: 500;
   font-size: 1.1em;
@@ -54,7 +54,7 @@ body {
   color: #fff;
 }
 .front-end-about-me {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   text-align: center;
   font-size: 0.7em;
   letter-spacing: 2px;
@@ -69,7 +69,7 @@ body {
   margin-right: 3px;
 }
 .front-end-about-me a i {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   transition: 0.4s all;
 }
 .front-end-about-me a i:hover {
@@ -79,7 +79,7 @@ body {
 .about-me {
   width: 100%;
   font-size: 0.9em;
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   margin-top: 30px;
 }
 .about-me::selection {
@@ -98,7 +98,7 @@ body {
   margin-bottom: 40px;
 }
 .skills h5 {
-  color: rgba(59, 61, 68, 0.70);
+  color: rgba(59, 61, 68, 0.7);
   font-weight: 600;
   font-size: 1em;
   margin-bottom: 20px;
@@ -108,7 +108,7 @@ body {
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid rgba(59, 61, 68, 0.70);
+  border-bottom: 1px solid rgba(59, 61, 68, 0.7);
   display: inline-block;
   margin-right: 6px;
   margin-bottom: 5px;
