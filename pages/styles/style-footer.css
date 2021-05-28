@@ -1,7 +1,7 @@
 /* FOOTER */
 .footer-design-site {
-  border-top: 1px solid rgba(24, 49, 83, 0.50);
-  color: rgba(24, 49, 83, 0.80);
+  border-top: 1px solid rgba(24, 49, 83, 0.5);
+  color: rgba(24, 49, 83, 0.8);
   padding: 25px;
   font-family: 'Poppins', sans-serif;
 }
@@ -10,25 +10,24 @@
   width: 100%;
   margin: auto;
   text-align: center;
-
 }
 @media (min-width: 1200px) {
   .footer-content {
     width: 100%;
   }
 }
-.autor-abraham-calsin{
-  font-size: .8rem;
+.autor-abraham-calsin {
+  font-size: 0.8rem;
   margin: 0;
 }
-.autor-abraham-calsin::selection{
+.autor-abraham-calsin::selection {
   background-color: #183153;
-  color: #fff;  
+  color: #fff;
 }
-.authorAC{
+.authorAC {
   font-weight: 600;
 }
-.authorAC::selection{
+.authorAC::selection {
   background-color: #183153;
   color: #fff;
 }

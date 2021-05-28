@@ -34,7 +34,7 @@
 .more-lessons-of-the-day div {
   background: #fff;
   border-radius: 7px;
-  border: 2px dashed rgba(24, 49, 83, 0.10);
+  border: 2px dashed rgba(24, 49, 83, 0.1);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -44,7 +44,7 @@
 }
 .more-lessons p {
   font-size: 0.96em;
-  color: rgba(24, 49, 83, 0.80);
+  color: rgba(24, 49, 83, 0.8);
   text-align: center;
 }
 .more-lessons p::selection {
@@ -57,7 +57,7 @@
   font-size: 1.792em;
   margin: 0px;
   padding: 0;
-  color: rgba(24, 49, 83, 0.80);
+  color: rgba(24, 49, 83, 0.8);
 }
 .author-of-lesson {
   display: block;
@@ -80,7 +80,7 @@
 }
 .link-download-share a {
   text-decoration: none;
-  color: rgba(24, 49, 83, 0.80);
+  color: rgba(24, 49, 83, 0.8);
   font-size: 0.896em;
   transition: 0.3s all;
 }
