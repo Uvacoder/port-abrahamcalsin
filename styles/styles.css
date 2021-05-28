@@ -110,8 +110,7 @@ body {
 @media (max-width: 576px) {
   .content-section-divide h4 {
     font-size: 1.4em;
-    margin-top: 90px;
-    margin-bottom: 90px;
+    margin-top: 70px;
   }
 }
 /* QUOTES */
