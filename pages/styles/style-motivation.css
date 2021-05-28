@@ -16,7 +16,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
@@ -27,7 +27,7 @@ body {
   margin: 0;
 }
 .content-section-divide h4::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 @media (max-width: 576px) {

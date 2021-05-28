@@ -1,130 +1,134 @@
-/* --------------------------- */
-.content-section-quotes-lessons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(auto, 1fr);
-  grid-gap: 50px 50px;
-  align-items: center;
-  font-family: 'Poppins', sans-serif;
+/*-----*/
+.content-lessons-grid{
+	font-family: 'Poppins', sans-serif;
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(auto, 1fr);
+	grid-gap: 30px 0;
+	align-items: start;
+	padding-right: 20px;
+	padding-left: 20px;
+	transition: all .3s ease;
 }
-.content-quote {
-  border-radius: 5px;
-  overflow: hidden;
-  background: #fff;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 2px 10px 0px;
-  transition: 0.3s all;
+@media (min-width: 440px){
+	.content-lessons-grid{
+		grid-template-columns: repeat(1, .7fr);
+		grid-template-rows: repeat(auto, .7fr);
+		justify-content: center;
+	}
 }
-.content-quote:hover {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  transform: translateY(-2px);
+@media (min-width: 576px){
+	.content-lessons-grid{
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(auto, 1fr);
+		grid-gap: 30px 30px;
+		padding-right: 0;
+		padding-left: 0;
+	}	
 }
-.lesson-image {
-  width: 100%;
-  position: relative;
+@media (min-width: 992px){
+	.content-lessons-grid{
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: auto;
+		grid-gap: 50px 50px !important;
+	}
 }
-.lesson-image img {
-  width: 100%;
-  display: block;
+/*----*/
+.content-lesson-img-dscrpt{
+	background: #fff;
+	box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+	/*box-shadow: rgba(24, 49, 83, 0.2) 0 18px 50px -10px;*/
+	width: 100%;
+	padding: 10px 10px;
+	border-radius: 20px;
+	transition: all .3s ease;
 }
-.lesson-image img::selection {
-  background-color: transparent;
+.content-lesson-img-dscrpt:hover{
+	transform: translateY(-3px);
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+	/*box-shadow: rgba(24, 49, 83, 1) 0 18px 50px -10px;*/
 }
-.download-lesson-of-the-day {
-  width: 100%;
+.lesson-img{
+	width: 100%;
+	max-width: 100%;
+	border-radius: 16px;
+	overflow: hidden;
+	pointer-events: none;
 }
-.download-lesson-of-the-day a {
-  text-decoration: none;
-  font-size: 0.8em;
-  color: #f96802;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px 0px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  transition: 0.3s all;
+.lesson-img::selection{
+	background-color: transparent;
 }
-.download-lesson-of-the-day a:hover {
-  background: #f96802;
-  color: #fff;
+.lesson-img img::selection{
+	background-color: transparent;
 }
-.download-lesson-of-the-day a::selection {
-  background-color: #f96802;
-  color: #fff;
+.lesson-img img{
+	width: 100%;
+	display: block;
+	pointer-events: none;
 }
-@media (max-width: 992px) {
-  .content-section-quotes-lessons {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-gap: 50px 50px;
-    align-items: center;
-    padding: 0px;
-  }
+/*-----*/
+.allDateLesson{
+	width: 100%;
+	padding: 0 20px;
+	padding-top: 13px;
+	padding-bottom: 5px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 0 0 18px 18px;
+	/*background: #fed33a;*/
+	/*background: #3b3d44;*/
+	/*background: #183153;*/
 }
-@media (max-width: 768px) {
-  .content-section-quotes-lessons {
-    grid-gap: 25px 25px;
-  }
+.date-public-author{
+	margin: 0;
+	font-size: 0.813rem;
+	color: #183153;
+	/*color: #fed33a;*/
 }
-@media (max-width: 576px) {
-  .content-section-quotes-lessons {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(auto, 1fr);
-    grid-gap: 30px 0;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+.date-public-author i{
+	margin-right: 5px;
 }
-@media (max-width: 416px) {
-  .content-section-quotes-lessons {
-    grid-gap: 25px;
-  }
+.authorLesson{
+	font-weight: 600;
+	text-decoration: none;
 }
-@media (max-width: 280px) {
-  .content-section-quotes-lessons {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
+.authorLesson::selection{
+	background-color: #183153;
+  	color: #fff;
 }
-/*-- DISABLED --*/
-/* ASIDE IMAGE */
-.lessonProgrammed img {
-  filter: blur(3.2px);
+.downloadLesson{
+	text-decoration: none;
+	color: #183153;
+	/*color: #fed33a;*/
+	text-align: center;
+	border-radius: 5px;
+	font-weight: 600;
+	font-size: 0.813rem;
+	transition: all .3s ease-in-out;
 }
-.lessonProgrammed:before {
-  content: '';
-  background-color: rgba(0, 0, 0, 0.2);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+.downloadLesson{
+	background: transparent;
+	text-align: center;
+	padding: 5px 9px;
+	color: #fff;
+	background: #183153;
+	transition: all .3s ease;
 }
-.lessonProgrammed:after {
-  content: ' ';
-  background-image: url(../resources/icons/fa-clock.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: absolute;
-  left: 40%;
-  top: 40%;
-  width: 20%;
-  max-width: 20%;
-  min-width: 20%;
-  height: 30%;
-  max-height: 30%;
-  min-height: 30%;
+@media (min-width: 576px){
+	.allDateLesson{
+		padding: 0 20px;
+		padding-top: 13px;
+		padding-bottom: 5px;
+	}
+	.downloadLesson{
+		color: #183153;
+		border: 1px solid #183153;
+		background: transparent;
+	}
+	.downloadLesson:hover{
+		color: #fff;
+		background: #183153;	
+	}
 }
 /*------*/
-/* ASIDE DOWNLOAD */
-.removeCursorHover {
-  cursor: not-allowed;
-}
-.removeCursorHover:hover {
-  background: none !important;
-  color: none;
-}
-#linkDisabled {
-  color: #7a7a7a;
-}
-/*--------*/

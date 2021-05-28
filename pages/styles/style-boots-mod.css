@@ -40,11 +40,11 @@
   }
 }
 .modal-title {
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
 }
 /* CLOSE MODAL CONTACT */
 .close-mod-contact {
-  background: rgba(59, 61, 68, 0.88);
+  background: #183153;
   color: #fff;
   border: none;
   border-radius: 5px;
@@ -63,7 +63,7 @@
 .send-envelop {
   color: #fff;
   padding: 6px 10px;
-  background: rgba(59, 61, 68, 0.88);
+  background: #183153;
   align-self: start;
   font-size: 0.9em;
   border-radius: 3px 0 0 3px;
@@ -71,7 +71,7 @@
 .contact-cont-mod a {
   text-decoration: none;
   width: auto;
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   padding: 2.3px 10px;
   font-size: 0.9em;
   border-radius: 0 3px 3px 0;

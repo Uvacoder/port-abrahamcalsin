@@ -30,7 +30,7 @@
 }
 .menu_navbar label {
   position: absolute;
-  color: #3b3d44;
+  color: #183153;
   display: none;
   right: 30px;
   top: 25px;
@@ -59,25 +59,28 @@
   outline: none;
 }
 .navbar-men-resp ul li a::selection {
-  background-color: #111827;
+  background-color: #183153;
   color: #fff;
 }
 .navbar-inicio,
 .navbar-motivacion,
 .sobre-mi {
-  color: #3b3d44;
+  color: #183153;
   text-decoration: none;
   font-size: 0.9em;
   font-weight: bold;
   transition: 0.3s all;
 }
 .navbar-inicio:hover {
+  /*color: #fed33a;*/
   color: #f96802;
 }
 .navbar-motivacion:hover {
+  /*color: #fed33a;*/
   color: #f96802;
 }
 .sobre-mi:hover {
+  /*color: #fed33a;*/
   color: #f96802;
 }
 /* RESPONSIVE NAVBAR */
@@ -127,12 +130,15 @@
     margin-top: 40px;
   }
   .navbar-inicio:hover {
+    /*color: #fed33a;*/
     color: #f96802;
   }
   .navbar-motivacion:hover {
+    /*color: #fed33a;*/
     color: #f96802;
   }
   .sobre-mi:hover {
+    /*color: #fed33a;*/
     color: #f96802;
   }
   .menu_navbar label {

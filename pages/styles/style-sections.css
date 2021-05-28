@@ -34,12 +34,12 @@
   padding-right: 5px;
   padding-bottom: 13px;
   padding-top: 13px;
-  background: rgba(59, 61, 68, 0.88);
+  background: rgba(24, 49, 83, 0.93);
   letter-spacing: 2px;
 }
 .select-sections a::selection {
   background-color: #fff;
-  color: #3b3d44;
+  color: #183153;
 }
 .select-sections div i {
   height: 100%;
@@ -47,7 +47,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #3b3d44;
+  background: #183153;
   cursor: default;
 }
 @media (max-width: 800px) {

@@ -4,7 +4,7 @@
   font-family: 'Poppins', sans-serif;
 }
 .text-more-lessons-of-the-day {
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   margin-bottom: 15px;
   font-size: 1.2em;
 }
@@ -13,13 +13,13 @@
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid rgba(59, 61, 68, 0.88);
+  border-bottom: 1px solid #183153;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 6px;
 }
 .text-more-lessons-of-the-day p::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 /* ------------------- */
@@ -34,7 +34,7 @@
 .more-lessons-of-the-day div {
   background: #fff;
   border-radius: 7px;
-  border: 2px dashed #e9e9e9;
+  border: 2px dashed rgba(24, 49, 83, 0.10);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -44,11 +44,11 @@
 }
 .more-lessons p {
   font-size: 0.96em;
-  color: rgba(59, 61, 68, 0.88);
+  color: rgba(24, 49, 83, 0.80);
   text-align: center;
 }
 .more-lessons p::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 .more-lessons p:before {
@@ -57,7 +57,7 @@
   font-size: 1.792em;
   margin: 0px;
   padding: 0;
-  color: rgba(59, 61, 68, 0.88);
+  color: rgba(24, 49, 83, 0.80);
 }
 .author-of-lesson {
   display: block;
@@ -66,7 +66,7 @@
   font-style: italic;
 }
 .author-of-lesson::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 .link-download-share {
@@ -80,13 +80,13 @@
 }
 .link-download-share a {
   text-decoration: none;
-  color: rgba(59, 61, 68, 0.88);
+  color: rgba(24, 49, 83, 0.80);
   font-size: 0.896em;
   transition: 0.3s all;
 }
 .link-download-share a:hover {
   transform: scale(1.1);
-  color: #3b3d44;
+  color: #183153;
 }
 @media (max-width: 768px) {
   .more-lessons-of-the-day {

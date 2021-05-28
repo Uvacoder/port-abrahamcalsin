@@ -16,7 +16,7 @@ body {
   margin-top: 100px;
 }
 .content-section-divide h4 {
-  color: rgba(59, 61, 68, 0.7);
+  color: #183153;
   font-weight: 400;
   letter-spacing: 3.1px;
   text-transform: uppercase;
@@ -28,7 +28,7 @@ body {
   margin: 0;
 }
 .content-section-divide h4::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 @media (max-width: 576px) {
@@ -44,7 +44,7 @@ body {
 }
 /* AUTHORS RIGHTS */
 .author-right-source-img {
-  color: rgba(59, 61, 68, 0.7);
+  color: rgba(24, 49, 83, 0.80);
   margin-bottom: 20px;
   width: 100%;
 }
@@ -65,7 +65,7 @@ body {
   font-size: 0.8em;
 }
 .description-important::selection {
-  background: #3b3d44;
+  background: #183153;
   color: #fff;
 }
 .description-important span {
@@ -73,7 +73,7 @@ body {
   font-style: italic;
 }
 .description-important span::selection {
-  background: #3b3d44;
+  background: #183153;
   color: #fff;
 }
 @media (min-width: 1200px) {
@@ -91,7 +91,7 @@ body {
 /* ----------------------- */
 /* TEXT IDENTIFY BOOKS */
 .book-identifier-by-section {
-  color: rgba(59, 61, 68, 0.7);
+  color: #183153;
   margin-bottom: 15px;
   font-size: 1.2em;
 }
@@ -100,13 +100,13 @@ body {
   width: 5%;
   padding: 0px;
   height: 1px;
-  border-bottom: 1px solid rgba(59, 61, 68, 0.7);
+  border-bottom: 1px solid #183153;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 6px;
 }
 .book-identifier-by-section p::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 @media (max-width: 416px) {

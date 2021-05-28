@@ -1,53 +1,36 @@
 /* FOOTER */
 .footer-design-site {
-  background: #3b3d44;
+  border-top: 1px solid rgba(24, 49, 83, 0.50);
+  color: rgba(24, 49, 83, 0.80);
   padding: 25px;
-  color: rgba(255, 255, 255, 0.62);
-  margin-top: 0px;
-  margin-bottom: -3px;
   font-family: 'Poppins', sans-serif;
 }
 .footer-content {
   padding: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  width: 100%;
   margin: auto;
+  text-align: center;
+
 }
 @media (min-width: 1200px) {
   .footer-content {
-    max-width: 1350px;
+    width: 100%;
   }
 }
-.autor-copyright {
-  line-height: 0.7;
-}
-.autor-copyright p::selection {
-  background-color: #fff;
-  color: #3b3d44;
-}
-.autor-copyright span::selection {
-  background-color: #fff;
-  color: #3b3d44;
-}
-.autor-abraham-calsin {
-  font-weight: bold;
-  font-size: 12.7px;
-  letter-spacing: 0.5px;
+.autor-abraham-calsin{
+  font-size: .8rem;
   margin: 0;
 }
-.frontend-developer {
-  font-size: 12px;
-  letter-spacing: 0.7px;
+.autor-abraham-calsin::selection{
+  background-color: #183153;
+  color: #fff;  
 }
-/* DIVIDE - AUTOR - SOCIAL */
-.divide-autor-social {
-  display: none;
+.authorAC{
+  font-weight: 600;
 }
-.divide-autor-social div {
-  width: 80px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.62);
+.authorAC::selection{
+  background-color: #183153;
+  color: #fff;
 }
 /* SOCIAL MEDIA */
 .social-media {
@@ -79,10 +62,6 @@
     flex-direction: column;
     align-items: flex-start;
   }
-  .autor-abraham-calsin {
-    font-size: 11px;
-    letter-spacing: 0.4px;
-  }
   .frontend-developer {
     font-size: 10.3px;
     letter-spacing: 0.7px;
@@ -104,6 +83,7 @@
 }
 /* STYLES - BTN IR ARRIBA */
 #scroll-up img {
+  display: none;
   width: 20px;
   transition: 0.2s all;
   filter: blur(0) contrast(35%);
@@ -117,7 +97,7 @@
 }
 @media (max-width: 516px) {
   #scroll-up {
-    background: #3b3d44;
+    background: #183153;
     position: fixed;
     bottom: 20px;
     right: 20px;

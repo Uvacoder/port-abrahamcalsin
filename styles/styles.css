@@ -25,13 +25,13 @@ body {
   width: 540px;
   font-family: 'Poppins', sans-serif;
   font-weight: bolder;
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   font-size: 1.3rem;
   text-align: center;
   margin: 0;
 }
 .bible-verse::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 .bible-verse::before {
@@ -46,12 +46,12 @@ body {
   margin-top: 10px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   font-size: 13px;
   letter-spacing: 0.2em;
 }
 .verse-proverbios::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 @media (max-width: 615px) {
@@ -80,8 +80,8 @@ body {
 }
 
 /* CONTENT-SECTION */
-.backg-content-section {
-  background: none;
+.backg-content-sectionLessons {
+  background: #fafafa;
   padding: 0;
   margin: 0;
 }
@@ -92,18 +92,19 @@ body {
   padding: 0;
 }
 .content-section-divide h4 {
-  color: rgba(59, 61, 68, 0.88);
+  color: #183153;
   font-weight: 400;
+  margin:  0;
   margin-top: 100px;
-  margin-bottom: 100px;
   font-size: 1.5em;
   width: 100%;
   height: auto;
   text-align: center;
+  letter-spacing: 1.2px;
   font-family: 'Poppins', sans-serif;
 }
 .content-section-divide h4::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 @media (max-width: 576px) {
@@ -115,7 +116,6 @@ body {
 }
 /* QUOTES */
 .all-content-section {
-  background: #fafafa;
   margin-bottom: 0px;
 }
 #not {
@@ -133,7 +133,7 @@ body {
 .ver-mas-lecciones a {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  color: rgba(59, 61, 68, 0.7);
+  color: rgba(24, 49, 83, 0.80);
   font-size: 13px;
   font-weight: 700;
   margin: 0;
@@ -144,10 +144,10 @@ body {
 }
 .ver-mas-lecciones a:hover {
   -webkit-animation-name: yx;
-  color: #3b3d44;
+  color: #183153;
 }
 .ver-mas-lecciones a::selection {
-  background-color: #3b3d44;
+  background-color: #183153;
   color: #fff;
 }
 .ver-mas-lecciones a:focus {
