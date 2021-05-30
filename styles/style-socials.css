@@ -1,0 +1,13 @@
+.social-media-icon{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0 15px;
+}
+.social-fa-icon{
+	width: .9rem;
+}
+.social-fa-icon img{
+	width: 100%;
+	display: block;
+}
