@@ -1,20 +1,20 @@
 .toolTip {
   position: relative;
-  font-family: 'Poppins', sans-serif;
 }
 .tooltipDown {
   background: #183153;
+  font-family: 'Poppins', sans-serif;
   color: #fff;
   display: block;
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 440%;
+  width: 445%;
   padding: 0.5rem 0.4rem;
   text-align: center;
   border-radius: 5px;
   font-size: 0.8rem;
-  font-weight: 800;
+  font-weight: 600;
   opacity: 0;
   pointer-events: none;
   transform: translate(-50%, -100%);
@@ -34,6 +34,7 @@
   border-width: 10px 10px 0 10px;
   border-color: transparent;
   transform: translate(-50%, 100%);
+  text-align: center;
 }
 .toolTip .tooltipDown:after {
   border-top-color: #183153;
