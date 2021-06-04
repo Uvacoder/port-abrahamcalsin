@@ -1,5 +1,6 @@
 .toolTip {
   position: relative;
+  font-family: 'Poppins', sans-serif;
 }
 .tooltipDown {
   background: #183153;
