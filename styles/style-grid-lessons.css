@@ -36,7 +36,7 @@
 /*----*/
 .content-lesson-img-dscrpt {
   background: #fff;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: rgba(236, 239, 252, 1) 0px 12px 20px;
   /*box-shadow: rgba(24, 49, 83, 0.2) 0 18px 50px -10px;*/
   width: 100%;
   padding: 10px 10px;
@@ -45,7 +45,7 @@
 }
 .content-lesson-img-dscrpt:hover {
   transform: translateY(-3px);
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  box-shadow: rgba(204, 209, 230, 0.7) 0px 18px 50px -10px;
   /*box-shadow: rgba(24, 49, 83, 1) 0 18px 50px -10px;*/
 }
 .lesson-img {

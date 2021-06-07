@@ -5,6 +5,7 @@ body {
   margin: 0;
   margin-top: 175px;
   font-family: 'Poppins', sans-serif;
+  background: rgba(236, 239, 252, 0.4);
 }
 /* CONTENT-SECTION */
 .content-section-divide {

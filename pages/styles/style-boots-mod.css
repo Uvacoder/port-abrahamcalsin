@@ -23,7 +23,7 @@
 }
 .btn-mod-boots:hover {
   transform: translateY(-2px);
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 17px 0px;
+  box-shadow: rgba(225, 229, 247, 0.9) 0px 7px 17px 0px;
 }
 .inlin-deskt {
   width: 200px;

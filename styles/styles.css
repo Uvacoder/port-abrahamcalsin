@@ -81,7 +81,7 @@ body {
 
 /* CONTENT-SECTION */
 .backg-content-sectionLessons {
-  background: #fafafa;
+  background: rgba(236, 239, 252, 0.4);
   padding: 0;
   margin: 0;
 }
@@ -120,56 +120,4 @@ body {
 #not {
   pointer-events: none;
 }
-/* VER MAS LECCIONES */
-.ver-mas-lecciones {
-  display: flex;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  align-items: center;
-  justify-content: flex-end;
-  width: 100%;
-}
-.ver-mas-lecciones a {
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  color: rgba(24, 49, 83, 0.8);
-  font-size: 13px;
-  font-weight: 700;
-  margin: 0;
-  width: auto;
-  height: auto;
-  transition: 0.3s all;
-  animation: 0.4s infinite linear;
-}
-.ver-mas-lecciones a:hover {
-  -webkit-animation-name: yx;
-  color: #183153;
-}
-.ver-mas-lecciones a::selection {
-  background-color: #183153;
-  color: #fff;
-}
-.ver-mas-lecciones a:focus {
-  outline: none;
-}
-@keyframes yx {
-  0%,
-  100% {
-    padding-right: 0px;
-  }
-  50% {
-    padding-right: 3px;
-  }
-}
-@media (max-width: 615px) {
-  .ver-mas-lecciones {
-    padding-bottom: 45px;
-    padding-right: 0px;
-    justify-content: center;
-  }
-  .ver-mas-lecciones a {
-    font-size: 12px;
-    margin-right: 0;
-  }
-}
-/* ------------------ */
+/*-------*/
