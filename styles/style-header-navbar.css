@@ -1,155 +1,154 @@
-/* HEADER */
-.header-top {
+/*--- Container Header ---*/
+.headerNavigation{
   position: fixed;
-  background: #fff;
-  font-family: 'Poppins', sans-serif;
   top: 0;
   width: 100%;
-  z-index: 3;
+  z-index: 20;
+  background: #fff;
   box-shadow: rgb(0 0 0 / 10%) 0px -1px 17px;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
 }
-.header-container {
-  height: 75px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.logotype-abrahamcalsin img {
+/*--- Logo Abraham Calsin ---*/
+.logo-abrahamcalsin a img {
   width: 100%;
   display: block;
 }
-.logotype-abrahamcalsin img::selection {
+.logo-abrahamcalsin a img::selection {
   background-color: transparent;
 }
-.logotype-abrahamcalsin {
+.logo-abrahamcalsin {
   width: 75px;
 }
-/* BTN - MENU */
-#btn_menu {
-  display: none;
-}
-.menu_navbar label {
-  position: absolute;
-  color: #183153;
-  display: none;
-  right: 30px;
-  top: 25px;
-  font-size: 1.1em;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.1s all;
-}
-/* NAVBAR */
-.navbar-men-resp ul {
+/*--- Container Menu Navigation ---*/
+.headerNavigation nav{
   display: flex;
-  margin-top: auto;
-  margin-bottom: auto;
+  justify-content: space-between;
 }
-.navbar-men-resp ul li {
-  list-style: none;
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/*--- Links Navigation ---*/
+.menuHeadNavigation ul{
+  position: fixed;
+  top: 64px;
+  right: -999px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  gap:  0 20px;
+  padding: 20px 20px;
+  margin: 0;
+  list-style:  none;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  transition: all .3s ease;
 }
-.navbar-men-resp ul li:not(:last-child) {
-  margin-right: 20px;
+.menuHeadNavigation ul li{
+  position: relative;
+  margin-top: 30px;
+  font-size: 0.958rem;
 }
-.navbar-men-resp ul li a:focus {
-  outline: none;
+.menuHeadNavigation ul li:first-child{
+  margin-top: 37px;
 }
-.navbar-men-resp ul li a::selection {
-  background-color: #183153;
-  color: #fff;
-}
-.navbar-inicio,
-.navbar-motivacion,
-.sobre-mi {
+.menuHeadNavigation ul li a{
+  position: relative;
+  padding-left: 3px;
+  padding-right: 3px;
   color: #183153;
+  font-weight: 700;
+  letter-spacing: 1px;
   text-decoration: none;
-  font-size: 0.9em;
-  font-weight: bold;
-  transition: 0.3s all;
+  transition: all .3s ease;
 }
-.navbar-inicio:hover {
-  /*color: #fed33a;*/
+.menuHeadNavigation ul li a:hover{
   color: #f96802;
 }
-.navbar-motivacion:hover {
-  /*color: #fed33a;*/
-  color: #f96802;
+.hoverLink:after{
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: -1px;
+  background: #f96802;
+  border-radius: 50px;
+  transition: all .3s ease;
 }
-.sobre-mi:hover {
-  /*color: #fed33a;*/
-  color: #f96802;
+.hoverLink:hover::after{
+  right: auto;
+  left: 0;
+  width: 100%;
 }
-/* RESPONSIVE NAVBAR */
-@media (max-width: 576px) {
-  .logotype-abrahamcalsin {
-    margin-left: 15px;
+/*--- Amburguer Bar ---*/
+.contentAmburguerBar{
+  display: inline-block;
+  width: 18px;
+  cursor: pointer;
+}
+.barOne,
+.barTwo,
+.barThree{
+  width: 100%;
+  height: 3px;
+  background: #183153;
+  border-radius: 50px;
+  transition: all .3s ease-in-out;
+}
+.barTwo{
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 3px 0;
+}
+/*-- ClassList, active Burguer Bar, Toggle --*/
+.activeMenu .barOne{
+  transform:  rotate(45deg)
+              translate(-2px, -3px)
+              translateX(9px);
+  width: 63%;
+}
+.activeMenu .barTwo{
+  transform: translateX(-3px);
+  width: 95%;
+}
+.activeMenu .barThree{
+  transform:  rotate(-45deg)
+              translate(-2px, 3px)
+              translateX(9px);
+  width: 63%;
+}
+/*-- ClassList, active Menu Links Navigation, Toggle --*/
+.activeMenu .linkNavigation{
+  right: 0;
+}
+/*---*/
+@media (min-width: 576px){
+  .headerNavigation{
+    padding: 26px 0;
+  }
+  .contentAmburguerBar{
+    display: none;
+  }
+  .menuHeadNavigation ul{
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    border-top: 0;
+    background: transparent;
+  }
+  .menuHeadNavigation ul li{
+    margin-top: 0;
+    font-size: 0.908rem;
+  }
+  .menuHeadNavigation ul li:first-child{
+    margin-top: 0;
+  }
+  .menuHeadNavigation ul li a{
+    letter-spacing: 0;
+    padding-bottom: 1px;
   }
 }
-@media (max-width: 650px) {
-  .header-top {
-    height: 70px;
-  }
-  .logotype-abrahamcalsin {
-    width: 72px;
-  }
-  .navbar-men-resp {
-    position: fixed;
-    background: #fff;
-    border-top: 1px solid #eee;
-    width: 100%;
-    height: 100%;
-    top: 69px;
-    right: -900px;
-    padding: 0px;
-    transition: 0.4s all;
-  }
-  .navbar-men-resp ul {
-    display: block;
-    padding: 3px;
-  }
-  .navbar-men-resp ul li:not(:last-child) {
-    margin-right: 0px;
-  }
-  .navbar-inicio,
-  .navbar-motivacion,
-  .material-adicional,
-  .sobre-mi {
-    display: block;
-    background: none;
-    letter-spacing: 1px;
-    margin-top: 5px;
-    margin-bottom: 30px;
-    font-size: 0.9em;
-    transition: 0.3s all;
-  }
-  .navbar-inicio {
-    margin-top: 40px;
-  }
-  .navbar-inicio:hover {
-    /*color: #fed33a;*/
-    color: #f96802;
-  }
-  .navbar-motivacion:hover {
-    /*color: #fed33a;*/
-    color: #f96802;
-  }
-  .sobre-mi:hover {
-    /*color: #fed33a;*/
-    color: #f96802;
-  }
-  .menu_navbar label {
-    display: inline;
-    cursor: pointer;
-    transition: 0.1s all;
-  }
-  .menu_navbar label:active {
-    transform: scale(1.1);
-  }
-  #btn_menu:checked ~ .navbar-men-resp {
-    right: 0px;
-  }
-}
+/*-----*/

@@ -94,9 +94,6 @@
     <link rel="stylesheet" href="../styles/style-date-public.css" />
     <link rel="stylesheet" href="../pages/styles/style-footer.css" />
 
-    <!--- SCRIPT -->
-    <script type="text/javascript" src="app.js"></script>
-
     <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/d79f00ee22.js"
@@ -120,46 +117,31 @@
       })
     </script>
   </head>
-  <body onload="init()">
-    <!-- HEADER - NAVBAR -->
-    <div class="header-top">
-      <div class="container-rsp header-container">
-        <a href="https://www.abrahamcalsin.com" class="logotype-abrahamcalsin"
-          ><img
-            src="../resources/img-logotype/logotype-vector.svg"
-            alt="Abraham Calsin"
-            class="img-lo-ac"
-        /></a>
-        <div class="menu_navbar">
-          <input type="checkbox" id="btn_menu" />
-          <label for="btn_menu" class="btn_menu"
-            ><i class="fa fa-bars active"></i
-          ></label>
-          <nav class="navbar-men-resp">
-            <ul>
-              <li>
-                <a
-                  href="https://www.abrahamcalsin.com"
-                  class="navbar-inicio"
-                  style="color: #f96802"
-                  >Inicio</a
-                >
-              </li>
-              <li>
-                <a href="../pages/motivation.html" class="navbar-motivacion"
-                  >Motivación</a
-                >
-              </li>
-              <li>
-                <a href="../pages/about-me-contact.html" class="sobre-mi"
-                  >Sobre mi</a
-                >
-              </li>
-            </ul>
-          </nav>
+  <body>
+    <!--- Container Header --->
+    <header class="headerNavigation">
+      <!--- Container Menu Navigation --->
+      <nav class="container-rsp menuHeadNavigation">
+        <div class="logo-abrahamcalsin">
+          <a href="https://www.abrahamcalsin.com"><img src="../resources/img-logotype/logotype-vector.svg" alt="Abraham Calsin"></a>
         </div>
-      </div>
-    </div>
+        <!--- Menu - Amburguer Bar and Link Navigation --->
+        <div id="menuNavigation">
+          <div class="contentAmburguerBar" id="contentAmburguerBar">
+            <div class="barOne"></div>
+            <div class="barTwo"></div>
+            <div class="barThree"></div>
+          </div>
+          <!--- Links Navigation --->
+          <ul class="linkNavigation">
+            <li><a href="https://www.abrahamcalsin.com" class="hoverLink" id="colorSelectLink">Inicio</a></li>
+            <li><a href="../pages/motivation.html" class="hoverLink">Motivación</a></li>
+            <li><a href="../pages/about-me-contact.html" class="hoverLink">Sobre mi</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!------>
     <!---->
     <div class="backg-content-sectionLessons">
       <!-- CONTENT - SECTION - QUOTES -->
@@ -318,6 +300,8 @@
       </div>
     </div>
     <!------------->
+    <!--- S C R I P T S -->
+    <script type="text/javascript" src="../script/script-menu-navigation.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
     <!------------->
   </body>

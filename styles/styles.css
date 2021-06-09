@@ -54,6 +54,11 @@ body {
   background-color: #183153;
   color: #fff;
 }
+@media (max-width: 576px){
+  body{
+    padding-top: 66px !important;
+  }
+}
 @media (max-width: 615px) {
   .layout-quote {
     width: 100%;

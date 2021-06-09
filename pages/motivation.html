@@ -118,43 +118,30 @@
     </script>
   </head>
   <body>
-    <!-- HEADER - NAVBAR -->
-    <div class="header-top">
-      <div class="container-rsp header-container">
-        <a href="https://www.abrahamcalsin.com" class="logotype-abrahamcalsin"
-          ><img
-            src="../resources/img-logotype/logotype-vector.svg"
-            alt=""
-            class="img-lo-ac"
-        /></a>
-        <div class="menu_navbar">
-          <input type="checkbox" id="btn_menu" />
-          <label for="btn_menu" class="btn_menu"
-            ><i class="fa fa-bars active"></i
-          ></label>
-          <nav class="navbar-men-resp">
-            <ul>
-              <li>
-                <a href="https://www.abrahamcalsin.com" class="navbar-inicio"
-                  >Inicio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="motivation.html"
-                  class="navbar-motivacion"
-                  style="color: #f96802"
-                  >Motivación</a
-                >
-              </li>
-              <li>
-                <a href="about-me-contact.html" class="sobre-mi">Sobre mi</a>
-              </li>
-            </ul>
-          </nav>
+    <!--- Container Header --->
+    <header class="headerNavigation">
+      <!--- Container Menu Navigation --->
+      <nav class="container-rsp menuHeadNavigation">
+        <div class="logo-abrahamcalsin">
+          <a href="https://www.abrahamcalsin.com"><img src="../resources/img-logotype/logotype-vector.svg" alt="Abraham Calsin"></a>
         </div>
-      </div>
-    </div>
+        <!--- Menu - Amburguer Bar and Link Navigation --->
+        <div id="menuNavigation">
+          <div class="contentAmburguerBar" id="contentAmburguerBar">
+            <div class="barOne"></div>
+            <div class="barTwo"></div>
+            <div class="barThree"></div>
+          </div>
+          <!--- Links Navigation --->
+          <ul class="linkNavigation">
+            <li><a href="https://www.abrahamcalsin.com" class="hoverLink">Inicio</a></li>
+            <li><a href="motivation.html" class="hoverLink" id="colorSelectLink">Motivación</a></li>
+            <li><a href="about-me-contact.html" class="hoverLink">Sobre mi</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!------>
     <!-- CONTENT - SECTION - QUOTES -->
     <div class="container-rsp all-content-section">
       <div class="content-section-divide"><h4>— Lecciones del Día —</h4></div>
@@ -826,40 +813,10 @@
         <a href="javascript:void(0);" id="scroll-up" style="display: none"
           ><img src="../resources/icons/arrow-up-icon.svg" alt=""
         /></a>
-        <!-- SOCIAL MEDIA 
-        <div class="social-media">
-          <a
-            href="https://twitter.com/abraham_calsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-twitter.svg" alt=""
-          /></a>
-          <a
-            href="https://github.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-github.svg" alt=""
-          /></a>
-          <a
-            href="https://www.instagram.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-instagram.svg" alt=""
-          /></a>
-          <a
-            href="https://www.facebook.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-facebook.svg" alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-linkedin.svg" alt=""
-          /></a>
-        </div>-->
       </div>
     </div>
+
+    <!--- S C R I P T S --->
+    <script type="text/javascript" src="../script/script-menu-navigation.js"></script>
   </body>
 </html>
