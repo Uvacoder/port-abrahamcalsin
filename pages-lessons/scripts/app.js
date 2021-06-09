@@ -1,6 +1,6 @@
-var removeChildTab = document.getElementById('removeChildTab');
-var removeTab = document.getElementById('removeTab');
+var removeChildTab = document.getElementById('removeChildTab')
+var removeTab = document.getElementById('removeTab')
 
-var remove = removeChildTab.removeChild(removeTab);
+var remove = removeChildTab.removeChild(removeTab)
 
 /*------------------------*/
