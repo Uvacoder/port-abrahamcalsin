@@ -10,8 +10,8 @@ body {
 /* SECTION LAYOUT */
 .layout-quote {
   width: 100%;
-  padding-top: 150px;
-  padding-bottom: 150px;
+  padding-top: 125px;
+  padding-bottom: 125px;
 }
 .layout-bible-verse {
   width: 100%;
@@ -62,8 +62,8 @@ body {
 @media (max-width: 615px) {
   .layout-quote {
     width: 100%;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
   .bible-verse {
     width: 310px;
