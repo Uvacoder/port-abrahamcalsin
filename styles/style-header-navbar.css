@@ -12,13 +12,13 @@
 }
 
 /*--- Logo Abraham Calsin ---*/
-#logoModeLightDark{
-  transition: all .2s;
+#logoModeLightDark {
+  transition: all 0.2s;
 }
 .logo-abrahamcalsin a img {
   width: 100%;
   display: block;
-  transition: all .2s;
+  transition: all 0.2s;
 }
 .logo-abrahamcalsin a img::selection {
   background-color: transparent;
