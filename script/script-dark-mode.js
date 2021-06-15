@@ -23,7 +23,7 @@ const applyTheme = isDark => {
 
     logoModifiedDarkMode.setAttribute(
       'src',
-      '../resources/logo-abraham-calsin/logo-abraham-calsin-white.svg',
+      'https://abrahamcalsin.com/resources/logo-abraham-calsin/logo-abraham-calsin-white.svg',
     )
   } else {
     document.body.classList.remove('darkMode')
@@ -36,7 +36,7 @@ const applyTheme = isDark => {
 
     logoModifiedDarkMode.setAttribute(
       'src',
-      '../resources/logo-abraham-calsin/logo-abraham-calsin-black.svg',
+      'https://abrahamcalsin.com/resources/logo-abraham-calsin/logo-abraham-calsin-black.svg',
     )
   }
 }
