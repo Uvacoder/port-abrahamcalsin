@@ -1,52 +1,58 @@
-  const toggleDarkmode = document.querySelector("#toggleDarkmode");
+const toggleDarkmode = document.querySelector('#toggleDarkmode')
 
-  const iconElement = toggleDarkmode.querySelector("i");
+const iconElement = toggleDarkmode.querySelector('i')
 
-  const logoModifiedDarkMode = document.getElementById('logoModeLightDark');
+const logoModifiedDarkMode = document.getElementById('logoModeLightDark')
 
-  const cleanTheme = () => {
-    //   Clean the icon classess
-    iconElement.classList.remove("fa-sun");
+const cleanTheme = () => {
+  //   Clean the icon classess
+  iconElement.classList.remove('fa-sun')
 
-    iconElement.classList.remove("fa-moon");
-  };
+  iconElement.classList.remove('fa-moon')
+}
 
-  const applyTheme = (isDark) => {
-    if (isDark) {
-      document.body.classList.add("darkMode");
+const applyTheme = isDark => {
+  if (isDark) {
+    document.body.classList.add('darkMode')
 
-      localStorage.setItem("dark-mode", "true");
+    localStorage.setItem('dark-mode', 'true')
 
-      toggleDarkmode.classList.add("active");
+    toggleDarkmode.classList.add('active')
 
-      iconElement.classList.add("fa-sun");
+    iconElement.classList.add('fa-sun')
 
-      logoModifiedDarkMode.setAttribute("src", "../resources/logo-abraham-calsin/logo-abraham-calsin-white.svg");
-    } else {
-      document.body.classList.remove("darkMode");
+    logoModifiedDarkMode.setAttribute(
+      'src',
+      '../resources/logo-abraham-calsin/logo-abraham-calsin-white.svg',
+    )
+  } else {
+    document.body.classList.remove('darkMode')
 
-      localStorage.setItem("dark-mode", "false");
+    localStorage.setItem('dark-mode', 'false')
 
-      toggleDarkmode.classList.remove("active");
+    toggleDarkmode.classList.remove('active')
 
-      iconElement.classList.add("fa-moon");
+    iconElement.classList.add('fa-moon')
 
-      logoModifiedDarkMode.setAttribute("src", "../resources/logo-abraham-calsin/logo-abraham-calsin-black.svg");
-    }
-  };
+    logoModifiedDarkMode.setAttribute(
+      'src',
+      '../resources/logo-abraham-calsin/logo-abraham-calsin-black.svg',
+    )
+  }
+}
 
-  toggleDarkmode.addEventListener("click", () => {
-    const isDark = document.body.classList.contains("darkMode");
+toggleDarkmode.addEventListener('click', () => {
+  const isDark = document.body.classList.contains('darkMode')
 
-    cleanTheme();
+  cleanTheme()
 
-    applyTheme(!isDark);
-  });
+  applyTheme(!isDark)
+})
 
-  // call initializy
+// call initializy
 
-  const isDark = localStorage.getItem("dark-mode") === "true";
+const isDark = localStorage.getItem('dark-mode') === 'true'
 
-  cleanTheme();
+cleanTheme()
 
-  applyTheme(isDark);
+applyTheme(isDark)

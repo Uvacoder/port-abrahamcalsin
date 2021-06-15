@@ -105,12 +105,12 @@
   font-weight: 600;
   font-size: 0.813rem;
   background: #183153;
-  border:  1px solid #183153;
+  border: 1px solid #183153;
   text-align: center;
   padding: 5px 9px;
   transition: all 0.3s ease;
 }
-.downloadLesson:hover{
+.downloadLesson:hover {
   background-color: #183153;
   color: #fff;
 }
