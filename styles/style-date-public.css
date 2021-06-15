@@ -18,6 +18,7 @@
   width: 17rem;
   height: 35px;
   border-radius: 0 0 3px 3px;
+  transition: all 0.2s;
 }
 .update-pag img {
   width: 1.2em;

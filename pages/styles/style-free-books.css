@@ -7,6 +7,10 @@ body {
   padding-top: 78px;
   font-family: 'Poppins', sans-serif;
   background: rgba(236, 239, 252, 0.4);
+  transition: all 0.2s;
+}
+body.darkMode {
+  background-color: #1b355a;
 }
 /* CONTENT-SECTION */
 .content-section-divide {
@@ -15,9 +19,10 @@ body {
   justify-content: center;
   padding: 0;
   margin-top: 100px;
+  color: #183153;
+  transition: all 0.2s;
 }
 .content-section-divide h4 {
-  color: #183153;
   font-weight: 400;
   letter-spacing: 3.1px;
   text-transform: uppercase;
@@ -45,7 +50,6 @@ body {
 }
 /* AUTHORS RIGHTS */
 .author-right-source-img {
-  color: rgba(24, 49, 83, 0.8);
   margin-bottom: 20px;
   width: 100%;
 }
@@ -57,6 +61,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: rgba(24, 49, 83, 0.8);
+  transition: all 0.2s;
 }
 .check-icon-imp {
   font-weight: 700;
@@ -96,6 +102,7 @@ body {
   color: #183153;
   margin-bottom: 15px;
   font-size: 1.2em;
+  transition: all 0.2s;
 }
 .book-identifier-by-section p:before {
   content: '';
@@ -106,6 +113,7 @@ body {
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 6px;
+  transition: all 0.3s ease;
 }
 .book-identifier-by-section p::selection {
   background-color: #183153;
@@ -131,6 +139,7 @@ body {
   transition: 0.3s all;
   padding: 5px;
   border-radius: 10px;
+  transition: all 0.2s;
 }
 .book:hover {
   box-shadow: rgba(229, 234, 255, 1) 0px 9px 25px;
@@ -164,7 +173,7 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 0px 0px 8px 8px;
-  transition: 0.3s all;
+  transition: all 0.3s;
 }
 .book-download a:hover {
   background: #f96802;

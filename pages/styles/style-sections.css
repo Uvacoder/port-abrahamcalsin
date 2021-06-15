@@ -17,7 +17,7 @@
   border-radius: 7px;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.3s all;
+  transition: all 0.2s;
 }
 .select-sections div:hover {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -36,6 +36,7 @@
   padding-top: 13px;
   background: rgba(24, 49, 83, 0.93);
   letter-spacing: 2px;
+  transition: all 0.3s ease;
 }
 .select-sections a::selection {
   background-color: #fff;
@@ -49,6 +50,7 @@
   align-items: center;
   background: #183153;
   cursor: default;
+  transition: all 0.3s ease;
 }
 @media (max-width: 800px) {
   .select-sections div i {

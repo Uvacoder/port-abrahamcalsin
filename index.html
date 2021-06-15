@@ -85,6 +85,7 @@
     />
     <!-- LINK - STYLE -->
     <link rel="stylesheet" href="styles/style-responsive.css" />
+    <link rel="stylesheet" href="styles/style-dark-mode.css">
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/style-global.css" />
     <link rel="stylesheet" href="styles/style-header-navbar.css" />
@@ -130,37 +131,45 @@
       <nav class="container-rsp menuHeadNavigation">
         <div class="logo-abrahamcalsin">
           <a href="https://www.abrahamcalsin.com"
-            ><img
-              src="resources/img-logotype/logotype-vector.svg"
+            ><img id="logoModeLightDark"
+              src="resources/logo-abraham-calsin/logo-abraham-calsin-black.svg"
               alt="Abraham Calsin"
           /></a>
         </div>
         <!--- Menu - Amburguer Bar and Link Navigation --->
-        <div id="menuNavigation">
-          <div class="contentAmburguerBar" id="contentAmburguerBar">
-            <div class="barOne"></div>
-            <div class="barTwo"></div>
-            <div class="barThree"></div>
+        <div class="flexBarDark">
+          <div id="menuNavigation" class="menuNavigation">
+            <div class="contentAmburguerBar" id="contentAmburguerBar">
+              <div class="barOne"></div>
+              <div class="barTwo"></div>
+              <div class="barThree"></div>
+            </div>
+            <!--- Links Navigation --->
+            <ul class="linkNavigation">
+              <li>
+                <a
+                  href="https://www.abrahamcalsin.com"
+                  class="hoverLink"
+                  id="colorSelectLink"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="pages/motivation.html" class="hoverLink">Motivación</a>
+              </li>
+              <li>
+                <a href="pages/about-me-contact.html" class="hoverLink"
+                  >Sobre mi</a
+                >
+              </li>
+            </ul>
           </div>
-          <!--- Links Navigation --->
-          <ul class="linkNavigation">
-            <li>
-              <a
-                href="https://www.abrahamcalsin.com"
-                class="hoverLink"
-                id="colorSelectLink"
-                >Inicio</a
-              >
-            </li>
-            <li>
-              <a href="pages/motivation.html" class="hoverLink">Motivación</a>
-            </li>
-            <li>
-              <a href="pages/about-me-contact.html" class="hoverLink"
-                >Sobre mi</a
-              >
-            </li>
-          </ul>
+          <!-- Btn DarkMode -->
+          <button class="toggleDarkmode" id="toggleDarkmode">
+            <span>
+              <i class="fas fa-moon" id="changeIcon"></i>
+            </span>
+          </button>
         </div>
       </nav>
     </header>
@@ -443,6 +452,7 @@
       <!---->
     </div>
     <!----------------------->
+     <script type="text/javascript" src="script/script-dark-mode.js"></script>
     <script
       type="text/javascript"
       src="script/script-menu-navigation.js"

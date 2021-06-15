@@ -2,6 +2,8 @@
 .backg-content-sectionLessons {
   padding: 0;
   margin: 0;
+  color: #183153;
+  transition: all 0.2s;
 }
 .content-section-divide {
   background: none;
@@ -10,7 +12,6 @@
   padding: 0;
 }
 .content-section-divide h4 {
-  color: #183153;
   font-weight: 400;
   margin: 0;
   margin-top: 100px;
@@ -20,6 +21,7 @@
   text-align: center;
   letter-spacing: 1.2px;
   font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
 }
 .content-section-divide h4::selection {
   background-color: #183153;
@@ -54,6 +56,7 @@
   font-size: 0.8rem;
   border-radius: 50px;
   box-shadow: rgb(236 239 252) 0px 12px 20px;
+  transition: all 0.2s;
 }
 .containerPagination ul li {
   display: flex;
@@ -100,4 +103,5 @@
 }
 .containerPagination ul .tabSelect a {
   color: #fff;
+  transition: all 0.3s ease;
 }

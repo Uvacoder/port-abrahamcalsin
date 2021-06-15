@@ -85,6 +85,7 @@
     />
     <!-- LINK STYLES -->
     <link rel="stylesheet" href="../styles/style-responsive.css" />
+    <link rel="stylesheet" href="../styles/style-dark-mode.css">
     <link rel="stylesheet" href="../styles/style-global.css" />
     <link rel="stylesheet" href="styles/style-about-me-contact.css" />
     <link rel="stylesheet" href="../styles/style-header-navbar.css" />
@@ -133,29 +134,37 @@
           /></a>
         </div>
         <!--- Menu - Amburguer Bar and Link Navigation --->
-        <div id="menuNavigation">
-          <div class="contentAmburguerBar" id="contentAmburguerBar">
-            <div class="barOne"></div>
-            <div class="barTwo"></div>
-            <div class="barThree"></div>
+        <div class="flexBarDark">
+          <div id="menuNavigation">
+            <div class="contentAmburguerBar" id="contentAmburguerBar">
+              <div class="barOne"></div>
+              <div class="barTwo"></div>
+              <div class="barThree"></div>
+            </div>
+            <!--- Links Navigation --->
+            <ul class="linkNavigation">
+              <li>
+                <a href="https://www.abrahamcalsin.com" class="hoverLink"
+                  >Inicio</a
+                >
+              </li>
+              <li><a href="motivation.html" class="hoverLink">Motivación</a></li>
+              <li>
+                <a
+                  href="about-me-contact.html"
+                  class="hoverLink"
+                  id="colorSelectLink"
+                  >Sobre mi</a
+                >
+              </li>
+            </ul>
           </div>
-          <!--- Links Navigation --->
-          <ul class="linkNavigation">
-            <li>
-              <a href="https://www.abrahamcalsin.com" class="hoverLink"
-                >Inicio</a
-              >
-            </li>
-            <li><a href="motivation.html" class="hoverLink">Motivación</a></li>
-            <li>
-              <a
-                href="about-me-contact.html"
-                class="hoverLink"
-                id="colorSelectLink"
-                >Sobre mi</a
-              >
-            </li>
-          </ul>
+          <!-- Btn DarkMode -->
+          <button class="toggleDarkmode" id="toggleDarkmode">
+            <span>
+              <i class="fas fa-moon" id="changeIcon"></i>
+            </span>
+          </button>
         </div>
       </nav>
     </header>
@@ -366,42 +375,10 @@
         <a href="javascript:void(0);" id="scroll-up" style="display: none"
           ><img src="../resources/icons/arrow-up-icon.svg" alt=""
         /></a>
-        <!-- SOCIAL MEDIA 
-        <div class="social-media">
-          <a
-            href="https://twitter.com/abraham_calsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-twitter.svg" alt=""
-          /></a>
-          <a
-            href="https://github.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-github.svg" alt=""
-          /></a>
-          <a
-            href="https://www.instagram.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-instagram.svg" alt=""
-          /></a>
-          <a
-            href="https://www.facebook.com/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-facebook.svg" alt=""
-          /></a>
-          <a
-            href="https://www.linkedin.com/in/abrahamcalsin"
-            target="_blank"
-            rel="noreferrer"
-            ><img src="resources/social-media/fa-linkedin.svg" alt=""
-          /></a>
-        </div>-->
       </div>
     </div>
     <!-- S C R I P T S -->
+    <script type="text/javascript" src="../script/script-dark-mode.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"

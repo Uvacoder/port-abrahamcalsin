@@ -90,6 +90,7 @@
     <!-- LINK STYLES -->
     <link rel="stylesheet" href="../../styles/style-responsive.css" />
     <link rel="stylesheet" href="../../styles/style-header-navbar.css" />
+    <link rel="stylesheet" href="../../styles/style-dark-mode.css">
     <link rel="stylesheet" href="../styles/style-free-books.css" />
     <link rel="stylesheet" href="../../styles/style-global.css" />
     <link rel="stylesheet" href="../../styles/style-date-public.css" />
@@ -126,31 +127,39 @@
           /></a>
         </div>
         <!--- Menu - Amburguer Bar and Link Navigation --->
-        <div id="menuNavigation">
-          <div class="contentAmburguerBar" id="contentAmburguerBar">
-            <div class="barOne"></div>
-            <div class="barTwo"></div>
-            <div class="barThree"></div>
+        <div class="flexBarDark">
+          <div id="menuNavigation">
+            <div class="contentAmburguerBar" id="contentAmburguerBar">
+              <div class="barOne"></div>
+              <div class="barTwo"></div>
+              <div class="barThree"></div>
+            </div>
+            <!--- Links Navigation --->
+            <ul class="linkNavigation">
+              <li>
+                <a href="https://www.abrahamcalsin.com" class="hoverLink"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../motivation.html"
+                  class="hoverLink"
+                  id="colorSelectLink"
+                  >Motivación</a
+                >
+              </li>
+              <li>
+                <a href="../about-me-contact.html" class="hoverLink">Sobre mi</a>
+              </li>
+            </ul>
           </div>
-          <!--- Links Navigation --->
-          <ul class="linkNavigation">
-            <li>
-              <a href="https://www.abrahamcalsin.com" class="hoverLink"
-                >Inicio</a
-              >
-            </li>
-            <li>
-              <a
-                href="../motivation.html"
-                class="hoverLink"
-                id="colorSelectLink"
-                >Motivación</a
-              >
-            </li>
-            <li>
-              <a href="../about-me-contact.html" class="hoverLink">Sobre mi</a>
-            </li>
-          </ul>
+          <!-- Btn DarkMode -->
+          <button class="toggleDarkmode" id="toggleDarkmode">
+            <span>
+              <i class="fas fa-moon" id="changeIcon"></i>
+            </span>
+          </button>
         </div>
       </nav>
     </header>
@@ -535,6 +544,7 @@
       <!---->
     </div>
     <!--- S C R I P T S --->
+    <script type="text/javascript" src="../../script/script-dark-mode.js"></script>
     <script
       type="text/javascript"
       src="../../script/script-menu-navigation.js"

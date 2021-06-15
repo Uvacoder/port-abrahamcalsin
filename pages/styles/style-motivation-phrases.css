@@ -3,9 +3,13 @@
 }
 body {
   margin: 0;
-  margin-top: 175px;
   font-family: 'Poppins', sans-serif;
   background: rgba(236, 239, 252, 0.4);
+  padding-top: 77px;
+  transition: all 0.2s;
+}
+body.darkMode {
+  background-color: #1b355a;
 }
 /* CONTENT-SECTION */
 .content-section-divide {
@@ -14,9 +18,10 @@ body {
   justify-content: center;
   padding: 0;
   margin-top: 100px;
+  color: #183153;
+  transition: all 0.2s;
 }
 .content-section-divide h4 {
-  color: #183153;
   font-weight: 400;
   text-transform: uppercase;
   border-radius: 5px 5px 0px 0px;
@@ -30,13 +35,12 @@ body {
   background-color: #183153;
   color: #fff;
 }
-@media (max-width: 650px) {
-  body {
-    margin-top: 120px;
-  }
+@media (max-width: 576px) {
   .content-section-divide {
     margin-top: 70px;
   }
+}
+@media (max-width: 650px) {
   .content-section-divide h4 {
     font-size: 1.4em;
   }
@@ -55,6 +59,7 @@ body {
   border-left: 5px solid rgba(24, 49, 83, 0.85);
   padding: 15px;
   font-size: 1em;
+  transition: all 0.2s;
 }
 @media (max-width: 400px) {
   .motivational-phrase {
@@ -86,7 +91,6 @@ body {
   color: #183153;
 }
 .author-mot-phrase {
-  color: rgba(24, 49, 83, 0.85);
   font-weight: bolder;
   font-style: italic;
   margin-top: 13px;
