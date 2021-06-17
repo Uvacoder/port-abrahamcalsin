@@ -34,6 +34,13 @@
     grid-gap: 50px 50px !important;
   }
 }
+@media (min-width: 1200px){
+  .content-lessons-grid {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+    grid-gap: 50px 50px !important;
+  }
+}
 /*----*/
 .content-lesson-img-dscrpt {
   background: #fff;
