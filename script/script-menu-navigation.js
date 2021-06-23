@@ -7,7 +7,43 @@ headerNavigation.addEventListener('click', e => {
   }
 })
 
-// Color Select Link
-const colorSelectLink = document.getElementById('colorSelectLink')
 
-colorSelectLink.style.color = '#f96802'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // Color Select Link
+// const colorSelectLink = document.getElementById('colorSelectLink')
+
+// colorSelectLink.style.color = '#f96802'
