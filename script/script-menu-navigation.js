@@ -7,42 +7,6 @@ headerNavigation.addEventListener('click', e => {
   }
 })
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // // Color Select Link
 // const colorSelectLink = document.getElementById('colorSelectLink')
 
