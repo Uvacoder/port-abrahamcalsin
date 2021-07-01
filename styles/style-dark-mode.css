@@ -95,11 +95,9 @@ body.darkMode .footer-design-site {
   justify-content: center;
   align-items: center;
   text-align: center;
-  line-height: 1px;
   margin-right: 13px;
   color: rgba(236, 239, 252, 0.9);
   background: #183153;
-  padding: 1px;
   border-radius: 900px;
   cursor: pointer;
   outline: none;
@@ -116,7 +114,6 @@ body.darkMode .footer-design-site {
 .toggleDarkmode span {
   background: none;
   font-size: 0.8rem;
-  padding-left: 1px;
 }
 
 @media (min-width: 576px) {
@@ -178,6 +175,9 @@ body.darkMode .motivational-phrase div a {
   color: #f1f1f1;
 }
 body.darkMode .motivational-phrase div a:hover {
+  color: #fff;
+}
+body.darkMode .continuePages{
   color: #fff;
 }
 /*-------------------------------------------------------*/
