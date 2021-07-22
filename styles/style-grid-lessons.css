@@ -29,14 +29,14 @@
 }
 @media (min-width: 992px) {
   .content-lessons-grid {
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
     grid-gap: 50px 50px !important;
   }
 }
 @media (min-width: 1200px) {
   .content-lessons-grid {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     grid-gap: 50px 50px !important;
   }
