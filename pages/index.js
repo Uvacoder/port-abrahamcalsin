@@ -1,82 +1,81 @@
-import Head from 'next/head'
+import clsx from "clsx";
+import Link from "next/link";
+import MainLayout from "../components/layout";
+import Head from "next/head";
 
-export default function Home() {
+const SocialMediaStyles = (props) => {
+  const { href, logoSrc, alt } = props;
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
+    <Link href={href}>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        className={clsx(
+          "bg-clrOption-2 w-32 rounded-rds-1.1 shadow-sm inline-block py-4 px-6 hover:opacity-80 sm:w-35"
+        )}
+      >
+        <img src={logoSrc} alt={alt} className="w-full block" />
+      </a>
+    </Link>
+  );
+};
+
+const Home = () => {
+  return (
+    <MainLayout>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Abraham Calsin</title>
       </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
+      <div className="max-w-70">
+        <div className="text-center sm:flex flex-row-reverse sm:text-left sm:pt-20">
+          <div className="w-36-dek max-w-full mx-auto pb-8 sm:w-285">
+            <img
+              src="/images/abraham-calsin-picture.png"
+              alt="Abraham Calsin"
+              className="w-full"
+            />
+          </div>
+          <div className="sm:w-710">
+            <h3 className="text-size-1 font-medium tracking-ltr-1 sm:text-size-7.1-desk">
+              BIENVENIDO A MI PORTAFOLIO
+            </h3>
+            <div className="bg-clrOption-1 w-35 h-1-2 mx-auto my-2 sm:m-0 sm:my-3 sm:h-2-6 sm:w-36.1-desk"></div>
+            <h1 className="font-extraBold text-size-6 sm:text-size-8.2-desk">
+              {"{"}Abraham Calsin{"}"}
+            </h1>
+            <p className="text-size-5 font-medium px-10 mt-2 sm:px-0 sm:text-size-8.1-desk">
+              Hey, hola! Soy un desarrollador frontend, apasionado por la
+              programación, creando proyectos de código abierto.
             </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+            <div className="flex justify-center sm:justify-start gap-5 mt-6 sm:mt-10">
+              <SocialMediaStyles
+                href="https://github.com/abrahamcalsin"
+                logoSrc="/icons/github_icon.svg"
+                alt="GitHub"
+              />
+              <SocialMediaStyles
+                href="https://www.linkedin.com/in/abrahamcalsin/"
+                logoSrc="/icons/linkedin_icon.svg"
+                alt="LinkedIn"
+              />
+            </div>
+          </div>
         </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
-}
+        <div className="my-20 px-4 sm:my-36.2-desk">
+          <div className="w-full max-w-500 mx-auto bg-clrOptin-3 shadow-sm px-9 py-7 rounded-rds-1 relative italic text-size-4 sm:text-size-7.2-desk sm:py-12 sm:px-12 sm:rounded-rds-2-desk">
+            <strong className="absolute -mt-21 -ml-14 text-size-6.1 font-notoSerif font-black not-italic sm:-mt-32 sm:-ml-20 sm:text-size-9-desk">
+              “
+            </strong>
+            <p className="font-regular mt-2">
+              Todo lo que hagas con esfuerzo y sacrificio, lo obtendras con
+              beneficios; ¡No te rindas!.
+            </p>
+            <p className="font-bold mt-2">— Abraham Calsin</p>
+          </div>
+        </div>
+      </div>
+    </MainLayout>
+  );
+};
+export default Home;
