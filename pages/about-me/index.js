@@ -39,10 +39,9 @@ const AboutMe = () => {
           creo proyectos de código abierto, escribo en JavaScript moderno,
           Typescript, React.js y Next.js. Me fascina el asunto del trabajo en
           equipo, a lo largo de mi aventura en el mundo del desarrollo web, me
-          involucre en el desarrollo de varios proyectos en base a mis
-          conocimientos, proponiéndome retos, los cuales me enseñaron a corregir
-          mis propios errores al desarrollar un Sitio Web. Puedes ver mi trabajo
-          en la sección de
+          involucre en el desarrollo de varios proyectos, proponiéndome retos,
+          los cuales me enseñaron a corregir mis propios errores al desarrollar
+          un Sitio Web. Puedes ver mi trabajo en la sección de
           <Link href="/projects">
             <a className="font-bold underline ml-2">Proyectos.</a>
           </Link>
