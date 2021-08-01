@@ -58,7 +58,7 @@ const AboutMe = () => {
             alt="Email"
             contentSpan="Email:"
             contentLinkIcons="@abrahamcalsin"
-            href="mailto:contact.abrahamcalsin@gmail.com"
+            href="mailto:hello.abrahamcalsin@gmail.com"
           />
           <ContactSocialMedia
             iconSocialSrc="/icons/linkedin.svg"
