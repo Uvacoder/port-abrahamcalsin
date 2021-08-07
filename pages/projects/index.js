@@ -77,7 +77,7 @@ const Projects = () => {
             contentText_descript="Shadow es una biblioteca de código abierto, que permite a un
             diseñador elegir sombras modernas."
             hrefViewDemo="https://shadow.abrahamcalsin.com/"
-            contentText_viewDemo="VER"
+            contentText_viewDemo="VER PROYECTO"
             iconExternalSrc="/icons/external_link.svg"
             hrefViewCode="https://github.com/abrahamcalsin/shadow"
             contentText_viewCode="VER CÓDIGO EN GITHUB"
