@@ -40,16 +40,18 @@ const CardProyects = (props) => {
             {contentText_viewDemo}
             <img src={iconExternalSrc} className={clsx("w-4 ml-3")} />
           </a>
-          <a
-            href={hrefViewCode}
-            target="_blank"
-            rel="noreferrer"
-            className={clsx(
-              "bg-clrOption-2 py-4 px-7 rounded-rds-1 text-size-2 font-extraBold hover:opacity-80 w-full sm:text-size-4"
-            )}
-          >
-            {contentText_viewCode}
-          </a>
+          {contentText_viewCode ? (
+            <a
+              href={hrefViewCode}
+              target="_blank"
+              rel="noreferrer"
+              className={clsx(
+                "bg-clrOption-2 py-4 px-7 rounded-rds-1 text-size-2 font-extraBold hover:opacity-80 w-full sm:text-size-4"
+              )}
+            >
+              {contentText_viewCode}
+            </a>
+          ) : null}
         </div>
       </div>
     </div>
@@ -71,6 +73,14 @@ const Projects = () => {
           En esta sección podrás ver algunos de mis proyectos mas destacados.
         </p>
         <div className="my-15 grid grid-cols-autoGrid gap-15  items-start sm:my-25 sm:gap-13">
+          <CardProyects
+            imageProyectSrc="/projects-img/motivation_design_template.svg"
+            alt="Shadow"
+            contentText_descript="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
+            hrefViewDemo="https://motivation-image.abrahamcalsin.com/"
+            contentText_viewDemo="VER PROYECTO"
+            iconExternalSrc="/icons/external_link.svg"
+          />
           <CardProyects
             imageProyectSrc="/projects-img/shadow_design_template.svg"
             alt="Shadow"
