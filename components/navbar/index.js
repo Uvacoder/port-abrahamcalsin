@@ -14,8 +14,9 @@ const NavTabLink = (props) => {
     <Link href={href}>
       <a
         className={clsx(
-          "relative transition duration-300 before:content-[' '] before:absolute before:bottom-0 before:left-0 before:h-2-6 before:w-o before:bg-clrOption-1 pb-2-8 before:transition before:duration-300 before:ease-in-out before:w-full",
-          !activeLinkSelect && "hover:before:w-full before:w-0"
+          "relative after:content-[' '] after:block after:h-2-8 after:bg-clrOption-1 pb-2-8 after:w-full",
+          !activeLinkSelect &&
+            "after:w-0 after:right-0 after:transition-all after:duration-300 hover:after:w-full hover:after:right-auto hover:after:left-0"
         )}
       >
         {contentNavLink}

@@ -120,6 +120,7 @@ module.exports = {
 
     extend: {
       spacing: {
+        auto: "auto",
         "0-1": "-3px",
         0: "0px",
         1: "1px",
@@ -169,6 +170,10 @@ module.exports = {
         37: "139px",
         285: "285px",
         710: "710px",
+      },
+      inset: {
+        0: "0",
+        auto: "auto",
       },
       gridTemplateColumns: {
         autoGrid: "repeat(auto-fill, minmax(14rem, 1fr))",
