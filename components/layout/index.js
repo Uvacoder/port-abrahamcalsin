@@ -15,7 +15,8 @@ const MainLayout = (props) => (
       <meta
         data-react-helmet="true"
         name="description"
-        content="Frontend developer, creator of open source projects, writing in modern JavaScripr, Typescript, React.js and Next.js."
+        content="Maquetador Web, creador de proyectos de código abierto, escribiendo en HTML, JavaScript, CSS, Sass,
+          Tailwind, Bootstrap."
       />
       <meta
         data-react-helmet="true"
@@ -36,7 +37,8 @@ const MainLayout = (props) => (
       <meta
         data-react-helmet="true"
         property="og:description"
-        content="Frontend developer, creator of open source projects, writing in modern JavaScripr, Typescript, React.js and Next.js."
+        content="Maquetador Web, creador de proyectos de código abierto, escribiendo en HTML, JavaScript, CSS, Sass,
+          Tailwind, Bootstrap."
       />
       <meta
         data-react-helmet="true"
@@ -56,12 +58,13 @@ const MainLayout = (props) => (
       <meta
         data-react-helmet="true"
         name="twitter:title"
-        content="Abraham Calsin - Frontend Developer"
+        content="Abraham Calsin - Maquetador Web"
       />
       <meta
         data-react-helmet="true"
         name="twitter:description"
-        content="Frontend developer, creator of open source projects, writing in modern JavaScripr, Typescript, React.js and Next.js."
+        content="Maquetador Web, creador de proyectos de código abierto, escribiendo en HTML, JavaScript, CSS, Sass,
+          Tailwind, Bootstrap."
       />
       <meta
         data-react-helmet="true"
