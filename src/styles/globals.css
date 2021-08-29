@@ -13,7 +13,6 @@
   border-radius: 10px;
   background-color: #aaa;
 }
-
 .hoverChild span {
   transition: all 0.3s ease-in-out;
 }
