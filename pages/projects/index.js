@@ -1,13 +1,13 @@
 import clsx from "clsx";
 import MainLayout from "../../components/layout";
 import Head from "next/head";
+import Image from "next/image";
 
 const CardProyects = (props) => {
   const {
     hrefViewDemo,
     hrefViewCode,
     imageProyectSrc,
-    iconExternalSrc,
     alt,
     contentText_descript,
     contentText_viewDemo,
@@ -15,38 +15,45 @@ const CardProyects = (props) => {
   } = props;
 
   return (
-    <div className={clsx("bg-clrOptin-3 p-4 shadow-sm rounded-rds-3-desk")}>
-      <img
+    <div
+      className={clsx(
+        "bg-clrOptin-3 p-4 shadow-sm rounded-rds-3-desk transition duration-300 ease-in-out hover:transform hover:-translate-y-2"
+      )}
+    >
+      <Image
         src={imageProyectSrc}
         alt={alt}
         className={clsx("rounded-rds-4-desk")}
+        width={1278}
+        height={946}
       />
-      <div className={clsx("pt-6 px-3")}>
-        <p className={clsx("text-justify text-size-4 sm:text-size-5")}>
-          {contentText_descript}
-        </p>
+      <div className={clsx("pt-2 px-3")}>
+        <p className={clsx("text-justify text-size-4 sm:text-size-5")}>{contentText_descript}</p>
         <div
           className={clsx(
             "flex flex-col gap-3 justify-around items-center text-center my-4 sm:gap-4"
           )}
         >
-          <a
-            href={hrefViewDemo}
-            target="_blank"
-            className={clsx(
-              "flex items-center justify-center bg-clrOption-2 py-4 px-2 rounded-rds-1 text-size-2 font-extraBold hover:opacity-80 w-full sm:text-size-4"
-            )}
-          >
-            {contentText_viewDemo}
-            <img src={iconExternalSrc} className={clsx("w-4 ml-3")} />
-          </a>
+          {contentText_viewDemo ? (
+            <a
+              href={hrefViewDemo}
+              target="_blank"
+              className={clsx(
+                "flex items-center justify-center gap-3 w-full bg-clrOption-2 py-4 px-2 rounded-rds-1 text-size-2 font-extraBold transition duration-300 hover:opacity-80 sm:text-size-4"
+              )}
+            >
+              {contentText_viewDemo}
+              <Image width={12} height={12} src="/icons/external_link.svg" />
+            </a>
+          ) : null}
+
           {contentText_viewCode ? (
             <a
               href={hrefViewCode}
               target="_blank"
               rel="noreferrer"
               className={clsx(
-                "bg-clrOption-2 py-4 px-7 rounded-rds-1 text-size-2 font-extraBold hover:opacity-80 w-full sm:text-size-4"
+                "w-full bg-clrOption-2 py-4 px-7 rounded-rds-1 text-size-2 font-extraBold transition duration-300 hover:opacity-80 sm:text-size-4"
               )}
             >
               {contentText_viewCode}
@@ -74,24 +81,70 @@ const Projects = () => {
         </p>
         <div className="my-15 grid grid-cols-autoGrid gap-15  items-start sm:my-25 sm:gap-13">
           <CardProyects
-            imageProyectSrc="/projects-img/motivation_design_template.svg"
-            alt="Shadow"
+            imageProyectSrc="/projects-cover/motivation-cover.svg"
+            alt="Motivation"
             contentText_descript="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
-            hrefViewDemo="https://motivation-image.abrahamcalsin.com/"
+            hrefViewDemo="https://motivation-image.abrahamcalsin.com"
             contentText_viewDemo="VER PROYECTO"
-            iconExternalSrc="/icons/external_link.svg"
           />
           <CardProyects
-            imageProyectSrc="/projects-img/shadow_design_template.svg"
+            imageProyectSrc="/projects-cover/shadow-cover.svg"
             alt="Shadow"
             contentText_descript="Shadow es una biblioteca de código abierto, que permite a un
             diseñador elegir sombras modernas."
-            hrefViewDemo="https://shadow.abrahamcalsin.com/"
+            hrefViewDemo="https://shadow.abrahamcalsin.com"
             contentText_viewDemo="VER PROYECTO"
-            iconExternalSrc="/icons/external_link.svg"
             hrefViewCode="https://github.com/abrahamcalsin/shadow"
             contentText_viewCode="VER CÓDIGO EN GITHUB"
           />
+          <CardProyects
+            imageProyectSrc="/projects-cover/cyber-security-tech-cover.svg"
+            alt="Cyber Security Tech - Abraham Calsin"
+            contentText_descript="Cyber Security Tech, es un template y/o maqueta, open source, construido con HTML5, JavaScript y CSS."
+            hrefViewDemo="https://cyber-security-tech.abrahamcalsin.com"
+            contentText_viewDemo="VER PROYECTO"
+            hrefViewCode="https://github.com/abrahamcalsin/cyber-security-tech"
+            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          />
+          <CardProyects
+            imageProyectSrc="/projects-cover/paginas-web-ganadoras-cover.svg"
+            alt="Páginas Web Ganadoras"
+            contentText_descript="Páginas Web Ganadoras, es un template y/o página-web open source, inspirado en (paginasganadoras.com)."
+            hrefViewDemo="https://paginas-web-ganadoras.abrahamcalsin.com"
+            contentText_viewDemo="VER PROYECTO"
+            hrefViewCode="https://github.com/abrahamcalsin/paginas-web-ganadoras"
+            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          />
+          <CardProyects
+            imageProyectSrc="/projects-cover/free-only-webinar-cover.svg"
+            alt="Free Only Webinar"
+            contentText_descript="Free Only Webinar, es un template y/o maqueta, open source, construido con HTML5 y CSS."
+            hrefViewDemo="https://free-only-webinar.abrahamcalsin.com"
+            contentText_viewDemo="VER PROYECTO"
+            hrefViewCode="https://github.com/abrahamcalsin/free-only-webinar"
+            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          />
+          <CardProyects
+            imageProyectSrc="/projects-cover/super-discount-cover.svg"
+            alt="Super Discount"
+            contentText_descript="Super Discount, es un template y/o maqueta, open source, construido con HTML5 y CSS."
+            hrefViewDemo="https://super-discount.abrahamcalsin.com"
+            contentText_viewDemo="VER PROYECTO"
+            hrefViewCode="https://github.com/abrahamcalsin/super-discount"
+            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          />
+        </div>
+        <div className="w-full flex justify-center mb-12 md:mb-12">
+          <a
+            href="https://github.com/abrahamcalsin"
+            className="text-size-2 group px-7 py-4 bg-clrOption-2 shadow-sm rounded-rds-1.1 font-extraBold hoverChild transition duration-300 hover:opacity-80 md:text-size-4 md:px-7 md:py-5"
+            target="_blank"
+          >
+            VER MÁS EN MI GITHUB{" "}
+            <span className="text-size-5 ml-2-6 md:group-hover:ml-3 md:text-size-8.1-desk">
+              &#8594;
+            </span>
+          </a>
         </div>
       </div>
     </MainLayout>

@@ -26,7 +26,7 @@ const NavTabLink = (props) => {
 };
 
 const NavTabIcon = (props) => {
-  const { href, iconSrc, contentLinkSection } = props;
+  const { href, iconSrc, targetBlank, alt, contentLinkSection } = props;
 
   const router = useRouter();
 
@@ -40,8 +40,9 @@ const NavTabIcon = (props) => {
           !isActiveSelect &&
             "border-brdSecondary opacity-50 hover:border-brdPrimary border-brdsecondary hover:opacity-100"
         )}
+        target={targetBlank}
       >
-        <img src={iconSrc} alt="Inicio" className="-mt-2-6 block" />
+        <img src={iconSrc} alt={alt} className="-mt-2-6 block" />
         <p className="text-size-1 pt-1 font-semiBold">{contentLinkSection}</p>
       </a>
     </Link>
@@ -50,9 +51,9 @@ const NavTabIcon = (props) => {
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="sm:mt-4">
       {/* Navbar Logo Fixed */}
-      <div className="fixed sm:static bg-clrOptin-3 sm:bg-transparent shadow-sm sm:shadow-none  h-20 sm:h-30 w-full flex justify-center items-center">
+      <div className="fixed sm:static bg-clrOptin-3 sm:bg-transparent shadow-sm sm:shadow-none  h-20 sm:h-30 w-full flex justify-center items-center z-10">
         <div className="w-full max-w-70 flex justify-center items-center sm:justify-between px-15">
           <Link href="/">
             <a className="sm:w-30 w-28">
@@ -68,26 +69,38 @@ const Navbar = () => {
             <NavTabLink href="/" contentNavLink="Inicio" />
             <NavTabLink href="/about-me" contentNavLink="Sobre Mi" />
             <NavTabLink href="/projects" contentNavLink="Proyectos" />
+            <a
+              href="https://resume.abrahamcalsin.com"
+              className="bg-clrOption-2 px-6 py-3 rounded-rds-1.1 shadow-sm transition duration-300 hover:opacity-80"
+              target="__blank"
+            >
+              Resume
+            </a>
           </div>
           {/* ----- */}
         </div>
       </div>
       {/* Navbar Icons/Links Fixed Mobile*/}
       <div className="flex fixed bg-clrOptin-3 shadow-sml w-full h-20 justify-evenly items-center bottom-0 sm:hidden z-20">
-        <NavTabIcon
-          href="/"
-          iconSrc="/icons/home-icon.svg"
-          contentLinkSection="Inicio"
-        />
+        <NavTabIcon href="/" iconSrc="/icons/home-icon.svg" contentLinkSection="Inicio" />
         <NavTabIcon
           href="/about-me"
           iconSrc="/icons/aboutme-icon.svg"
+          alt="Sobre mi"
           contentLinkSection="Sobre mi"
         />
         <NavTabIcon
           href="/projects"
           iconSrc="/icons/projects-icon.svg"
+          alt="Proyectos"
           contentLinkSection="Proyectos"
+        />
+        <NavTabIcon
+          href="https://resume.abrahamcalsin.com"
+          iconSrc="/icons/document-icon.svg"
+          targetBlank="__blank"
+          alt="Resume"
+          contentLinkSection="Resume"
         />
       </div>
       {/* ----- */}

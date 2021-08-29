@@ -23,17 +23,9 @@ const MainLayout = (props) => (
         name="image"
         content="https://avatars.githubusercontent.com/u/77748010?v=4"
       />
-      <meta
-        data-react-helmet="true"
-        property="og:url"
-        content="https://www.abrahamcalsin.com"
-      />
+      <meta data-react-helmet="true" property="og:url" content="https://www.abrahamcalsin.com" />
       <meta data-react-helmet="true" property="og:type" content="website" />
-      <meta
-        data-react-helmet="true"
-        property="og:title"
-        content="Abraham Calsin"
-      />
+      <meta data-react-helmet="true" property="og:title" content="Abraham Calsin" />
       <meta
         data-react-helmet="true"
         property="og:description"
@@ -45,16 +37,8 @@ const MainLayout = (props) => (
         property="og:image"
         content="https://avatars.githubusercontent.com/u/77748010?v=4"
       />
-      <meta
-        data-react-helmet="true"
-        name="twitter:card"
-        content="summary_large_image"
-      />
-      <meta
-        data-react-helmet="true"
-        name="twitter:creator"
-        content="@abraham_calsin"
-      />
+      <meta data-react-helmet="true" name="twitter:card" content="summary_large_image" />
+      <meta data-react-helmet="true" name="twitter:creator" content="@abraham_calsin" />
       <meta
         data-react-helmet="true"
         name="twitter:title"
@@ -73,9 +57,7 @@ const MainLayout = (props) => (
       />
     </Head>
     <Navbar />
-    <main className="mx-auto max-w-70 sm:py-10 px-7 sm:px-15 pt-35">
-      {props.children}
-    </main>
+    <main className="mx-auto max-w-70 sm:py-10 px-7 sm:px-15 pt-35">{props.children}</main>
     <Footer />
   </div>
 );

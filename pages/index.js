@@ -2,6 +2,7 @@ import clsx from "clsx";
 import Link from "next/link";
 import MainLayout from "../components/layout";
 import Head from "next/head";
+import Image from "next/image";
 
 const SocialMediaStyles = (props) => {
   const { href, logoSrc, alt } = props;
@@ -12,7 +13,7 @@ const SocialMediaStyles = (props) => {
         target="_blank"
         rel="noreferrer"
         className={clsx(
-          "bg-clrOption-2 w-32 rounded-rds-1.1 shadow-sm inline-block py-4 px-6 hover:opacity-80 sm:w-35"
+          "bg-clrOption-2 w-32 rounded-rds-1.1 shadow-sm inline-block py-4 px-6 transition duration-300 hover:opacity-80 sm:w-35"
         )}
       >
         <img src={logoSrc} alt={alt} className="w-full block" />
@@ -30,10 +31,12 @@ const Home = () => {
       <div className="max-w-70">
         <div className="text-center sm:flex flex-row-reverse sm:text-left sm:pt-20">
           <div className="w-36-dek max-w-full mx-auto pb-8 sm:w-285">
-            <img
+            <Image
               src="/images/abraham-calsin-picture.png"
               alt="Abraham Calsin"
               className="w-full"
+              width={512}
+              height={512}
             />
           </div>
           <div className="sm:w-710">
@@ -45,8 +48,8 @@ const Home = () => {
               {"{"}Abraham Calsin{"}"}
             </h1>
             <p className="text-size-5 font-medium px-10 mt-2 sm:px-0 sm:text-size-8.1-desk">
-              Hey, hola! Soy un Maquetador Web, apasionado por el diseño y la
-              programación web, creo proyectos de código abierto.
+              Hey, hola! Soy un Maquetador Web, apasionado por el diseño y la programación web, creo
+              proyectos de código abierto.
             </p>
             <div className="flex justify-center sm:justify-start gap-5 mt-6 sm:mt-10">
               <SocialMediaStyles
@@ -68,8 +71,8 @@ const Home = () => {
               “
             </strong>
             <p className="font-regular mt-2">
-              Todo lo que hagas con esfuerzo y sacrificio, lo obtendras con
-              beneficios; ¡No te rindas!.
+              Todo lo que hagas con esfuerzo y sacrificio, lo obtendras con beneficios; ¡No te
+              rindas!.
             </p>
             <p className="font-bold mt-2">— Abraham Calsin</p>
           </div>

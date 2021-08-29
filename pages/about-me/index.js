@@ -10,12 +10,7 @@ const ContactSocialMedia = (props) => {
     <li className={clsx("flex items-center my-2 sm:text-size-6.2 text-size-4")}>
       <img src={iconSocialSrc} className={clsx("w-6 sm:w-7")} alt={alt} />
       <span className={clsx("mx-2 font-extraBold sm:mx-3")}>{contentSpan}</span>
-      <a
-        href={href}
-        target="_blank"
-        rel="noreferrer"
-        className={clsx("underline")}
-      >
+      <a href={href} target="_blank" rel="noreferrer" className={clsx("underline")}>
         {contentLinkIcons}
       </a>
     </li>
@@ -34,16 +29,14 @@ const AboutMe = () => {
           {"{"}Sobre Mi{"}"}
         </h1>
         <p className="text-size-4 leading-loose font-medium mt-2 px-0 sm:text-size-8.1-desk">
-          Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona el
-          diseño y la maquetación web, actualmente me desempeño como Maquetador
-          Web, creo proyectos de código abierto, escribo en HTML, JavaScript,
-          CSS, Sass, Tailwind, Bootstrap y en constante aprendizaje con
-          frameworks y librerias como React.js, Next.js. Me fascina el asunto
-          del trabajo en equipo, a lo largo de mi aventura en el mundo de la
-          maquetación web, me involucre en el desarrollo de varios proyectos,
-          proponiéndome retos, los cuales me enseñaron a corregir mis propios
-          errores al Maquetar un Sitio Web. Puedes ver mi trabajo en la sección
-          de
+          Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona el diseño y la
+          maquetación web, actualmente me desempeño como Maquetador Web, creo proyectos de código
+          abierto, escribo en HTML, JavaScript, CSS, Sass, Tailwind, Bootstrap y en constante
+          aprendizaje con frameworks y librerias como React.js, Next.js, TypeScript. Me fascina el
+          asunto del trabajo en equipo, a lo largo de mi aventura en el mundo de la maquetación web,
+          me involucre en el desarrollo de varios proyectos, proponiéndome retos, los cuales me
+          enseñaron a corregir mis propios errores al Maquetar un Sitio Web. Puedes ver mi trabajo
+          en la sección de
           <Link href="/projects">
             <a className="font-bold underline ml-2">Proyectos.</a>
           </Link>
