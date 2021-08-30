@@ -29,8 +29,7 @@ const AboutMe = () => {
           {"{"}Sobre Mi{"}"}
         </h1>
         <p className="text-size-4 leading-loose font-medium mt-2 px-0 sm:text-size-8.1-desk">
-          Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona el diseño y la
-          maquetación web, actualmente me desempeño como Maquetador Web, creo proyectos de código
+          Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona el diseño y la programación web, actualmente me desempeño como Maquetador Web, creo proyectos de código
           abierto, escribo en HTML, JavaScript, CSS, Sass, Tailwind, Bootstrap y en constante
           aprendizaje con frameworks y librerias como React.js, Next.js, TypeScript. Me fascina el
           asunto del trabajo en equipo, a lo largo de mi aventura en el mundo de la maquetación web,
