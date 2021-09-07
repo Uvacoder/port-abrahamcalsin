@@ -88,7 +88,8 @@ module.exports = {
       primary: "#fff",
       secondary: "#ECEFFC",
       "clrOption-1": "#183153",
-      "clrOption-2": "rgba(252, 163, 17, 0.34)",
+      // "clrOption-2": "rgba(252, 163, 17, 0.34)",
+      "clrOption-2": "#f9dcad",
       "clrOptin-3": "#f7f9fe",
       transparent: "transparent",
     },
@@ -131,6 +132,11 @@ module.exports = {
       100: "1",
     },
 
+    scale: {
+      1: "1",
+      "-1": "-1",
+    },
+
     extend: {
       spacing: {
         auto: "auto",
@@ -138,6 +144,7 @@ module.exports = {
         0: "0px",
         1: "1px",
         "1-2": "2px",
+        "1-3": "5px",
         2: "6px",
         "2-6": "3px",
         "2-8": "4px",

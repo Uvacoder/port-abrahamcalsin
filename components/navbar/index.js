@@ -52,9 +52,9 @@ const NavTabIcon = (props) => {
 const Navbar = () => {
   return (
     <header className="sm:mt-4">
-      {/* Navbar Logo Fixed */}
+      {/* Navbar Logo Fixed Mobile */}
       <div className="fixed sm:static bg-clrOptin-3 sm:bg-transparent shadow-sm sm:shadow-none  h-20 sm:h-30 w-full flex justify-center items-center z-10">
-        <div className="w-full max-w-70 flex justify-center items-center sm:justify-between px-15">
+        <div className="w-full max-w-70 flex justify-between items-center sm:justify-between px-7 sm:px-15">
           <Link href="/">
             <a className="sm:w-30 w-28">
               <img
@@ -64,7 +64,14 @@ const Navbar = () => {
               />
             </a>
           </Link>
-          {/* Navbar Links/Icons Fixed Desktop*/}
+          <a
+            href="https://resume.abrahamcalsin.com"
+            target="__blank"
+            className="bg-clrOption-2 px-4 py-1-3 shadow-sm rounded-rds-1.1 font-extraBold sm:hidden"
+          >
+            Resume
+          </a>
+          {/* Navbar Links Desktop*/}
           <div className="hidden sm:flex sm:items-center sm:gap-x-8 font-bold text-size-8-desk">
             <NavTabLink href="/" contentNavLink="Inicio" />
             <NavTabLink href="/about-me" contentNavLink="Sobre Mi" />
@@ -94,13 +101,6 @@ const Navbar = () => {
           iconSrc="/icons/projects-icon.svg"
           alt="Proyectos"
           contentLinkSection="Proyectos"
-        />
-        <NavTabIcon
-          href="https://resume.abrahamcalsin.com"
-          iconSrc="/icons/document-icon.svg"
-          targetBlank="__blank"
-          alt="Resume"
-          contentLinkSection="Resume"
         />
       </div>
       {/* ----- */}
