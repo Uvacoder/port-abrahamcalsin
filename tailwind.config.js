@@ -192,7 +192,8 @@ module.exports = {
         710: "710px",
       },
       gridTemplateColumns: {
-        autoGrid: "repeat(auto-fill, minmax(14rem, 1fr))",
+        pjectsCards: "repeat(auto-fill, minmax(14rem, 1fr))",
+        videoYoutube: "repeat(auto-fill, minmax(20rem, 1fr))",
       },
       lineHeight: {
         loose: "1.7",

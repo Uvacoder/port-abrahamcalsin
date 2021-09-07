@@ -93,7 +93,7 @@ const Projects = () => {
         <p className="text-size-4 leading-loose font-medium mt-2 px-0 sm:text-size-8.1-desk">
           En esta sección podrás ver algunos de mis proyectos mas destacados.
         </p>
-        <div className="my-15 grid grid-cols-autoGrid gap-15  items-start sm:my-25 sm:gap-13">
+        <div className="my-15 grid grid-cols-pjectsCards gap-15  items-start sm:my-25 sm:gap-13">
           <CardProyects
             imageProyectSrc="/projects-cover/munay-mikhuy-anka.svg"
             alt="Motivation"
