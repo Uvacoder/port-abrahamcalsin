@@ -94,14 +94,14 @@ const Projects = () => {
           En esta sección podrás ver algunos de mis proyectos mas destacados.
         </p>
         <div className="my-15 grid grid-cols-pjectsCards gap-15  items-start sm:my-25 sm:gap-13">
-          <CardProyects
+          {/* <CardProyects
             imageProyectSrc="/projects-cover/munay-mikhuy-anka.svg"
             alt="Motivation"
             tagLanguajes="Next.js, Scss"
             contentText_descript="Munay Mikhuy Anka, es un restaurante de alta calidad, ofrecen deliciosos platos típicos de la ciudad de Puno - Perú."
             hrefViewDemo="https://munay-mikhuy-anka.abrahamcalsin.com"
             contentText_viewDemo="VER PROYECTO"
-          />
+          /> */}
           <CardProyects
             imageProyectSrc="/projects-cover/motivation-cover.svg"
             alt="Motivation"
