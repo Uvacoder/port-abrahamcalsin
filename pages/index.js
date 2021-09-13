@@ -48,8 +48,8 @@ const Home = () => {
               {"{"}Abraham Calsin{"}"}
             </h1>
             <p className="text-size-5 font-medium px-10 mt-2 sm:px-0 sm:text-size-8.1-desk">
-              Hey, hola! Soy un Maquetador Web, apasionado por el diseño y la programación web, creo
-              proyectos de código abierto.
+              Hey, hola! Soy un desarrollador frontend, apasionado por la programación,
+              creo proyectos de código abierto.
             </p>
             <div className="flex justify-center sm:justify-start gap-5 mt-6 sm:mt-10">
               <SocialMediaStyles
@@ -71,8 +71,8 @@ const Home = () => {
               “
             </strong>
             <p className="font-regular mt-2">
-              Todo lo que hagas con esfuerzo y sacrificio, lo obtendras con beneficios; ¡No te
-              rindas!.
+              Todo lo que hagas con esfuerzo y sacrificio, lo obtendras con beneficios;
+              ¡No te rindas!.
             </p>
             <p className="font-bold mt-2">— Abraham Calsin</p>
           </div>
