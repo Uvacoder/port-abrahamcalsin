@@ -29,7 +29,7 @@ const AboutMe = () => {
         <h1 className="font-extraBold text-xsm-1.3 sm:text-sm-1.4">
           {"{"}Sobre Mi{"}"}
         </h1>
-        <p className="text-sm leading-1.7 font-medium mt-2 px-0 sm:text-xl">
+        <p className="text-sm leading-1.7 font-medium mt-2 px-0 sm:text-xl sm:leading-9">
           Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona la
           programación, actualmente me desempeño como desarrollador frontend, creo
           proyectos de código abierto, escribo en JavaScript moderno, React.js, Next.js y
