@@ -12,9 +12,7 @@ const SocialMediaStyles = (props) => {
       <a
         target="_blank"
         rel="noreferrer"
-        className={clsx(
-          "bg-clrOption-2 w-32 rounded-rds-1.1 shadow-sm inline-block py-4 px-6 transition duration-300 hover:opacity-80 sm:w-35"
-        )}
+        className="bg-secondary w-32 rounded-rds-1.1 shadow-sm inline-block py-4 px-6 transition duration-300 hover:opacity-80 sm:w-35"
       >
         <img src={logoSrc} alt={alt} className="w-full block" />
       </a>
@@ -40,14 +38,14 @@ const Home = () => {
             />
           </div>
           <div className="sm:w-710">
-            <h3 className="text-size-1 font-medium tracking-ltr-1 sm:text-size-7.1-desk">
+            <h3 className="text-xs-1.2 font-medium tracking-ltr-1 sm:text-xsm-1.1">
               BIENVENIDO A MI PORTAFOLIO
             </h3>
-            <div className="bg-clrOption-1 w-35 h-1-2 mx-auto my-2 sm:m-0 sm:my-3 sm:h-2-6 sm:w-36.1-desk"></div>
-            <h1 className="font-extraBold text-size-6 sm:text-size-8.2-desk">
+            <div className="bg-primary w-35 h-1-2 mx-auto my-2 sm:m-0 sm:my-3 sm:h-2-6 sm:w-36.1-desk"></div>
+            <h1 className="font-extraBold text-xsm-1.3 sm:text-sm-1.4">
               {"{"}Abraham Calsin{"}"}
             </h1>
-            <p className="text-size-5 font-medium px-10 mt-2 sm:px-0 sm:text-size-8.1-desk">
+            <p className="text-base font-medium px-10 mt-2 sm:px-0 sm:text-xl">
               Hey, hola! Soy un desarrollador frontend, apasionado por la programación,
               creo proyectos de código abierto.
             </p>
@@ -66,8 +64,8 @@ const Home = () => {
           </div>
         </div>
         <div className="my-20 px-4 sm:my-36.2-desk">
-          <div className="w-full max-w-500 mx-auto bg-clrOptin-3 shadow-sm px-9 py-7 rounded-rds-1 relative italic text-size-4 sm:text-size-7.2-desk sm:py-12 sm:px-12 sm:rounded-rds-2-desk">
-            <strong className="absolute -mt-21 -ml-14 text-size-6.1 font-notoSerif font-black not-italic sm:-mt-32 sm:-ml-20 sm:text-size-9-desk">
+          <div className="w-full max-w-500 mx-auto bg-white shadow-sm px-9 py-7 rounded-rds-1 relative italic text-sm sm:text-lg sm:py-12 sm:px-12 sm:rounded-rds-2-desk">
+            <strong className="absolute -mt-3 -ml-14 text-xs-1.7 font-notoSerif font-black not-italic sm:-mt-7 sm:-ml-20 sm:text-sm-1.5">
               “
             </strong>
             <p className="font-regular mt-2">

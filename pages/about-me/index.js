@@ -8,7 +8,7 @@ const ContactSocialMedia = (props) => {
   const { href, iconSocialSrc, alt, contentSpan, contentLinkIcons } = props;
 
   return (
-    <li className={clsx("flex items-center my-2 sm:text-size-6.2 text-size-4")}>
+    <li className={clsx("flex items-center my-2 sm:text-xsm-1.2 text-sm")}>
       <img src={iconSocialSrc} className={clsx("w-6 sm:w-7")} alt={alt} />
       <span className={clsx("mx-2 font-extraBold sm:mx-3")}>{contentSpan}</span>
       <a href={href} target="_blank" rel="noreferrer" className={clsx("underline")}>
@@ -25,11 +25,11 @@ const AboutMe = () => {
         <title>Sobre Mi - Abraham Calsin</title>
       </Head>
       <div className="mt-0 sm:mt-20 sm:mb-10">
-        <div className="bg-clrOption-1 w-25 h-1-2 my-2 sm:m-0 sm:mb-3 sm:h-2-6 sm:w-35"></div>
-        <h1 className="font-extraBold text-size-6 sm:text-size-8.2-desk">
+        <div className="bg-primary w-25 h-1-2 my-2 sm:m-0 sm:mb-3 sm:h-2-6 sm:w-35"></div>
+        <h1 className="font-extraBold text-xsm-1.3 sm:text-sm-1.4">
           {"{"}Sobre Mi{"}"}
         </h1>
-        <p className="text-size-4 leading-loose font-medium mt-2 px-0 sm:text-size-8.1-desk">
+        <p className="text-sm leading-1.7 font-medium mt-2 px-0 sm:text-xl">
           Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona la
           programación, actualmente me desempeño como desarrollador frontend, creo
           proyectos de código abierto, escribo en JavaScript moderno, React.js, Next.js y
@@ -41,9 +41,9 @@ const AboutMe = () => {
             <a className="font-bold underline ml-2">Proyectos.</a>
           </Link>
         </p>
-        <p className="font-semiBold text-size-6.2 sm:text-size-6 mt-15 sm:mt-17">
+        <p className="font-semiBold text-xsm-1.2 sm:text-xsm-1.3 mt-15 sm:mt-17">
           ¿Te interesa lo que hago?, ¡Trabajemos juntos!.
-          <span className="block mt-2 relative font-bold before:content-[' '] before:inline-block before:h-2-6 before:w-10 before:mb-2 before:mr-2 before:rounded-rds-1.1 before:bg-clrOption-1">
+          <span className="block mt-2 relative font-bold before:content-[' '] before:inline-block before:h-2-6 before:w-10 before:mb-2 before:mr-2 before:rounded-rds-1.1 before:bg-primary">
             Contáctame:
           </span>
         </p>
@@ -80,7 +80,7 @@ const AboutMe = () => {
 
         <div className="mt-15 mb-17 sm:mt-19">
           <div className="mb-7">
-            <h1 className="text-size-6.2 sm:text-size-6 block relative font-bold before:content-[' '] before:inline-block before:h-2-6 before:w-10 before:mb-2-8 before:mr-2 before:rounded-rds-1.1 before:bg-clrOption-1">
+            <h1 className="text-xsm-1.2 sm:text-xsm-1.3 block relative font-bold before:content-[' '] before:inline-block before:h-2-6 before:w-10 before:mb-2-8 before:mr-2 before:rounded-rds-1.1 before:bg-primary">
               Videos de Motivación
             </h1>
           </div>

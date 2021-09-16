@@ -1,79 +1,51 @@
+import * as dayjs from "dayjs";
+import React from "react";
 import clsx from "clsx";
 import MainLayout from "../../components/layout";
 import Head from "next/head";
-import Image from "next/image";
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTags } from "@fortawesome/free-solid-svg-icons";
+import { faTags, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-const CardProyects = (props) => {
+const ContentProject = (props) => {
+  const projectFormatDate = "D MMM, YYYY";
   const {
-    hrefViewDemo,
-    hrefViewCode,
-    imageProyectSrc,
-    alt,
-    contentText_descript,
-    contentText_viewDemo,
-    contentText_viewCode,
+    dateProject = new Date(),
+    titleProject,
+    descriptionProject,
     tagLanguajes,
+    hrefProjectDemo,
   } = props;
 
   return (
-    <div
-      className={clsx(
-        "bg-clrOptin-3 p-4 shadow-sm rounded-rds-3-desk transition duration-300 ease-in-out hover:transform hover:-translate-y-2"
-      )}
-    >
-      <Image
-        src={imageProyectSrc}
-        alt={alt}
-        className={clsx("rounded-rds-4-desk")}
-        width={1278}
-        height={946}
-      />
-      <div className={clsx("px-3")}>
-        {tagLanguajes ? (
-          <div className="flex items-center text-clrSecondary border-1 border-sec my-2">
-            <p className="transform -scale-x-1 mr-1.5 text-size-3">
-              <FontAwesomeIcon icon={faTags} />
-            </p>{" "}
-            <p className="font-bold text-size-4">{tagLanguajes}</p>
-          </div>
-        ) : null}
-        <p className={clsx("text-justify text-size-4 sm:text-size-5")}>
-          {contentText_descript}
-        </p>
-        <div
-          className={clsx(
-            "flex flex-col gap-3 justify-around items-center text-center my-4 sm:gap-4"
-          )}
-        >
-          {contentText_viewDemo ? (
-            <a
-              href={hrefViewDemo}
-              target="_blank"
-              className={clsx(
-                "flex items-center justify-center gap-3 w-full bg-clrOption-2 py-4 px-2 rounded-rds-1 text-size-2 font-extraBold transition duration-300 hover:opacity-80 sm:text-size-4"
-              )}
-            >
-              {contentText_viewDemo}
-              <Image width={12} height={12} src="/icons/external_link.svg" />
-            </a>
-          ) : null}
-
-          {contentText_viewCode ? (
-            <a
-              href={hrefViewCode}
-              target="_blank"
-              rel="noreferrer"
-              className={clsx(
-                "w-full bg-clrOption-2 py-4 px-7 rounded-rds-1 text-size-2 font-extraBold transition duration-300 hover:opacity-80 sm:text-size-4"
-              )}
-            >
-              {contentText_viewCode}
-            </a>
-          ) : null}
+    <div className="flex gap-6 sm:gap-10 mb-17">
+      <div>
+        <div className="relative text-xs-1.1 sm:text-xs text-white italic bg-primary h-8 sm:h-10 w-21 sm:w-32 px-0 py-0 sm:py-5 flex items-center justify-center rounded-rds-0.1 after:[' '] after:absolute after:-right-7 after:bg-transparent after:border-l-transparent after:border-r-transparent after:border-t-primary after:border-b-transparent after:border-l-9 after:border-r-9 after:border-t-12 after:border-b-12 after:transform after:-rotate-90">
+          <span>{dayjs(dateProject).format(projectFormatDate)}</span>
         </div>
+      </div>
+      <div className="mt-0 sm:-mt-2">
+        <h1 className="leading-1.2 sm:leading-normal text-xsm-1.3 sm:text-3xl font-extraBold">
+          {titleProject}
+        </h1>
+        <div className="flex items-center text-secondary-600 border-1 border-sec text-xs sm:text-sm">
+          <span className="transform -scale-x-1 mr-1.5 text-xs-1.3 sm:text-xs">
+            <FontAwesomeIcon icon={faTags} />
+          </span>{" "}
+          <p className="font-extraBold">{tagLanguajes}</p>
+        </div>
+        <p className="text-sm sm:text-xl font-medium">{descriptionProject}</p>
+        <a
+          href={hrefProjectDemo}
+          target="__blank"
+          rel="noreferrer"
+          className="underline font-extraBold mt-3 inline-block bg-secondary py-3 px-5 rounded-rds-1.1 shadow-sm text-xs-1.3 transition duration-300 hover:opacity-80 sm:text-sm"
+        >
+          VER DEMO{" "}
+          <span className="text-xs ml-1">
+            <FontAwesomeIcon icon={faExternalLinkAlt} />
+          </span>
+        </a>
       </div>
     </div>
   );
@@ -86,92 +58,67 @@ const Projects = () => {
         <title>Proyectos - Abraham Calsin</title>
       </Head>
       <div className="mt-0 sm:mt-20 sm:mb-10">
-        <div className="bg-clrOption-1 w-25 h-1-2 my-2 sm:m-0 sm:mb-3 sm:h-2-6 sm:w-35"></div>
-        <h1 className="font-extraBold text-size-6 sm:text-size-8.2-desk">
+        <div className="bg-primary w-25 h-1-2 my-2 sm:m-0 sm:mb-3 sm:h-2-6 sm:w-35"></div>
+        <h1 className="font-extraBold text-xsm-1.3 sm:text-sm-1.4">
           {"{"}Proyectos{"}"}
         </h1>
-        <p className="text-size-4 leading-loose font-medium mt-2 px-0 sm:text-size-8.1-desk">
-          En esta sección podrás ver algunos de mis proyectos mas destacados.
+        <p className="text-sm leading-loose font-medium mt-2 px-0 sm:text-xl">
+          En esta sección puedes ver algunos de mis proyectos más destacados. También
+          puedes ver todos los códigos en mi{" "}
+          <a
+            href="https://github.com/abrahamcalsin"
+            target="__blank"
+            rel="noreferrer"
+            className="font-bold underline"
+          >
+            GitHub.
+          </a>
         </p>
-        <div className="my-15 grid grid-cols-pjectsCards gap-15  items-start sm:my-25 sm:gap-13">
-          <CardProyects
-            imageProyectSrc="/projects-cover/munay-mikhuy-anka.svg"
-            alt="Motivation"
-            tagLanguajes="Next.js, Scss"
-            contentText_descript="Sitio web y/o maqueta web de un restaurante, que ofrece platos típicos de la ciudad de Puno - Perú."
-            hrefViewDemo="https://munay-mikhuy-anka.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/munay-mikhuy-anka"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
+        <div className="relative my-15 sm:my-25 before:[' '] before:absolute before:bg-primary before:top-0 before:left-10 sm:before:left-16 before:h-full before:w-2">
+          <ContentProject
+            dateProject={new Date("09/03/2021")}
+            titleProject="Munay Mikhuy Anka"
+            tagLanguajes="Next.js, Sass"
+            descriptionProject="Sitio web y/o maqueta web de un restaurante, que ofrece platos típicos de la ciudad de Puno - Perú."
+            hrefProjectDemo="https://munay-mikhuy-anka.abrahamcalsin.com"
           />
-          <CardProyects
-            imageProyectSrc="/projects-cover/motivation-cover.svg"
-            alt="Motivation"
-            tagLanguajes="HTML, CSS, JavaScript"
-            contentText_descript="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
-            hrefViewDemo="https://motivation-image.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
+          <ContentProject
+            dateProject={new Date("08/27/2021")}
+            titleProject="Páginas Web Ganadoras"
+            tagLanguajes="HTML5, CSS, JavaScript"
+            descriptionProject="Páginas Web Ganadoras, es un template y/o página-web open source, inspirado en (paginasganadoras.com)."
+            hrefProjectDemo="https://paginas-web-ganadoras.abrahamcalsin.com"
           />
-          <CardProyects
-            imageProyectSrc="/projects-cover/shadow-cover.svg"
-            alt="Shadow"
-            tagLanguajes="HTML, CSS, JavaScript"
-            contentText_descript="Shadow es una biblioteca de código abierto, que permite a un
-            diseñador elegir sombras modernas."
-            hrefViewDemo="https://shadow.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/shadow"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          <ContentProject
+            dateProject={new Date("08/24/2021")}
+            titleProject="Cyber Security Tech"
+            tagLanguajes="HTML5, CSS, JavaScript"
+            descriptionProject="Cyber Security Tech, es un template y/o maqueta, open source."
+            hrefProjectDemo="https://cyber-security-tech.abrahamcalsin.com"
           />
-          <CardProyects
-            imageProyectSrc="/projects-cover/cyber-security-tech-cover.svg"
-            alt="Cyber Security Tech - Abraham Calsin"
-            tagLanguajes="HTML, CSS, JavaScript"
-            contentText_descript="Cyber Security Tech, es un template y/o maqueta, open source."
-            hrefViewDemo="https://cyber-security-tech.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/cyber-security-tech"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          <ContentProject
+            dateProject={new Date("06/09/2021")}
+            titleProject="Motivation"
+            tagLanguajes="HTML5, CSS, JavaScript"
+            descriptionProject="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
+            hrefProjectDemo="https://motivation-image.abrahamcalsin.com"
           />
-          <CardProyects
-            imageProyectSrc="/projects-cover/paginas-web-ganadoras-cover.svg"
-            alt="Páginas Web Ganadoras"
-            tagLanguajes="HTML, CSS, JavaScript"
-            contentText_descript="Páginas Web Ganadoras, es un template y/o página-web open source, inspirado en (paginasganadoras.com)."
-            hrefViewDemo="https://paginas-web-ganadoras.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/paginas-web-ganadoras"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
-          />
-          <CardProyects
-            imageProyectSrc="/projects-cover/free-only-webinar-cover.svg"
-            alt="Free Only Webinar"
-            tagLanguajes="HTML, CSS"
-            contentText_descript="Free Only Webinar, es un template y/o maqueta, open source."
-            hrefViewDemo="https://free-only-webinar.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/free-only-webinar"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
-          />
-          <CardProyects
-            imageProyectSrc="/projects-cover/super-discount-cover.svg"
-            alt="Super Discount"
-            tagLanguajes="HTML, CSS"
-            contentText_descript="Super Discount, es un template y/o maqueta, open source."
-            hrefViewDemo="https://super-discount.abrahamcalsin.com"
-            contentText_viewDemo="VER PROYECTO"
-            hrefViewCode="https://github.com/abrahamcalsin/super-discount"
-            contentText_viewCode="VER CÓDIGO EN GITHUB"
+          <ContentProject
+            dateProject={new Date("05/13/2021")}
+            titleProject="Shadow"
+            tagLanguajes="HTML5, CSS, JavaScript"
+            descriptionProject="Shadow es una biblioteca de código abierto, que permite a un diseñador elegir sombras modernas."
+            hrefProjectDemo="https://shadow.abrahamcalsin.com"
           />
         </div>
         <div className="w-full flex justify-center mb-12 md:mb-12">
           <a
             href="https://github.com/abrahamcalsin"
-            className="text-size-2 group px-7 py-4 bg-clrOption-2 shadow-sm rounded-rds-1.1 font-extraBold hoverChild transition duration-300 hover:opacity-80 md:text-size-4 md:px-7 md:py-5"
+            className="text-xs-1.3 group px-7 py-4 bg-secondary shadow-sm rounded-rds-1.1 font-extraBold hoverChild transition duration-300 hover:opacity-80 md:text-sm md:px-7 md:py-5"
             target="_blank"
           >
             VER MÁS EN MI GITHUB{" "}
-            <span className="text-size-5 ml-2-6 md:group-hover:ml-3 md:text-size-8.1-desk">
+            <span className="text-base ml-2-6 md:group-hover:ml-3 md:text-xl">
               &#8594;
             </span>
           </a>

@@ -3,7 +3,7 @@ import Footer from "../footer/index";
 import Head from "next/head";
 
 const MainLayout = (props) => (
-  <div className="font-montserrat text-clrPrimary">
+  <div className="font-montserrat text-primary">
     <Head>
       <meta charset="UTF-8" />
       <meta
