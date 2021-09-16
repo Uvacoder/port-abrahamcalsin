@@ -98,7 +98,7 @@ const Projects = () => {
           />
           <ContentProject
             dateProject={new Date("06/09/2021")}
-            titleProject="Motivation"
+            titleProject="Motivación"
             tagLanguajes="HTML5, CSS, JavaScript"
             descriptionProject="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
             hrefProjectDemo="https://motivation-image.abrahamcalsin.com"
@@ -107,7 +107,7 @@ const Projects = () => {
             dateProject={new Date("05/13/2021")}
             titleProject="Shadow"
             tagLanguajes="HTML5, CSS, JavaScript"
-            descriptionProject="Shadow es una biblioteca de código abierto, que permite a un diseñador elegir sombras modernas."
+            descriptionProject="Shadow is an open source library, which allows a designer to choose modern shadows."
             hrefProjectDemo="https://shadow.abrahamcalsin.com"
           />
         </div>
