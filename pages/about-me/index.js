@@ -33,10 +33,13 @@ const AboutMe = () => {
           Hey, hola! Soy Abraham Calsin un individuo autodidacta, me apasiona la
           programación, actualmente me desempeño como desarrollador frontend, creo
           proyectos de código abierto, escribo en JavaScript moderno, React.js, Next.js y
-          Typescript. Me fascina el asunto del trabajo en equipo, a lo largo de mi
-          aventura en el mundo del desarrollo web, me involucre en el desarrollo de varios
-          proyectos, proponiéndome retos, los cuales me enseñaron a corregir mis propios
-          errores al desarrollar un Sitio Web. Puedes ver mi trabajo en la sección de
+          TypeScript.
+        </p>
+        <p className="text-sm leading-1.7 font-medium mt-2 px-0 sm:text-xl sm:leading-9">
+          Me fascina el asunto del trabajo en equipo, a lo largo de mi aventura en el
+          mundo del desarrollo web, me involucre en el desarrollo de varios proyectos,
+          proponiéndome retos, los cuales me enseñaron a corregir mis propios errores al
+          desarrollar un Sitio Web. Puedes ver mi trabajo en la sección de
           <Link href="/projects">
             <a className="font-bold underline ml-2">Proyectos.</a>
           </Link>
