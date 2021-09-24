@@ -6,6 +6,7 @@ import Head from "next/head";
 // Font Awesome icons
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTags, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const ContentProject = (props) => {
   const projectFormatDate = "D MMM, YYYY";
@@ -15,6 +16,7 @@ const ContentProject = (props) => {
     descriptionProject,
     tagLanguajes,
     hrefProjectDemo,
+    hrefProjectCode,
   } = props;
 
   return (
@@ -39,13 +41,26 @@ const ContentProject = (props) => {
           href={hrefProjectDemo}
           target="__blank"
           rel="noreferrer"
-          className="underline font-extraBold mt-3 inline-block bg-secondary py-3 px-5 rounded-rds-1.1 shadow-sm text-xs-1.3 transition duration-300 hover:opacity-80 sm:text-sm"
+          className="underline font-extraBold mr-3 mt-3 inline-block bg-secondary py-3 px-5 rounded-rds-1.1 shadow-sm text-xs-1.3 transition duration-300 hover:opacity-80 sm:text-sm"
         >
           VER DEMO{" "}
           <span className="text-xs ml-1">
             <FontAwesomeIcon icon={faExternalLinkAlt} />
           </span>
         </a>
+        {hrefProjectCode ? (
+          <a
+            href={hrefProjectCode}
+            target="__blank"
+            rel="noreferrer"
+            className="underline font-extraBold mt-3 inline-block bg-secondary py-3 px-5 rounded-rds-1.1 shadow-sm text-xs-1.3 transition duration-300 hover:opacity-80 sm:text-sm"
+          >
+            VER CÓDIGO{" "}
+            <span className="text-xs ml-1">
+              <FontAwesomeIcon icon={faGithub} />
+            </span>
+          </a>
+        ) : null}
       </div>
     </div>
   );
@@ -64,7 +79,7 @@ const Projects = () => {
         </h1>
         <p className="text-sm leading-loose font-medium mt-2 px-0 sm:text-xl">
           En esta sección puedes ver algunos de mis proyectos más destacados. También
-          puedes ver todos los códigos en mi{" "}
+          puedes ver más proyectos en mi{" "}
           <a
             href="https://github.com/abrahamcalsin"
             target="__blank"
@@ -76,52 +91,52 @@ const Projects = () => {
         </p>
         <div className="relative my-15 sm:my-25 before:[' '] before:absolute before:bg-primary before:top-0 before:left-10 sm:before:left-16 before:h-full before:w-2">
           <ContentProject
+            dateProject={new Date("09/22/2021")}
+            titleProject="Tasks List"
+            tagLanguajes="React.js, Tailwind."
+            descriptionProject="Tasks List is an open source web application that allows you to manage your day to day tasks. Create new tasks, mark them as completed and even delete them."
+            hrefProjectDemo="https://tasks-list.abrahamcalsin.com"
+            hrefProjectCode="https://github.com/abrahamcalsin/task-list"
+          />
+          <ContentProject
             dateProject={new Date("09/03/2021")}
             titleProject="Munay Mikhuy Anka"
             tagLanguajes="Next.js, Sass"
             descriptionProject="Sitio web y/o maqueta web de un restaurante, que ofrece platos típicos de la ciudad de Puno - Perú."
             hrefProjectDemo="https://munay-mikhuy-anka.abrahamcalsin.com"
+            hrefProjectCode="https://github.com/abrahamcalsin/munay-mikhuy-anka"
           />
           <ContentProject
             dateProject={new Date("08/27/2021")}
             titleProject="Páginas Web Ganadoras"
-            tagLanguajes="HTML5, CSS, JavaScript"
+            tagLanguajes="HTML, CSS, JavaScript"
             descriptionProject="Páginas Web Ganadoras, es un template y/o página-web open source, inspirado en (paginasganadoras.com)."
             hrefProjectDemo="https://paginas-web-ganadoras.abrahamcalsin.com"
+            hrefProjectCode="https://github.com/abrahamcalsin/paginas-web-ganadoras"
           />
           <ContentProject
             dateProject={new Date("08/24/2021")}
             titleProject="Cyber Security Tech"
-            tagLanguajes="HTML5, CSS, JavaScript"
+            tagLanguajes="HTML, CSS, JavaScript"
             descriptionProject="Cyber Security Tech, es un template y/o maqueta, open source."
             hrefProjectDemo="https://cyber-security-tech.abrahamcalsin.com"
+            hrefProjectCode="https://github.com/abrahamcalsin/cyber-security-tech"
           />
           <ContentProject
             dateProject={new Date("06/09/2021")}
             titleProject="Motivación"
-            tagLanguajes="HTML5, CSS, JavaScript"
+            tagLanguajes="HTML, CSS, JavaScript"
             descriptionProject="Lecciones del día, en imágenes, sobre desarrollo personal, negocios, liderazgo, trabajo en equipo, etc. Sólo hay que hacer un clic para descargarlas."
             hrefProjectDemo="https://motivation-image.abrahamcalsin.com"
           />
           <ContentProject
             dateProject={new Date("05/13/2021")}
             titleProject="Shadow"
-            tagLanguajes="HTML5, CSS, JavaScript"
+            tagLanguajes="HTML, CSS, JavaScript"
             descriptionProject="Shadow is an open source library, which allows a designer to choose modern shadows."
             hrefProjectDemo="https://shadow.abrahamcalsin.com"
+            hrefProjectCode="https://github.com/abrahamcalsin/shadow"
           />
-        </div>
-        <div className="w-full flex justify-center mb-12 md:mb-12">
-          <a
-            href="https://github.com/abrahamcalsin"
-            className="text-xs-1.3 group px-7 py-4 bg-secondary shadow-sm rounded-rds-1.1 font-extraBold hoverChild transition duration-300 hover:opacity-80 md:text-sm md:px-7 md:py-5"
-            target="_blank"
-          >
-            VER MÁS EN MI GITHUB{" "}
-            <span className="text-base ml-2-6 md:group-hover:ml-3 md:text-xl">
-              &#8594;
-            </span>
-          </a>
         </div>
       </div>
     </MainLayout>
