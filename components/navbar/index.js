@@ -66,7 +66,7 @@ const Navbar = () => {
           </Link>
           <a
             href="https://resume.abrahamcalsin.com"
-            target="__blank"
+            target="_blank"
             className="bg-secondary px-4 py-1-3 shadow-sm rounded-rds-1.1 font-extraBold sm:hidden"
           >
             Resume
@@ -79,7 +79,7 @@ const Navbar = () => {
             <a
               href="https://resume.abrahamcalsin.com"
               className="bg-secondary px-6 py-3 rounded-rds-1.1 shadow-sm transition duration-300 hover:opacity-80"
-              target="__blank"
+              target="_blank"
             >
               Resume
             </a>
