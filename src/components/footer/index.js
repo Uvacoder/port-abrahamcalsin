@@ -8,6 +8,7 @@ const Footer = () => {
           {"{"}Developed by
           <span className="font-bold"> ©Abraham Calsin{"}"}</span>
         </p>
+
         <p className="mt-0.5 flex justify-center">
           With Next.js and Tailwind.{" "}
           <img src="/icons/heart_icon.svg" alt="❤" className="w-2 ml-0.5 block" />

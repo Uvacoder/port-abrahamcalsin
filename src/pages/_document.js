@@ -11,10 +11,6 @@ class MyDocument extends Document {
       <Html>
         <Head>
           <meta charSet="UTF-8" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
-          />
           <meta data-react-helmet="true" name="robots" content="index,follow" />
           <meta data-react-helmet="true" name="googlebot" content="index,follow" />
           <meta
@@ -72,6 +68,7 @@ class MyDocument extends Document {
         </Head>
         <body className="bg-grayBlue">
           <Main />
+
           <NextScript />
         </body>
       </Html>
