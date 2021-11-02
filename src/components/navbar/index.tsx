@@ -1,7 +1,7 @@
 import Link from "next/link"
 
-import NavDesktop from "../nav-desktop"
-import NavMobile from "../nav-mobile"
+import NavDesktop from "~/components/nav-desktop"
+import NavMobile from "~/components/nav-mobile"
 
 const Navbar = () => {
   return (

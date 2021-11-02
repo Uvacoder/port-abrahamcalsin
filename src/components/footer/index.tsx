@@ -1,5 +1,3 @@
-import Link from "next/link"
-
 const Footer = () => {
   return (
     <div className="mb-11.2 mx-auto w-full max-w-70 px-2.5 sm:px-5.5">

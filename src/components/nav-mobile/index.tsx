@@ -1,8 +1,8 @@
-import clsx from "clsx"
 import { useRouter } from "next/router"
 import Link from "next/dist/client/link"
+import clsx from "clsx"
 
-const NavTabIcon = (props) => {
+const NavTabIcon = (props: any) => {
   const { href, iconSrc, targetBlank, alt, contentLinkSection } = props
 
   const router = useRouter()

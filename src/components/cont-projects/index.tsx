@@ -1,21 +1,28 @@
+import dayjs from "dayjs"
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTags, faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons"
 import { faGithub } from "@fortawesome/free-brands-svg-icons"
 
-import Timline from "../timeline"
-
-const Project = (props) => {
+const Project = (props: any) => {
   const {
     titleProject,
     descriptionProject,
     tagLanguajes,
     hrefProjectDemo,
     hrefProjectCode,
+    dateProject = new Date(),
   } = props
+
+  const projectFormatDate = "D MMM, YYYY"
 
   return (
     <div className="flex gap-2.2 sm:gap-3.7 mb-6.5">
-      <Timline />
+      <div>
+        <div className="relative text-xs-1.1 sm:text-xs text-white italic bg-primary h-3 w-8 sm:w-12 px-0 py-0.7 sm:py-2 flex items-center justify-center rounded-rds-0.1 after:[' '] after:absolute after:-right-2.5 after:bg-transparent after:border-l-transparent after:border-r-transparent after:border-t-primary after:border-b-transparent after:border-l-9 after:border-r-9 after:border-t-12 after:border-b-12 after:transform after:-rotate-90">
+          <span>{dayjs(dateProject).format(projectFormatDate)}</span>
+        </div>
+      </div>
 
       <div className="-mt-0.7">
         <h1 className="leading-1.2 sm:leading-normal text-xsm-1.3 sm:text-3xl font-extraBold">

@@ -1,7 +1,7 @@
-import Navbar from "../navbar/index"
-import Footer from "../footer/index"
+import Navbar from "~/components/navbar"
+import Footer from "~/components/footer"
 
-const MainLayout = (props) => (
+const MainLayout = (props: any) => (
   <div className="font-montserrat text-primary">
     <Navbar />
     <main className="mx-auto max-w-70 pt-13 sm:pt-0 py-3.7 px-2.5 sm:px-5.5">
