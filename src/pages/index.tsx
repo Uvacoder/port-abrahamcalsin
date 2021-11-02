@@ -1,11 +1,12 @@
+import type { NextPage } from "next"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 
-import MainLayout from "../components/layout"
-import QuoteAbrahamCalsin from "../components/quote-abrahamcalsin"
+import MainLayout from "~/components/layout"
+import QuoteAbrahamCalsin from "~/components/quote-abrahamcalsin"
 
-const SocialMediaStyles = (props) => {
+const SocialMediaStyles = (props: any) => {
   const { href, logoSrc, alt } = props
 
   return (
@@ -21,7 +22,7 @@ const SocialMediaStyles = (props) => {
   )
 }
 
-const Home = () => {
+const Home: NextPage = () => {
   return (
     <MainLayout>
       <Head>

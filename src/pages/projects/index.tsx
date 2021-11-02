@@ -1,8 +1,8 @@
 import React from "react"
-import MainLayout from "../../components/layout"
 import Head from "next/head"
 
-import ContProjects from "../../components/cont-projects"
+import MainLayout from "~/components/layout"
+import ContProjects from "~/components/cont-projects"
 
 const Projects = () => {
   return (

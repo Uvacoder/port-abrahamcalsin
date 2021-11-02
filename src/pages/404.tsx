@@ -1,5 +1,5 @@
 import Link from "next/link"
-import MainLayout from "../components/layout"
+import MainLayout from "~/components/layout"
 
 const custom404 = () => {
   return (

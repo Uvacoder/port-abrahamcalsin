@@ -1,8 +1,9 @@
 import Link from "next/link"
 import Head from "next/head"
-import MainLayout from "../../components/layout"
 
-const ContactSocialMedia = (props) => {
+import MainLayout from "~/components/layout"
+
+const ContactSocialMedia = (props: any) => {
   const { href, iconSocialSrc, alt, contentSpan, contentLinkIcons } = props
 
   return (
