@@ -53,7 +53,7 @@ const Home: NextPage = () => {
             </h1>
 
             <p className="text-base font-medium mt-0.7 sm:px-0 sm:text-xl leading-1.7 sm:leading-9">
-              Hey, hola! Soy un desarrollador frontend, apasionado por la programación,
+              Soy un desarrollador frontend, apasionado por la programación,
               creo proyectos de código abierto.
             </p>
 
