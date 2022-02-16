@@ -35,7 +35,13 @@ const Article = (props: ArticleProps) => {
                 {article.title} | {CMS_NAME}
               </title>
             </Head>
-            <ArticleBody title={article.title} date={article.date} content={article.content} />
+            <ArticleBody
+              title={article.title}
+              date={article.date}
+              content={article.content}
+              shareLinkSlug={article.slug}
+              shareTitle={article.title}
+            />
           </article>
         </MainLayout>
       )}

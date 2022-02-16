@@ -8,5 +8,9 @@ interface DateFormatArticleProps {
 export const DateFormatArticle = (props: DateFormatArticleProps) => {
   const { dateArticle = new Date() } = props
 
-  return <span>{dayjs(dateArticle).format(dateFormat.article)}</span>
+  return (
+    <span className="mr-2 font-regular text-primary-600 dark:text-inherit italic">
+      {dayjs(dateArticle).format(dateFormat.article)}
+    </span>
+  )
 }
