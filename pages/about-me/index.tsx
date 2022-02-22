@@ -78,14 +78,14 @@ const AboutMe = () => {
         <ContactLinks
           svgIcon={<LinkedinStrokeIcon />}
           nameIcon="LinkedIn:"
-          href="https://github.com/abrahamcalsin"
+          href="https://www.linkedin.com/in/abrahamcalsin"
           username="@abrahamcalsin"
         />
 
         <ContactLinks
           svgIcon={<TwitterStrokeIcon />}
           nameIcon="Twitter:"
-          href="https://github.com/abrahamcalsin"
+          href="https://twitter.com/abraham_calsin"
           username="@abraham_calsin"
         />
 
