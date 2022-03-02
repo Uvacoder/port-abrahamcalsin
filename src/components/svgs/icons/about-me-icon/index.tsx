@@ -1,18 +1,17 @@
 import * as React from 'react'
 
-interface SvgIconProps {
-  className?: string
-}
-
-export const AboutMeIcon = (props: SvgIconProps) => {
-  const { className } = props
-
+export const AboutMeIcon = () => {
   return (
-    <svg className={className} viewBox="0 0 16 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg className="block w-2.2" viewBox="0 0 15 19" xmlns="http://www.w3.org/2000/svg">
       <path
-        fillRule="evenodd"
-        clipRule="evenodd"
-        d="M13.294 5.291A5.274 5.274 0 0 1 8 10.583a5.275 5.275 0 0 1-5.294-5.292A5.274 5.274 0 0 1 8 0a5.273 5.273 0 0 1 5.294 5.291ZM8 20c-4.338 0-8-.705-8-3.425 0-2.721 3.685-3.401 8-3.401 4.339 0 8 .705 8 3.425C16 19.32 12.315 20 8 20Z"
+        d="M7.62274 12.5745C4.05056 12.5745 1 13.1146 1 15.2776C1 17.4406 4.03121 18 7.62274 18C11.1949 18 14.2446 17.4591 14.2446 15.2969C14.2446 13.1348 11.2143 12.5745 7.62274 12.5745Z"
+        stroke="currentColor"
+        stroke-width="1.3842"
+      />
+      <path
+        d="M7.62276 9.48932C9.96697 9.48932 11.867 7.58844 11.867 5.24422C11.867 2.9 9.96697 1 7.62276 1C5.27854 1 3.37766 2.9 3.37766 5.24422C3.36974 7.58052 5.25743 9.4814 7.59285 9.48932H7.62276Z"
+        stroke="currentColor"
+        stroke-width="1.3842"
       />
     </svg>
   )
