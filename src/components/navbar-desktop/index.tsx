@@ -37,7 +37,7 @@ const NavbarDesktop = () => {
         <NavigationLink href="/" textLink="Inicio" />
         <NavigationLink href="/about-me" textLink="Sobre Mi" />
         <NavigationLink href="/projects" textLink="Proyectos" />
-
+        <NavigationLink href="/blog" textLink="Blog" />
         <DarkThemeButton />
       </div>
     </div>

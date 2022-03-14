@@ -8,10 +8,11 @@ import { LogoAbrahamCalsin } from '~/components/svgs/logo-abrahamcalsin'
 import { HomeIcon } from '~/components/svgs/icons/home-icon'
 import { AboutMeIcon } from '~/components/svgs/icons/about-me-icon'
 import { ProjectsIcon } from '~/components/svgs/icons/projects-icon'
+import { BlogStrokeIcon } from '~/components/svgs/icons/blog-stroke-icon'
 
 const NavigationTop = () => {
   return (
-    <div className="fixed backdrop-filter backdrop-blur-md bg-grayBlue/50 dark:bg-primary/50 border-b-px border-b-primary-500/60 h-6.5 w-full flex justify-center items-center z-10">
+    <div className="fixed backdrop-filter backdrop-blur-md bg-main/70 dark:bg-primary/70 border-b-px border-b-primary-500/60 h-6.5 w-full flex justify-center items-center z-10">
       <div className="container flex items-center justify-between w-full">
         <Link href="/">
           <a className="w-9.5 sm:w-11.2">
@@ -58,10 +59,11 @@ const NavbarMobile = () => {
   return (
     <div className="sm:hidden">
       <NavigationTop />
-      <div className="flex justify-evenly fixed backdrop-filter backdrop-blur-md bg-grayBlue/50 dark:bg-primary/50 border-t-px border-t-primary-500/60 w-full h-7.5 bottom-0 z-20">
+      <div className="flex justify-evenly fixed backdrop-filter backdrop-blur-md bg-main/70 dark:bg-primary/60 border-t-px border-t-primary-500/60 w-full h-7.5 bottom-0 z-20">
         <NavigationBottom href="/" svgIcon={<HomeIcon />} textLink="Inicio" />
         <NavigationBottom href="/about-me" svgIcon={<AboutMeIcon />} textLink="Sobre mi" />
         <NavigationBottom href="/projects" svgIcon={<ProjectsIcon />} textLink="Proyectos" />
+        <NavigationBottom href="/blog" svgIcon={<BlogStrokeIcon />} textLink="Blog" />
       </div>
     </div>
   )
