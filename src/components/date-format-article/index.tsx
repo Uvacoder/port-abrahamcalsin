@@ -1,4 +1,6 @@
 import dayjs from 'dayjs'
+import en from 'dayjs/locale/en'
+
 import { dateFormat } from '~/utils'
 
 interface DateFormatArticleProps {
@@ -8,7 +10,7 @@ interface DateFormatArticleProps {
 export const DateFormatArticle = (props: DateFormatArticleProps) => {
   const { dateArticle = new Date() } = props
 
-  return (
-    <span className="font-regular text-inherit dark:text-inherit">{dayjs(dateArticle).format(dateFormat.article)}</span>
-  )
+  const date = dayjs(dateArticle).locale(en).format(dateFormat.article)
+
+  return <span className="font-regular text-inherit dark:text-inherit capitalize">{date}</span>
 }
