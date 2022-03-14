@@ -25,7 +25,7 @@ export const ArticleBody = (props: ArticleBodyProps) => {
       <div className="my-0 mt-0 sm:my-9.5 sm:mt-11.2">
         <div>
           <h1 className="text-3xl sm:text-4xl">{title}</h1>
-          <div className="flex justify-between mt-2 sm:mt-3.5 mb-4 text-primary-600 dark:text-primary-400">
+          <div className="flex justify-between mt-2 sm:mt-3.5 mb-4 text-primary-600 dark:text-primary-400 text-sm sm:text-base">
             <div>
               <DateFormatArticle dateArticle={date} />
               <span className="mx-1">|</span>
