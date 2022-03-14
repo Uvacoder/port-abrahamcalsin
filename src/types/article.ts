@@ -4,6 +4,7 @@ interface Article {
   description: string
   content: string
   slug: string
+  readingTime: any
 }
 
 export default Article
