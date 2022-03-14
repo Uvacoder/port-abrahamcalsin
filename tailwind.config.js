@@ -40,7 +40,7 @@ module.exports = {
       current: 'currentColor',
       black: '#000',
       white: '#f7f9fe',
-      grayBlue: '#F2F4FB',
+      main: '#EFF2FA',
 
       primary: {
         50: '#edf8ff',
