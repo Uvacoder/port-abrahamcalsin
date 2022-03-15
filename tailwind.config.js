@@ -134,10 +134,6 @@ module.exports = {
       12: '16px',
     },
 
-    scale: {
-      1: '1',
-    },
-
     extend: {
       spacing: {
         0: '0px',
