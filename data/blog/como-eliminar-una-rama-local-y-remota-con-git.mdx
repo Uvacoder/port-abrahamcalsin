@@ -9,14 +9,16 @@ En este artículo veremos cómo eliminar eficazmente una rama local y remota con
 ## - Eliminar rama local:
 
 Para eliminar una rama local ejecuta el siguiente comando,
-`git branch -D <branch-name>`, remplaza la `<branch-name>` por el nombre de la rama que desees eliminar.
+`git branch -D [branch-name]`, remplaza la `[branch-name]` por el nombre de la rama que deseas eliminar.
 
-> _**Nota:** Si intenta eliminar una rama que contengan cambios sin mergear le saltara el siguiente error: `error: The branch 'branch_name' is not fully merged. If you are sure you want to delete it, run 'git branch -D nombre_de_la_rama'.`_ Tenga en cuenta este error, para saber que cambios realizados tiene en su(s) rama(s) que aun no están mergeados, ejecute el siguiente comando `git branch --no-merged`, esto le mostrara todos los cambios no mergeados en su propia rama. Si esta seguro de eliminar la rama, entonces necesitara forzar la eliminación de la rama con el comando `-D`.
+> **Nota:** Si intentas eliminar una rama que contiene cambios no fusionados, obtendrás el siguiente error: `error: The branch 'branch_name' is not fully merged. If you are sure you want to delete it, run 'git branch -D [branch-name]'.` Ten en cuenta este error, para saber qué cambios tienes en tu rama que aún no están fusionados, ejecuta el siguiente comando `git branch --no-merged`, esto te mostrará todos los cambios no fusionados en tu propia rama. Si estás seguro de eliminar la rama, entonces tendrás que forzar el borrado con el comando `-D`.
 
-Recuerde que si fuerza la eliminación, todos los cambios no mergeados se eliminaran por completo.
+Recuerda que si fuerzas el borrado, todos los cambios que posiblemente no hayan sido fusionados se borrarán por completo.
 
 ## - Eliminar rama remota:
 
-Si ya elimino su rama local eso no quiere decir que esto haya afectado a su rama remota, si desea reflejar estos cambios en remoto, ejecute el siguiente comando, `git push origin --delete <branch-name>`, recuerde modificar el nombre de su rama que desea eliminar.
+Si por alguna razón ya `pusheaste` a github la rama que acabas de borrar localmente, entonces este borrado local no se reflejará en el lado remoto, por lo que es imprescindible ejecutar el siguiente comando para que el lado remoto también borre la rama que hemos borrado localmente: `git push origin --delete [branch-name]`, remplaza la `[branch-name]` por el nombre de la rama que ya borraste en local.
 
-Y listo, su rama ya fue eliminado, para estar seguro de esto, ejecute el siguiente comando `git branch`, esto le mostrara una lista completa de sus ramas "locales". Si no encuentra la rama que eliminó, entonces todo salió bien, continúe codificando sin más preocupación. 🎉
+Y listo, tu rama ha sido borrada, para estar seguros de esto, hay diferentes maneras de verificarlo, una de ellas es ejecutar el siguiente comando `git branch`, esto te mostrará una lista completa de tus ramas "locales", o `git branch -r`, este comando te mostrará una lista completa de todas tus ramas en el lado remoto.
+
+Si en estas listas no encuentras la rama que has eliminado, entonces todo ha ido bien, la rama se ha eliminado con éxito, continúa codificando sin más preocupaciones. 🎉
