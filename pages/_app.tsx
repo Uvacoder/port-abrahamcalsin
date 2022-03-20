@@ -5,6 +5,8 @@ import NProgress from 'nprogress'
 
 import * as ga from '~/lib/ga'
 
+import Navbar from '~/components/navbar'
+
 import '~/styles/index.css'
 import '~/styles/scrollbar.css'
 import '~/styles/nprogress.css'
@@ -41,7 +43,12 @@ function MyApp({ Component, pageProps }: AppProps) {
     }
   }, [])
 
-  return <Component {...pageProps} />
+  return (
+    <>
+      <Navbar />
+      <Component {...pageProps} />
+    </>
+  )
 }
 
 export default MyApp
