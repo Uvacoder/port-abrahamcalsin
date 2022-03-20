@@ -16,7 +16,6 @@
     "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"],
-      "~/lib*": ["./lib/*"],
       "contentlayer/generated": ["./.contentlayer/generated"]
     },
     "incremental": true
