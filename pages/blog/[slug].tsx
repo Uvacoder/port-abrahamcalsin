@@ -4,8 +4,6 @@ import ErrorPage from 'next/error'
 
 import { allBlogs, Blog } from 'contentlayer/generated'
 
-import ArticleType from '~/types/article'
-import { CMS_NAME } from '~/lib/constants'
 import { MainLayout } from '~/layouts'
 import { ArticleBody } from '~/components/article-body'
 import { GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult } from 'next'
@@ -31,9 +29,7 @@ const Article = (props: ArticleProps) => {
       ) : (
         <>
           <Head>
-            <title>
-              {article.title} | {CMS_NAME}
-            </title>
+            <title>{article.title} | Blog</title>
           </Head>
           <MainLayout>
             <article>

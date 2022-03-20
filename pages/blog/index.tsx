@@ -1,7 +1,6 @@
 import { allBlogs } from 'contentlayer/generated'
 
 import { Meta } from '~/components/meta'
-import { CMS_NAME } from '~/libconstants'
 import { MainLayout } from '~/layouts'
 import { AllArticles } from '~/components/all-articles'
 import Article from '~/types/article'
@@ -18,9 +17,9 @@ const Blog = (props: BlogProps) => {
 
   return (
     <MainLayout>
-      <Meta title={CMS_NAME} />
+      <Meta title="Blog" />
       <div className="mt-0 sm:mt-11.2 sm:mb-3.7 text-primary-600 dark:text-inherit">
-        <TitleSection title={CMS_NAME} externalLinkButton={false} />
+        <TitleSection title="Blog" externalLinkButton={false} />
         <p className="leading-6 sm:leading-9 font-medium mt-0.7 px-0">
           En esta sección puedes ver artículos sobre exploraciones del mundo del desarrollo web, tutoriales, guías
           prácticas. También escribo sobre diseño y experiencia de usuario/dev.
