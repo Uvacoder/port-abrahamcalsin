@@ -2,8 +2,8 @@ import { useRouter } from 'next/router'
 import Link from 'next/dist/client/link'
 import clsx from 'clsx'
 
-import DarkThemeButton from '~/components/dark-theme-button'
-import { LogoAbrahamCalsin } from '~/components/svgs/logo-abrahamcalsin'
+import { DarkThemeButton } from '~/components/dark-theme-button'
+import { LogoAbrahamCalsin } from '~/components/svgs'
 
 interface NavigationLinkProps {
   href: string
