@@ -4,10 +4,7 @@ import { MainLayout } from '~/layouts/main.layout'
 import { Meta } from '~/components/meta'
 import { TitleSection } from '~/components/title-section'
 import { PillTechnologies } from '~/components/pill-technologies'
-import { OctocatStrokeIcon } from '~/components/svgs/icons/octocat-stroke-icon'
-import { LinkedinStrokeIcon } from '~/components/svgs/icons/linkedin-stroke-icon'
-import { TwitterStrokeIcon } from '~/components/svgs/icons/twitter-stroke-icon'
-import { EmailStrokeIcon } from '~/components/svgs/icons/email-stroke-icon'
+import { OctocatStrokeIcon, LinkedinStrokeIcon, TwitterStrokeIcon, EmailStrokeIcon } from '~/components/svgs/icons'
 
 interface ContactLinks {
   svgIcon: React.ReactElement

@@ -2,10 +2,7 @@ import dayjs from 'dayjs'
 import { dateFormat } from '~/utils'
 
 import { Tag } from '~/components/tag'
-import { ExternalLinkIcon } from '~/components/svgs/icons/external-link-icon'
-import { PackageFillIcon } from '~/components/svgs/icons/package-fill-icon'
-import { OctocatFillIcon } from '~/components/svgs/icons/octocat-fill-icon'
-import { ClockFillIcon } from '~/components/svgs/icons/clock-fill-icon'
+import { ExternalLinkIcon, PackageFillIcon, OctocatFillIcon, ClockFillIcon } from '~/components/svgs/icons'
 import { PackageDownloads } from '~/components/package-downloads'
 
 export interface WorkItemProps {

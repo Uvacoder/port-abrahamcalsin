@@ -1,4 +1,4 @@
-import { TwitterStrokeIcon } from '~/components/svgs/icons/twitter-stroke-icon'
+import { TwitterStrokeIcon } from '~/components/svgs/icons'
 
 interface ShareArticleProps {
   articleLink: string

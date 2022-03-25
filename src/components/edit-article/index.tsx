@@ -1,4 +1,4 @@
-import { OctocatStrokeIcon } from '~/components/svgs/icons/octocat-stroke-icon'
+import { OctocatStrokeIcon } from '~/components/svgs/icons'
 
 interface EditArticleProps {
   slug: string

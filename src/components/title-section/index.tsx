@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 
-import { ExternalLinkIcon } from '~/components/svgs/icons/external-link-icon'
+import { ExternalLinkIcon } from '~/components/svgs/icons'
 
 export interface TitleSectionProps {
   title: string

@@ -2,7 +2,7 @@ import * as React from 'react'
 import ReactTooltip from 'react-tooltip'
 
 import { getAllDownloadsRGFB } from '~/services/package-downloads/get-all-downloads-rgfb'
-import { DownloadStrokeIcon } from '~/components/svgs/icons/download-stroke-icon'
+import { DownloadStrokeIcon } from '~/components/svgs/icons'
 
 interface PackageDownloadsProps {
   visible?: boolean

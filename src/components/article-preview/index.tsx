@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import { DateFormatArticle } from '~/components/date-format-article'
-import { CoffeeStrokeIcon } from '~/components/svgs/icons/coffee-stroke-icon'
+import { CoffeeStrokeIcon } from '~/components/svgs/icons'
 
 interface ArticlePreviewProps {
   title: string

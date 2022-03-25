@@ -5,10 +5,7 @@ import clsx from 'clsx'
 
 import { DarkThemeButton } from '~/components/dark-theme-button'
 import { LogoAbrahamCalsin } from '~/components/svgs/logo-abrahamcalsin'
-import { HomeIcon } from '~/components/svgs/icons/home-icon'
-import { AboutMeIcon } from '~/components/svgs/icons/about-me-icon'
-import { ProjectsIcon } from '~/components/svgs/icons/projects-icon'
-import { BlogStrokeIcon } from '~/components/svgs/icons/blog-stroke-icon'
+import { HomeIcon, AboutMeIcon, ProjectsIcon, BlogStrokeIcon } from '~/components/svgs/icons'
 
 const NavigationTop = () => {
   return (

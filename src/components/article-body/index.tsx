@@ -3,7 +3,7 @@ import * as React from 'react'
 import { DateFormatArticle } from '~/components/date-format-article'
 import { ShareArticle } from '~/components/share-article'
 import { EditArticle } from '~/components/edit-article'
-import { CoffeeStrokeIcon } from '~/components/svgs/icons/coffee-stroke-icon'
+import { CoffeeStrokeIcon } from '~/components/svgs/icons'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 
 interface TruncateTextProps {
@@ -12,14 +12,11 @@ interface TruncateTextProps {
 }
 
 const TruncateText = (props: TruncateTextProps) => {
-
   const { children, className } = props
 
   return (
     <div className="w-full px-6 py-2 bg-white dark:bg-primary-800/50 overflow-hidden shadow-lg shadow-primary-800/5 rounded-md mb-3">
-      <p className={`mt-0 mb-1 ${className}`}>
-      {children}
-      </p>
+      <p className={`mt-0 mb-1 ${className}`}>{children}</p>
     </div>
   )
 }
@@ -56,7 +53,7 @@ export const ArticleBody = (props: ArticleBodyProps) => {
           </div>
         </div>
         <div className="w-full mt-5 sm:mt-7 prose dark:prose-dark max-w-none">
-          <Component components={{TruncateText}} />
+          <Component components={{ TruncateText }} />
         </div>
         <ShareArticle articleLink={articleSlug} articleTitle={shareTitle} />
       </div>

@@ -1,4 +1,4 @@
-import { QuotationMarkIcon } from '~/components/svgs/icons/quotation-mark'
+import { QuotationMarkIcon } from '~/components/svgs/icons'
 
 const QuoteAbrahamCalsin = () => {
   return (
