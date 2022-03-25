@@ -1,8 +1,10 @@
-import { NextjsTechnology } from '~/components/svgs/nextjs-technology'
-import { ReactjsTechnology } from '~/components/svgs/reactjs-technology'
-import { TailwindcssTechnology } from '~/components/svgs/tailwindcss-technology'
-import { TypescriptTechnology } from '~/components/svgs/typescript-technology'
-import { VercelTechnology } from '~/components/svgs/vercel-technology'
+import {
+  NextjsTechnology,
+  ReactjsTechnology,
+  TailwindcssTechnology,
+  TypescriptTechnology,
+  VercelTechnology,
+} from '~/components/svgs'
 
 interface TechnologyProps {
   href: string

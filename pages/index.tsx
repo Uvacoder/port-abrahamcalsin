@@ -5,8 +5,7 @@ import { Meta } from '~/components/meta'
 import { MainLayout } from '~/layouts/main.layout'
 import QuoteAbrahamCalsin from '~/components/quote-abrahamcalsin'
 import { SocialNetworkButton } from '~/components/social-network-button'
-import { GithubSocialNetwork } from '~/components/svgs/github-social-network'
-import { LinkedinSocialNetwork } from '~/components/svgs/linkedin-social-network'
+import { GithubSocialNetwork, LinkedinSocialNetwork } from '~/components/svgs'
 
 const Home: NextPage = () => {
   return (

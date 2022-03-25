@@ -4,7 +4,7 @@ import Link from 'next/dist/client/link'
 import clsx from 'clsx'
 
 import { DarkThemeButton } from '~/components/dark-theme-button'
-import { LogoAbrahamCalsin } from '~/components/svgs/logo-abrahamcalsin'
+import { LogoAbrahamCalsin } from '~/components/svgs'
 import { HomeIcon, AboutMeIcon, ProjectsIcon, BlogStrokeIcon } from '~/components/svgs/icons'
 
 const NavigationTop = () => {
