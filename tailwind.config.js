@@ -208,6 +208,7 @@ module.exports = {
               fontWeight: theme('fontWeight.bold'),
               marginTop: theme('margin.0'),
               marginBottom: theme('margin.3'),
+              'scroll-margin-top': theme('spacing.8'),
             },
             p: {
               marginTop: theme('margin.1'),
