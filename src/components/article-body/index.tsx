@@ -43,8 +43,6 @@ export const ArticleBody = (props: ArticleBodyProps) => {
           <div className="flex justify-between mt-2 sm:mt-3.5 mb-4 text-primary-600 dark:text-primary-400 text-sm sm:text-base">
             <div>
               <DateFormatArticle dateArticle={date} />
-              <span className="mx-1">|</span>
-              <EditArticle slug={articleSlug} />
             </div>
             <div className="hidden sm:flex items-center gap-1">
               <CoffeeStrokeIcon className="w-2" />
@@ -55,7 +53,12 @@ export const ArticleBody = (props: ArticleBodyProps) => {
         <div className="w-full mt-5 sm:mt-7 prose dark:prose-dark max-w-none">
           <Component components={{ TruncateText }} />
         </div>
-        <ShareArticle articleLink={articleSlug} articleTitle={shareTitle} />
+        <hr className="my-4.5 border-primary-800/10" />
+        <div className="flex gap-x-px text-primary-600">
+          <ShareArticle articleLink={articleSlug} articleTitle={shareTitle} />
+          <span className="mx-1">•</span>
+          <EditArticle slug={articleSlug} />
+        </div>
       </div>
     </>
   )
