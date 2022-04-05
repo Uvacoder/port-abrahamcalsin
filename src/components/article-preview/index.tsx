@@ -14,11 +14,11 @@ export const ArticlePreview = (props: ArticlePreviewProps) => {
   const { title, date, slug, readingTime } = props
 
   return (
-    <div className="border-y-px border-primary-500/20 py-2 hover:opacity-80">
+    <div className="border-y-px border-primary-500/20 hover:opacity-80">
       <Link href={`/blog/${slug}`} passHref>
-        <a className="flex items-center justify-between gap-x-2">
+        <a className="flex items-center justify-between gap-x-2 py-2">
           <div className="flex sm:items-center w-full flex-col sm:flex-row">
-            <p className="sm:w-[12rem] m-0 text-sm">
+            <p className="mb-px text-sm sm:w-[12rem] sm:mb-0">
               <DateFormatArticle dateArticle={date} />
             </p>
             <h3 className="w-full text-lg text-primary-700 dark:text-primary-400 line-clamp-1 font-bold m-0 underline sm:no-underline hover:underline">
