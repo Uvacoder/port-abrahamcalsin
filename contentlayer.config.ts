@@ -22,11 +22,6 @@ export const Blog = defineDocumentType(() => ({
       description: 'The date of the article',
       required: true,
     },
-    description: {
-      type: 'string',
-      description: 'The description of the article',
-      required: true,
-    },
   },
   computedFields: {
     readingTime: { type: 'json', resolve: doc => readingTime(doc.body.raw) },

@@ -18,7 +18,6 @@ export const AllArticles = (props: AllArticlesProps) => {
             title={article.title}
             date={article.date}
             slug={article.slug}
-            description={article.description}
             readingTime={article.readingTime.text}
           />
         ))}
