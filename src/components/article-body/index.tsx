@@ -4,22 +4,7 @@ import { DateFormatArticle } from '~/components/date-format-article'
 import { ShareArticle } from '~/components/share-article'
 import { EditArticle } from '~/components/edit-article'
 import { CoffeeStrokeIcon } from '~/components/svgs/icons'
-import { useMDXComponent } from 'next-contentlayer/hooks'
-
-interface TruncateTextProps {
-  children: React.ReactNode
-  className: string
-}
-
-const TruncateText = (props: TruncateTextProps) => {
-  const { children, className } = props
-
-  return (
-    <div className="w-full px-6 py-2 bg-white dark:bg-primary-800/50 overflow-hidden shadow-lg shadow-primary-800/5 rounded-md mb-3">
-      <p className={`mt-0 mb-1 ${className}`}>{children}</p>
-    </div>
-  )
-}
+import { MdxComponents } from '~/components/mdx-components/mdx-components'
 
 interface ArticleBodyProps {
   title: string
@@ -32,8 +17,6 @@ interface ArticleBodyProps {
 
 export const ArticleBody = (props: ArticleBodyProps) => {
   const { title, date, content, articleSlug, shareTitle, readingTime } = props
-
-  const Component = useMDXComponent(content)
 
   return (
     <>
@@ -51,7 +34,7 @@ export const ArticleBody = (props: ArticleBodyProps) => {
           </div>
         </div>
         <div className="w-full mt-5 sm:mt-7 prose dark:prose-dark max-w-none">
-          <Component components={{ TruncateText }} />
+          <MdxComponents rawContent={content} />
         </div>
         <hr className="my-4.5 border-primary-800/10" />
         <div className="flex gap-x-px text-primary-600">
