@@ -120,8 +120,7 @@ p {
 
 /* rehype-code-title */
 .rehype-code-title {
-  @apply mt-7 px-2.5 py-1.5 font-robotoMono text-sm font-bold text-primary-800 border-px border-b-0 border-primary-400 rounded-t-lg dark:text-primary-800 dark:border-gray-700;
-  background-color: #ccd6f6;
+  @apply bg-primary-800 mt-7 px-2.5 py-1.5 font-robotoMono text-sm font-medium text-primary-300  rounded-t-lg;
 }
 
 .rehype-code-title + pre {
@@ -130,8 +129,8 @@ p {
 
 @screen md {
   .rehype-code-title {
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
+    margin-left: -1.500rem;
+    margin-right: -1.500rem;
   }
 }
 
