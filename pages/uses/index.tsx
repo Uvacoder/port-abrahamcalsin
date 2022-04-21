@@ -90,7 +90,7 @@ const Uses = () => {
             Utilizo <Hyperlink href="https://www.notion.so/">Notion</Hyperlink> para gestionar mis tareas
           </li>
           <li>
-            Gestiono mi tiempo de trabajo y estudio con <Hyperlink href="https://pomofocus.io/">Pomofocus</Hyperlink>
+            Gestiono mi tiempo de trabajo y estudio con <Hyperlink href="https://time-to-focus.yonycalsin.com/">Time To Focus</Hyperlink>
           </li>
           <li>
             Para concentrarme en el trabajo escucho música lofi con{' '}
