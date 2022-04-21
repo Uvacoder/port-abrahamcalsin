@@ -87,9 +87,6 @@ const Uses = () => {
         <h3>Flujo de trabajo:</h3>
         <ul>
           <li>
-            El gestor de contraseñas que utilizo es <Hyperlink href="https://bitwarden.com/">Bitwarden</Hyperlink>
-          </li>
-          <li>
             Utilizo <Hyperlink href="https://www.notion.so/">Notion</Hyperlink> para gestionar mis tareas
           </li>
           <li>
