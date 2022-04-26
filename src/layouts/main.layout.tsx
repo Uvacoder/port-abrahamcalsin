@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
+
+import { motion } from 'framer-motion'
 
 import Footer from '~/components/footer'
 
@@ -9,24 +11,25 @@ type MainLayoutProps = {
 export const MainLayout = (props: MainLayoutProps) => {
   const { children } = props
 
-  const [fullLoad, setFullLoad] = useState(false)
-
-  useEffect(() => {
-    setFullLoad(true)
-  }, [])
-
-  const style = {
-    transition: 'transform 500ms ease-in-out, opacity 500ms ease-in-out',
+  const variants = {
+    initial: {
+      opacity: 0,
+      y: 20,
+    },
+    animate: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+      },
+    },
   }
 
   return (
     <div>
-      <main
-        className={`container pt-11 sm:pt-0 ${fullLoad ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'}`}
-        style={style}
-      >
+      <motion.main className="container pt-11 sm:pt-0" initial="initial" animate="animate" variants={variants}>
         {children}
-      </main>
+      </motion.main>
       <Footer />
     </div>
   )
