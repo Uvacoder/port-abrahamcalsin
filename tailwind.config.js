@@ -192,6 +192,14 @@ module.exports = {
         inherit: 'inherit',
       },
 
+      gridTemplateColumns: {
+        'auto-fill': 'repeat(auto-fill, minmax(12rem, 1fr))',
+      },
+
+      gridAutoRows: {
+        '22rem': '22rem',
+      },
+
       typography: theme => ({
         DEFAULT: {
           css: {
