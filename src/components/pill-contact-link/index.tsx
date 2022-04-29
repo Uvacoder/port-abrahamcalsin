@@ -17,7 +17,7 @@ export function PillContactLink(props: PillContactLinkProps) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="group flex items-center gap-1.5 sm:gap-1.7 bg-primary-50 py-1 px-1.5 sm:py-1.2 sm:px-2 border-px border-primary-300 rounded-md hover:opacity-80"
+      className="group flex items-center gap-1.5 sm:gap-1.7 bg-primary-100 dark:bg-secondary/10 py-1 px-1.5 sm:py-1.2 sm:px-2 border-px border-primary-300 dark:border-secondary rounded-md hover:opacity-80"
     >
       <div className="w-2.5 min-w-min max-w-none sm:w-3">{svgIcon}</div>
       <div className="flex flex-col gap-px">
