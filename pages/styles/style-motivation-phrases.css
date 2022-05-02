@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(236, 239, 252, 0.4);
+  padding-top: 77px;
+  transition: all 0.2s;
+}
+body.darkMode {
+  background-color: #1b355a;
+}
+/* CONTENT-SECTION */
+.content-section-divide {
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 100px;
+  color: #183153;
+  transition: all 0.2s;
+}
+.content-section-divide h4 {
+  font-weight: 400;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.5em;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0;
+}
+.content-section-divide h4::selection {
+  background-color: #183153;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  .content-section-divide {
+    margin-top: 70px;
+  }
+}
+@media (max-width: 650px) {
+  .content-section-divide h4 {
+    font-size: 1.4em;
+  }
+}
+/* MOTIVATIONAL PHRASES SECTION */
+.motivational-phrases-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px 40px;
+  align-items: start;
+}
+.motivational-phrase {
+  background: #fafafa;
+  color: rgba(24, 49, 83, 0.8);
+  border-left: 5px solid rgba(24, 49, 83, 0.85);
+  padding: 15px;
+  font-size: 1em;
+  transition: all 0.2s;
+}
+@media (max-width: 400px) {
+  .motivational-phrase {
+    font-size: 0.8em;
+  }
+}
+.motivational-phrase div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.motivational-phrase::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.motivational-phrase span::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.motivational-phrase div a {
+  align-self: flex-end;
+  text-decoration: none;
+  color: rgba(24, 49, 83, 0.85);
+  transition: 0.3s all;
+}
+.motivational-phrase div a:hover {
+  transform: rotate(-4deg) scale(1.1);
+  color: #183153;
+}
+.author-mot-phrase {
+  font-weight: bolder;
+  font-style: italic;
+  margin-top: 13px;
+}
+@media (max-width: 800px) {
+  .motivational-phrases-section {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px 0px;
+  }
+  .motivational-phrase {
+    font-size: 0.9em;
+  }
+}

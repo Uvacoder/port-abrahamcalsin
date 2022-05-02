@@ -1,0 +1,562 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Libros en PDF - Abraham Calsin</title>
+    <link
+      rel="shortcut icon"
+      href="../../resources/icons/fav-icon-logotype.png"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta data-react-helmet="true" name="robots" content="index,follow" />
+    <meta data-react-helmet="true" name="googlebot" content="index,follow" />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Libros gratis en PDF, Lecciones del dia, Frases motivadoras e inspiradoras, Frases celebres, Motivacion personal."
+    />
+    <meta
+      data-react-helmet="true"
+      name="image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:url"
+      content="https://www.abrahamcalsin.com"
+    />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="Motivacion - Abraham Calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Libros gratis en PDF, Lecciones del dia, Frases motivadoras e inspiradoras, Frases celebres, Motivacion personal."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:creator"
+      content="@abraham_calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:title"
+      content="Abraham Calsin - Frontend Developer"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Frontend developer, creator of open source projects and writing in modern JavaScript, HTML, CSS, Sass, Bootstrap."
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <!-- LINKS - FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME - SCRIPT -->
+    <script
+      src="https://kit.fontawesome.com/d79f00ee22.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- LINK STYLES -->
+    <link rel="stylesheet" href="../../styles/styles.css">
+    <link rel="stylesheet" href="../../styles/style-responsive.css" />
+    <link rel="stylesheet" href="../../styles/style-dark-mode.css" />
+    <link rel="stylesheet" href="../../styles/style-header-navbar.css" />
+    <link rel="stylesheet" href="../styles/style-free-books.css" />
+    <link rel="stylesheet" href="../../styles/style-global.css" />
+    <link rel="stylesheet" href="../../styles/style-date-public.css" />
+    <link rel="stylesheet" href="../styles/style-footer.css" />
+    <link rel="stylesheet" href="../styles/style-sections.css" />
+    <!-- BTN IR ARIIBA -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $('#scroll-up').fadeIn()
+          } else {
+            $('#scroll-up').fadeOut()
+          }
+        })
+        $('#scroll-up').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600)
+          return false
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <!--- Container Header --->
+    <header class="headerNavigation">
+      <!--- Container Menu Navigation --->
+      <nav class="container-rsp menuHeadNavigation">
+        <div class="logo-abrahamcalsin">
+          <a href="/">
+            <img
+              id="logoModifiedDarkMode"
+              src="../../resources/img-logotype/logo-abraham-calsin-black.svg"
+              alt="Abraham Calsin"
+            />
+          </a>
+        </div>
+        <!--- Menu - Amburguer Bar and Link Navigation --->
+        <div class="flexBarDark">
+          <div id="menuNavigation">
+            <div class="contentAmburguerBar" id="contentAmburguerBar">
+              <div class="barOne"></div>
+              <div class="barTwo"></div>
+              <div class="barThree"></div>
+            </div>
+            <!--- Links Navigation --->
+            <ul class="linkNavigation">
+              <li>
+                <a href="/" class="hoverLink"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="../motivation.html"
+                  class="hoverLink"
+                  id="colorSelectLink"
+                  >Motivación</a
+                >
+              </li>
+              <li>
+                <a href="../about-me-contact.html" class="hoverLink"
+                  >Sobre mi</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Btn DarkMode -->
+          <button class="toggleDarkmode" id="toggleDarkmode">
+            <span>
+              <i class="fas fa-moon" id="changeIcon"></i>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!------>
+    <!---->
+    <div class="container-rsp">
+      <div class="content-section-divide"><h4>— Libros en PDF —</h4></div>
+      <div class="update-pag">
+        <p>
+          <img src="../../resources/icons/update-page.svg" alt="" />
+          Actualizado el 8 de Junio 2021
+        </p>
+      </div>
+      <!---->
+      <div class="author-right-source-img">
+        <div class="right-source-image">
+          <p class="description-important">
+            <i class="fas fa-check-circle check-icon-imp"></i>Fuente de
+            Imágenes, <span>Amazon.com</span>
+          </p>
+        </div>
+      </div>
+      <!-- FREE BOOKS -->
+      <div class="free-books-content">
+        <div class="book-identifier-by-section">
+          <p>Libros de Liderazgo:</p>
+        </div>
+        <div class="free-books">
+          <div class="book">
+            <div class="book-image">
+              <img src="../../resources/books/liderazgo101.jpg" alt="" />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Ju2-xIdtRTFn8QAr9Wc6SYyV8DYFcNSb"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img src="../../resources/books/mentor101.jpg" alt="" />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1xCEBIg4soe59BftcLUk42q1ExdhXtnuY"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/21-cualidades-indispensables.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1B2UT_lQiJVqic0d5vWG6NSmwVkFZ0_T0"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/21-leyes-irrefutables-del-liderazgo.png"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1P61zOF3ZM6gw7K7XR5BIp6KcY_-74pa1"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/desarrolle-el-lider-que-esta-en-usted.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1VLlwt0wKeOfyBncJ9yxORPh-j1FlgEXp"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/como-ganar-amigos-e-influir.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1LNV1ydg7-N0TSnpjv3LgUE2XL78YJnH0"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/como-ser-un-buen-lider.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1k_Zvzx90_OLTsSI_wN9tKYvkD3286FXp"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/el-lider-que-no-tenia-cargo.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1o_79pstYxoytzPJJ3AWlJEqEOMBvHChi"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+          <div class="book">
+            <div class="book-image">
+              <img
+                src="../../resources/books/la-inteligencia-emocional.jpg"
+                alt=""
+              />
+            </div>
+            <div class="book-download">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1DBJunwI2_Iz6smHUvk5T3JXDio4KJEXY"
+                >DESCARGAR LIBRO</a
+              >
+            </div>
+          </div>
+        </div>
+        <div id="divide-identifier-books">
+          <div class="book-identifier-by-section">
+            <p>Libros de Autoayuda:</p>
+          </div>
+          <div class="free-books">
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/tu-zonas-erroneas.jpg"
+                  class="remove-opacity"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1gWs-varDOXfORMO0LjdhhyJExXyv8IJP"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/los-dones-de-la-imperfeccion.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1xsOV8KeuQT_MMAKbO9uf4l-UKH1gjSn3"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/7-habitos-altamente-efectiva.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1Gs_piH2JCZrcpGbn1Y6sBxbrf-wkrvbM"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img src="../../resources/books/club-de-las5-am.jpg" alt="" />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1mfuVXr3C-0WsMc1ElFLqf8FF-364UwGs"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/sal-de-tu-mente-entra-en-tu-vida.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1_yg_ZeQiSLZdi9Wuxr1_xURWtI_H1Gyr"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/controla-tu-tiempo-controla-tu-vida.jpeg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=11U4gIXplcfpckjTn3L5b7p_4z49nknaL"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/secretos-de-la-mente-millonaria.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=17AI9zEH828einEGXpAIUvvVNo_J46G7t"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img src="../../resources/books/vendes-o-vendes.png" alt="" />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1TqeSWSpWuuWEwpHy_ljkJr5yg5WtVCK5"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/piense-y-hagase-rico.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1M6QXdZ69UE_FJEnZMU3Yx899VT47e0vy"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/padre-rico-padre-pobre.png"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1izmOdYcy6HCG_5xUvPQHrip7tC6mq5tr"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/el-inversor-inteligente.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1qIAubTqeNnd2Y3-M56TSXMDS6I6_r7rv"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/dinero-domina-el-juego.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=17yJjo5YwiTqXE_TKC6vP1fgGBV2XWIAq"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/el-millonario-de-la-puerta-del-alado.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1ucE9yJUvwkVwhakOYZaBrVqatObBqdcV"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+            <div class="book">
+              <div class="book-image">
+                <img
+                  src="../../resources/books/el-codigo-del-dinero.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="book-download">
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1oVGgqa0aqYjmg4m5C4oJpAI5BwDmTy_V"
+                  >DESCARGAR LIBRO</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- SELECT SECTION -->
+      <div class="select-sections">
+        <div class="icon1">
+          <i class="fa fa-trophy"></i
+          ><a href="../motivation.html" id="ic-0" title="Ir a Lecciones del Día"
+            >LECCIONES EL DÍA</a
+          >
+        </div>
+        <div class="icon3">
+          <i class="fas fa-quote-left"></i
+          ><a
+            href="../motivation/motivational-phrases.html"
+            id="ic-0"
+            title="Ir a Frases Motivadoras"
+            >FRASES MOTIVADORAS</a
+          >
+        </div>
+      </div>
+      <!------>
+    </div>
+    <!-- FOOTER -->
+    <div class="container-rsp footer-design-site">
+      <div class="footer-content">
+        <div class="autor-copyright">
+          <p class="autor-abraham-calsin">
+            {Developed by<span class="authorAC"> ©Abraham Calsin</span>}
+          </p>
+        </div>
+        <!-- BTN IR ARRIBA -->
+        <a href="javascript:void(0);" id="scroll-up" style="display: none"
+          ><img src="../../resources/icons/arrow-up-icon.svg" alt=""
+        /></a>
+      </div>
+      <!---->
+    </div>
+    <!--- S C R I P T S --->
+    <script
+      type="text/javascript"
+      src="../../script/script-dark-mode.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../../script/script-menu-navigation.js"
+    ></script>
+  </body>
+</html>

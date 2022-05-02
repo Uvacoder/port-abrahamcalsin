@@ -1,0 +1,871 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Motivación - Abraham Calsin</title>
+    <link rel="shortcut icon" href="../resources/icons/fav-icon-logotype.png" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <meta data-react-helmet="true" name="robots" content="index,follow" />
+    <meta data-react-helmet="true" name="googlebot" content="index,follow" />
+    <meta
+      data-react-helmet="true"
+      name="description"
+      content="Lecciones del dia, Libros gratis en PDF, Frases motivadoras e inspiradoras, Frases celebres, Motivacion personal."
+    />
+    <meta
+      data-react-helmet="true"
+      name="image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:url"
+      content="https://www.abrahamcalsin.com"
+    />
+    <meta data-react-helmet="true" property="og:type" content="website" />
+    <meta
+      data-react-helmet="true"
+      property="og:title"
+      content="Motivacion - Abraham Calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:description"
+      content="Lecciones del dia, Libros gratis en PDF, Frases motivadoras e inspiradoras, Frases celebres, Motivacion personal."
+    />
+    <meta
+      data-react-helmet="true"
+      property="og:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:creator"
+      content="@abraham_calsin"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:title"
+      content="Abraham Calsin - Frontend Developer"
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:description"
+      content="Frontend developer, creator of open source projects and writing in modern JavaScript, HTML, CSS, Sass, Bootstrap."
+    />
+    <meta
+      data-react-helmet="true"
+      name="twitter:image"
+      content="https://avatars.githubusercontent.com/u/77748010?v=4"
+    />
+    <!-- LINKS - FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- LINK STYLES -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/style-responsive.css" />
+    <link rel="stylesheet" href="../styles/style-dark-mode.css" />
+    <link rel="stylesheet" href="../styles/style-global.css" />
+    <link rel="stylesheet" href="styles/style-motivation.css" />
+    <link rel="stylesheet" href="../styles/style-header-navbar.css" />
+    <link rel="stylesheet" href="../styles/style-grid-lessons.css" />
+    <link rel="stylesheet" href="../styles/style-date-public.css" />
+    <link rel="stylesheet" href="../styles/style-tooltip.css" />
+    <link rel="stylesheet" href="styles/style-more-lesson.css" />
+    <link rel="stylesheet" href="styles/style-footer.css" />
+    <link rel="stylesheet" href="styles/style-sections.css" />
+    <!-- FONT AWESOME - SCRIPT -->
+    <script
+      src="https://kit.fontawesome.com/d79f00ee22.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- BTN IR ARIIBA -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 50) {
+            $('#scroll-up').fadeIn()
+          } else {
+            $('#scroll-up').fadeOut()
+          }
+        })
+        $('#scroll-up').click(function () {
+          $('html, body').animate({ scrollTop: 0 }, 600)
+          return false
+        })
+      })
+    </script>
+  </head>
+  <body>
+    <!--- Container Header --->
+    <header class="headerNavigation">
+      <!--- Container Menu Navigation --->
+      <nav class="container-rsp menuHeadNavigation">
+        <div class="logo-abrahamcalsin">
+          <a href="/">
+            <img
+              id="logoModifiedDarkMode"
+              src="../resources/img-logotype/logo-abraham-calsin-black.svg"
+              alt="Abraham Calsin"
+            />
+          </a>
+        </div>
+        <!--- Menu - Amburguer Bar and Link Navigation --->
+        <div class="flexBarDark">
+          <div id="menuNavigation">
+            <div class="contentAmburguerBar" id="contentAmburguerBar">
+              <div class="barOne"></div>
+              <div class="barTwo"></div>
+              <div class="barThree"></div>
+            </div>
+            <!--- Links Navigation --->
+            <ul class="linkNavigation">
+              <li>
+                <a href="/" class="hoverLink"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a href="motivation.html" class="hoverLink" id="colorSelectLink"
+                  >Motivación</a
+                >
+              </li>
+              <li>
+                <a href="about-me-contact.html" class="hoverLink">Sobre mi</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Btn DarkMode -->
+          <button class="toggleDarkmode" id="toggleDarkmode">
+            <span>
+              <i class="fas fa-moon" id="changeIcon"></i>
+            </span>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <!------>
+    <!-- CONTENT - SECTION - QUOTES -->
+    <div class="container-rsp all-content-section">
+      <div class="content-section-divide">
+        <h4>- Lecciones del Día -</h4>
+      </div>
+      <div class="update-pag">
+        <p>
+          <img src="../resources/icons/update-page.svg" alt="" /> Pag. 1 -
+          Actualizado el 11 de Junio 2021
+        </p>
+      </div>
+      <!------------------------------>
+      <div class="content-lessons-grid">
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson1.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1iK6cIeVZW7N-_qxivrYXFwmJlv0EzicJ"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!---->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson2.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Abraham Calsin</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1WMigc1wl-HbQc87BQNhqUznF4QyD8tWk"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson3.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1kVkF-PpoBaqo8nhkhWt1a64gyc_22BMI"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson4.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Lisa Nichols</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1XMiFFN21sXMfObVTFEzpxINSeEKNVxgL"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson5.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1IHn5qNVA5Y-j9OGFSfXNEKYyAi0_nQ9x"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson6.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1tEwe-DV2EtdC8sniAvzsMdRytGtyKmbQ"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson7.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1MmyA5elZFoE-QK00ShdyTSsTV5ZfGc5z"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+        <div class="content-lesson-img-dscrpt">
+          <div class="lesson-img">
+            <img
+              src="../resources/lessons-img/more-lessons/more-lesson8.png"
+              alt="Leccion6"
+            />
+          </div>
+          <div class="allDateLesson">
+            <p class="date-public-author">
+              <i class="fas fa-user-check"></i
+              ><span class="authorLesson">Anónimo</span>
+            </p>
+            <a
+              href="https://drive.google.com/uc?export=download&id=1prli64sk-NBIGNJL5VnfKVelEpY4tWVi"
+              class="downloadLesson toolTip"
+              ><i class="fas fa-download"
+                ><span class="tooltipDown">Descargar Lección</span></i
+              ></a
+            >
+          </div>
+        </div>
+        <!----->
+      </div>
+      <!---------->
+      <!-- MORE LESSONS OF THE DAY -->
+      <div class="all-content-more-lessons">
+        <div class="text-more-lessons-of-the-day">
+          <p>Más Lecciones del Día:</p>
+        </div>
+        <div class="more-lessons-of-the-day">
+          <div class="more-lessons">
+            <p>
+              Cualquier persona que deja de aprender es viejo, ya tenga veinte u
+              ochenta años; cualquier persona que sigue aprendiendo se mantiene
+              joven.<span class="author-of-lesson">— Henrry Ford —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1L60oZqi3QdVSzpax39Z4C2nbR9MB696n"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/2SfNaT0"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/33rguIR"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Todo lo que hagas con esfuerzo y sacrificio, lo obtendrás con
+              beneficios; ¡No te rindas!.<span class="author-of-lesson"
+                >— Abraham Calsin —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1rFJiHO38WyizUMDcCadJWUuhw1djvZhz"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/2QI7JY5"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3tcLTZX"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Nadie se hace grande haciendo sentir pequeño a los demás, grande
+              es aquel que ayuda a crecer a todo aquel que se encuentre a su
+              alrededor.<span class="author-of-lesson">— Anónimo —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1-s7YoU3z_58zhhQuM1GXy9naXithrECs"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/2PRbGt2"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/2QRxvJn"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              ¡MUJER!, puedes lograr lo que te propongas, no hay una meta
+              inalcanzable para ti; hoy y cada día de tu vida, no te prives de
+              convertirte en la mujer que deseas ser.<span
+                class="author-of-lesson"
+                >— Triunfadores —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1U5PSA7ypuRsjH2VnpgNgTGj1V42xm-hv"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3xF4GR7"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3eTYbkC"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              No te desanimes, ni te rindas; esfuérzate, continúa dando lo mejor
+              de ti, y recuerda que las cosas buenas le esperan a quien insiste
+              y resiste.<span class="author-of-lesson">— Anónimo —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Y_-ju5vgP3QCCMBsu7nR5yjdRSN21u3d"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3xM0kHG"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3gYQHzB"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Algunas veces se gana, otras veces se aprende, pero nunca se
+              rinde.<span class="author-of-lesson">— Anónimo —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1iBo0pa5xpaj3lXg_cXvB6AUgcUF8y66C"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/33ebreo"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3nJfmcO"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              No permitas que te digan que no puedes hacer algo, tampoco yo,
+              ¿entiendes?; si sueñas algo, hazlo y punto.<span
+                class="author-of-lesson"
+                >— Will Smith —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1BYS5OTChsVi5b6ib9k-ByVMMFbtJVoD3"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3taqaSg"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3uv8H8o"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              El río nunca va a la inversa.Vive como un río, dejando atrás el
+              pasado y concentrándote en el futuro.<span
+                class="author-of-lesson"
+                >— Anónimo —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_w2duURhnOgAi1MIB3rllPFbulZh6p2s"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3aZOgcb"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/2Srayx9"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Si te caes por tus problemas, levántate por tus sueños, pero nunca
+              te rindas.<span class="author-of-lesson">— Anónimo —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=10jQXtB4VhAO1RXW-kORCyQx4fxR8eZhY"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3nJ1vDf"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3nKj9qa"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              La gente positiva es la que se cae, se levanta, se sacude, se cura
+              las heridas, le sonríe a la vida y dice: ¡ahí voy de nuevo!.<span
+                class="author-of-lesson"
+                >— Anónimo —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1ll7tO2RZ-6NT-U8R1QozRqVqU_KsINcV"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3ebBQ2R"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3vxH4Mi"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Piensa en grande y tu hechos crecerán, piensa en pequeño y
+              quedarás atrás, piensa que puedes y podrás; todo está en el estado
+              mental.<span class="author-of-lesson">— Napoleon Hill —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1gbhS2QOuTwaYJe9rmSHISGJE72GZN_qV"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/339VCWn"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3egA7ta"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Siempre concluye tu día con pensamientos positivos y un corazón
+              agradecido.<span class="author-of-lesson">— Anónimo —</span>
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1OO9GXO8C6hjEMXEIvgmPfzaa_Gz8-iiV"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/33bM3Gf"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3aWdEj5"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Sin motivación, no hay esfuerzo; sin esfuerzo no hay disciplina, y
+              sin disciplina no hay éxito.<span class="author-of-lesson"
+                >— Anónimo —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1_JdFEhOihLx0fhGs3WZhXQVZtZzcr6wX"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3tdScfO"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3b1d4Am"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Nunca cambiarás tu vida hasta que cambies tus hábitos, el secreto
+              del éxito se encuentra en nuestra rutina diaria.<span
+                class="author-of-lesson"
+                >— John C. Maxwell —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1Ucp35N1G5ltFpbmqINCYi1kCBTEBialL"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3ujhryt"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/2RsbG2M"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+          <div class="more-lessons">
+            <p>
+              Tú naciste para ser un ganador, pero para ganar debes planear
+              ganar, estar preparado para ganar y esperar ganar.<span
+                class="author-of-lesson"
+                >— Zig Ziglar —</span
+              >
+            </p>
+            <aside class="link-download-share">
+              <a
+                href="https://drive.google.com/uc?export=download&id=11JLx6-jyn2Ps4vDStPjqq5ht5yNJKAKD"
+                rel="noreferrer"
+                title="Descargar Lección del Día"
+                ><i class="fas fa-download"></i></a
+              ><!----><a
+                href="https://bit.ly/3eUwHLE"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir en Twitter"
+                ><i class="fab fa-twitter"></i></a
+              ><!----><a
+                href="https://bit.ly/3xMLYqr"
+                target="_blank"
+                rel="noreferrer"
+                title="Compartir por WhatsApp"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </aside>
+          </div>
+        </div>
+      </div>
+      <!-- SELECT SECTION -->
+      <div class="select-sections">
+        <div class="icon1">
+          <i class="fas fa-quote-left"></i
+          ><a
+            href="motivation/motivational-phrases.html"
+            id="ic-0"
+            title="Ir a Frases Motivadoras"
+            >FRASES MOTIVADORAS</a
+          >
+        </div>
+        <div class="icon3">
+          <i class="fas fa-tablet-alt"></i
+          ><a
+            href="../pages/motivation/books-on-pdf.html"
+            id="ic-0"
+            title="Ir a Libros en PDF"
+            >LIBROS EN PDF</a
+          >
+        </div>
+      </div>
+      <!----->
+    </div>
+    <!-- FOOTER -->
+    <div class="container-rsp footer-design-site">
+      <div class="footer-content">
+        <div class="autor-copyright">
+          <p class="autor-abraham-calsin">
+            {Developed by<span class="authorAC"> ©Abraham Calsin</span>}
+          </p>
+        </div>
+        <!-- BTN IR ARRIBA -->
+        <a href="javascript:void(0);" id="scroll-up" style="display: none"
+          ><img src="../resources/icons/arrow-up-icon.svg" alt=""
+        /></a>
+      </div>
+    </div>
+
+    <!--- S C R I P T S --->
+    <script type="text/javascript" src="../script/script-dark-mode.js"></script>
+    <script
+      type="text/javascript"
+      src="../script/script-menu-navigation.js"
+    ></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

@@ -1,0 +1,139 @@
+.all-content-more-lessons {
+  padding: 0px;
+  margin-top: 100px;
+  font-family: 'Poppins', sans-serif;
+}
+.text-more-lessons-of-the-day {
+  color: #183153;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  transition: all 0.2s;
+}
+.text-more-lessons-of-the-day p:before {
+  content: '';
+  width: 5%;
+  padding: 0px;
+  height: 1px;
+  border-bottom: 1px solid #183153;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+.text-more-lessons-of-the-day p::selection {
+  background-color: #183153;
+  color: #fff;
+}
+/* ------------------- */
+.more-lessons-of-the-day {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 15px 20px;
+  align-items: start;
+  padding: 0px;
+  color: rgba(24, 49, 83, 0.8);
+  transition: all 0.2s;
+}
+.more-lessons-of-the-day div {
+  background: #fff;
+  border-radius: 7px;
+  border: 2px dashed rgba(24, 49, 83, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  transition: all 0.2s;
+}
+.more-lessons p {
+  font-size: 0.96em;
+  text-align: center;
+}
+.more-lessons p::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.more-lessons p:before {
+  font-family: 'Noto Serif TC', serif;
+  content: ' “ ';
+  font-size: 1.792em;
+  margin: 0px;
+  padding: 0;
+}
+.author-of-lesson {
+  display: block;
+  padding-top: 8px;
+  font-weight: 400px;
+  font-style: italic;
+}
+.author-of-lesson::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.link-download-share {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  border-top: 1px solid rgba(59, 61, 68, 0.15);
+  padding-top: 10px;
+  width: 235px;
+  max-width: 250px;
+  transition: all 0.3s ease;
+}
+.link-download-share a {
+  text-decoration: none;
+  font-size: 0.896em;
+  transition: 0.3s all;
+  color: rgba(24, 49, 83, 0.8);
+  transition: all 0.2s;
+}
+.link-download-share a:hover {
+  transform: scale(1.1);
+  color: #183153;
+}
+@media (max-width: 768px) {
+  .more-lessons-of-the-day {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 10px 10px;
+  }
+}
+@media (max-width: 500px) {
+  .more-lessons-of-the-day {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 15px 0;
+  }
+}
+
+/*--- Dark Mode active ---*/
+body.darkMode .text-more-lessons-of-the-day {
+  color: #f1f1f1;
+}
+
+body.darkMode .text-more-lessons-of-the-day p:before {
+  border-bottom-color: #f1f1f1;
+}
+
+body.darkMode .more-lessons-of-the-day {
+  color: #f1f1f1;
+}
+
+body.darkMode .more-lessons-of-the-day div {
+  background-color: #254a7e;
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkMode .link-download-share {
+  border-top-color: rgba(255, 255, 255, 0.5);
+}
+
+body.darkMode .link-download-share a {
+  color: #f1f1f1;
+}
+
+body.darkMode .link-download-share a:hover {
+  color: #fff;
+}

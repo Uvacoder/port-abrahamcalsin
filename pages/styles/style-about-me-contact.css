@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background: rgba(236, 239, 252, 0.4) !important;
+  margin: 0px;
+  padding-top: 77px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+}
+body.darkMode {
+  background: #183153 !important;
+}
+/* ********** */
+.about-me-cont {
+  width: 80%;
+  display: block;
+  margin: auto;
+  background: #fff;
+  box-shadow: rgba(204, 209, 230, 0.4) 0px 7px 27px 0px;
+  padding: 35px 25px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 30px;
+  overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+}
+.about-me-profile {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+}
+.profile-image {
+  display: inline-block;
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: auto;
+  box-shadow: rgba(24, 49, 83, 0.2) 0px 7px 29px 0px;
+  transition: all 0.2s;
+}
+.profile-image img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+.me-abrahamcalsin {
+  color: #183153;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding-top: 15px;
+  margin: 0;
+  transition: all 0.2s;
+}
+.me-abrahamcalsin::selection {
+  background: #183153;
+  color: #fff;
+}
+.front-end-about-me {
+  color: #183153;
+  text-align: center;
+  font-size: 0.7em;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+  display: block;
+  transition: all 0.2s;
+}
+.front-end-about-me::selection {
+  background: #183153;
+  color: #fff;
+}
+.front-end-about-me a {
+  margin-right: 3px;
+}
+.front-end-about-me a i {
+  color: #183153;
+  transition: all 0.3s ease;
+}
+.front-end-about-me a i:hover {
+  transform: scale(1.2) rotate(-7deg);
+}
+/* ABOUT ME - RESUME */
+.about-me {
+  width: 100%;
+  font-size: 0.9em;
+  color: rgba(24, 49, 83, 0.8);
+  margin-top: 30px;
+  transition: all 0.2s;
+}
+.about-me::selection {
+  background: #183153;
+  color: #fff;
+}
+.about-me i::selection {
+  background: #183153;
+  color: #fff;
+}
+/* ------ */
+.skills {
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.skills h5 {
+  color: rgba(24, 49, 83, 0.8);
+  font-weight: 600;
+  font-size: 1em;
+  margin-bottom: 20px;
+  transition: all 0.2s;
+}
+.skills h5:before {
+  content: '';
+  width: 5%;
+  padding: 0px;
+  height: 1px;
+  border-bottom: 1px solid rgba(24, 49, 83, 0.8);
+  display: inline-block;
+  margin-right: 6px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+}
+.skill-imgs {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px 30px;
+}
+.skill-imgs img {
+  width: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  min-height: 50px;
+  opacity: 0.6;
+  transition: 0.3s all;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skill-imgs img:hover {
+  opacity: 1;
+}
+/* --------- */
+@media (max-width: 992px) {
+  .about-me-cont {
+    width: 100%;
+  }
+  .skill-imgs {
+    grid-template-columns: repeat(7, 0.3fr);
+    grid-template-rows: repeat(auto, 0.3fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .skill-imgs {
+    grid-template-columns: repeat(5, 0.2fr);
+    grid-template-rows: repeat(auto, 0.2fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 30px 30px;
+  }
+}
+@media (max-width: 576px) {
+  .skill-imgs {
+    grid-gap: 20px 20px;
+  }
+  .skill-imgs img {
+    width: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    min-height: 40px;
+  }
+}
+@media (max-width: 395px) {
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+  .profile-image img {
+    margin-left: -40px;
+  }
+  .skill-imgs {
+    grid-template-columns: repeat(4, 0.2fr);
+    grid-template-rows: repeat(auto, 0.2fr);
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px 20px;
+  }
+  .about-me {
+    font-size: 14px;
+  }
+  .about-me-profile {
+    padding: 0;
+  }
+  .about-me-cont {
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+  .skills {
+    margin-left: 0;
+  }
+}
+@media (max-width: 280px) {
+  .skill-imgs {
+    grid-template-columns: repeat(2, 0.2fr);
+    grid-template-rows: repeat(auto, 0.2fr);
+    grid-gap: 10px 20px;
+  }
+}

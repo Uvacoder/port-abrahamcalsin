@@ -1,0 +1,42 @@
+/*-- UBDATE DATE --*/
+.update-pag {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.update-pag p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background: #183153;
+  font-size: 0.706em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 17rem;
+  height: 35px;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.2s;
+}
+.update-pag img {
+  width: 1.2em;
+  margin-right: 5px;
+  display: block;
+}
+.update-pag p::selection {
+  background: #fff;
+  color: #183153;
+}
+.update-pag img::selection {
+  background: transparent;
+}
+@media (max-width: 576px) {
+  .update-pag {
+    margin-bottom: 70px;
+  }
+  .update-pag p {
+    width: 16rem;
+  }
+}

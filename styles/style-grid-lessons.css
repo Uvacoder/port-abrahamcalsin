@@ -1,0 +1,128 @@
+/*-----*/
+.content-lessons-grid {
+  font-family: 'Poppins', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 30px 0;
+  color: #183153;
+  align-items: start;
+  padding-right: 20px;
+  padding-left: 20px;
+  transition: all 0.2s;
+}
+@media (min-width: 440px) {
+  .content-lessons-grid {
+    grid-template-columns: repeat(1, 0.7fr);
+    grid-template-rows: repeat(auto, 0.7fr);
+    justify-content: center;
+  }
+}
+@media (min-width: 576px) {
+  .content-lessons-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 30px 30px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media (min-width: 992px) {
+  .content-lessons-grid {
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-gap: 50px 50px !important;
+  }
+}
+/*----*/
+.content-lesson-img-dscrpt {
+  background: #fff;
+  box-shadow: rgba(236, 239, 252, 1) 0px 12px 20px;
+  /*box-shadow: rgba(24, 49, 83, 0.2) 0 18px 50px -10px;*/
+  width: 100%;
+  padding: 10px 10px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.content-lesson-img-dscrpt:hover {
+  transform: translateY(-3px);
+  box-shadow: rgba(204, 209, 230, 0.7) 0px 18px 50px -10px;
+  /*box-shadow: rgba(24, 49, 83, 1) 0 18px 50px -10px;*/
+}
+.lesson-img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  pointer-events: none;
+}
+.lesson-img::selection {
+  background-color: transparent;
+}
+.lesson-img img::selection {
+  background-color: transparent;
+}
+.lesson-img img {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+/*-----*/
+.allDateLesson {
+  width: 100%;
+  padding: 0 20px;
+  padding-top: 13px;
+  padding-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 18px 18px;
+  /*background: #fed33a;*/
+  /*background: #3b3d44;*/
+  /*background: #183153;*/
+}
+.date-public-author {
+  margin: 0;
+  font-size: 0.813rem;
+  /*color: #fed33a;*/
+}
+.date-public-author i {
+  margin-right: 5px;
+}
+.authorLesson {
+  font-weight: 600;
+  text-decoration: none;
+}
+.authorLesson::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.downloadLesson {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 0.813rem;
+  background: #183153;
+  text-align: center;
+  padding: 5px 9px;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 576px) {
+  .allDateLesson {
+    padding: 0 20px;
+    padding-top: 13px;
+    padding-bottom: 5px;
+  }
+  .downloadLesson {
+    color: #183153;
+    border: 1px solid #183153;
+    background: transparent;
+  }
+  .downloadLesson:hover {
+    color: #fff;
+    background: #183153;
+  }
+}
+/*------*/

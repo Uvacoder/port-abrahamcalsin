@@ -1,0 +1,206 @@
+/*--- Container Header ---*/
+.headerNavigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 20;
+  background: #fff;
+  box-shadow: rgb(0 0 0 / 10%) 0px -1px 17px;
+  padding: 20px 10px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.2s;
+}
+
+/*--- Logo Abraham Calsin ---*/
+.logo-abrahamcalsin a img {
+  width: 100%;
+  display: block;
+}
+.logo-abrahamcalsin a img::selection {
+  background-color: transparent;
+}
+.logo-abrahamcalsin {
+  width: 75px;
+}
+/*--- Container Menu Navigation ---*/
+.headerNavigation nav {
+  display: flex;
+  justify-content: space-between;
+}
+/*--- Links Navigation ---*/
+.flexBarDark {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.menuNavigation {
+  display: flex;
+  align-items: center;
+}
+.menuHeadNavigation ul {
+  position: fixed;
+  top: 64px;
+  right: -999px;
+  height: 100%;
+  width: 100%;
+  display: block;
+  gap: 0 20px;
+  padding: 20px 20px;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  background: #fff;
+  border-top: 1px solid #eee;
+  transition: all 0.2s;
+}
+.menuHeadNavigation ul li {
+  position: relative;
+  margin-top: 30px;
+  font-size: 0.958rem;
+}
+.menuHeadNavigation ul li:first-child {
+  margin-top: 37px;
+}
+.menuHeadNavigation ul li a {
+  position: relative;
+  padding-left: 3px;
+  padding-right: 3px;
+  color: #183153;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menuHeadNavigation ul li a::selection {
+  background: #183153;
+  color: #fff;
+}
+.menuHeadNavigation ul li a:hover {
+  color: #f96802;
+}
+.hoverLink:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  right: 0;
+  bottom: -1px;
+  background: #f96802;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+.hoverLink:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+/*--- Amburguer Bar ---*/
+.contentAmburguerBar {
+  display: inline-block;
+  width: 18px;
+  cursor: pointer;
+}
+.contentAmburguerBar div {
+  background: #183153;
+  transition: all 0.2s;
+}
+#colorSelectLink {
+  color: #f96802;
+}
+#colorSelectLink:after {
+  width: 100%;
+}
+.barOne,
+.barTwo,
+.barThree {
+  width: 100%;
+  height: 3px;
+  border-radius: 50px;
+}
+.barTwo {
+  width: 90%;
+  display: flex;
+  justify-content: flex-end;
+  margin: 3px 0;
+}
+/*-- ClassList, active Burguer Bar, Toggle --*/
+.activeMenu .barOne {
+  transform: rotate(45deg) translate(-2px, -3px) translateX(9px);
+  width: 63%;
+}
+.activeMenu .barTwo {
+  transform: translateX(-3px);
+  width: 95%;
+}
+.activeMenu .barThree {
+  transform: rotate(-45deg) translate(-2px, 3px) translateX(9px);
+  width: 63%;
+}
+/*-- ClassList, active Menu Links Navigation, Toggle --*/
+.activeMenu .linkNavigation {
+  right: 0;
+}
+/*---*/
+@media (min-width: 576px) {
+  .headerNavigation {
+    padding: 26px 0;
+  }
+  .flexBarDark {
+    flex-direction: row;
+  }
+  .contentAmburguerBar {
+    display: none;
+  }
+  .menuHeadNavigation ul {
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 0;
+    border-top: 0;
+    background: #fff;
+    transition: all 0.2s;
+  }
+  .menuHeadNavigation ul li {
+    margin-top: 0;
+    font-size: 0.908rem;
+  }
+  .menuHeadNavigation ul li:first-child {
+    margin-top: 0;
+  }
+  .menuHeadNavigation ul li a {
+    letter-spacing: 0;
+    padding-bottom: 1px;
+  }
+}
+/*-----*/
+
+/*--- Dark Mode active in style-header-navbar.css ---*/
+body.darkMode .headerNavigation {
+  background-color: #254a7e;
+  box-shadow: rgba(17, 35, 59, 1) 0px -1px 17px;
+}
+body.darkMode .menuHeadNavigation ul li a {
+  color: #f1f1f1;
+}
+body.darkMode .menuHeadNavigation ul li a:hover {
+  color: #fff;
+}
+body.darkMode .hoverLink:after {
+  background-color: #f1f1f1;
+}
+body.darkMode .menuHeadNavigation ul {
+  background-color: #254a7e;
+  border-top-color: rgba(255, 255, 255, 0.2);
+}
+body.darkMode .contentAmburguerBar div {
+  background-color: #ffffff;
+}
+body.darkMode #colorSelectLink {
+  color: #ffffff !important;
+}
+body.darkMode #colorSelectLink:after {
+  width: 100%;
+}
+/*--------------------------------------------------*/

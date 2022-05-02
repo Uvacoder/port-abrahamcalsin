@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="32.262428"
+   height="46.111423"
+   viewBox="0 0 8.5361007 12.200315"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="logo-HTML.svg"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="68.98549"
+     inkscape:cy="33.314439"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     borderlayer="true"
+     inkscape:showpageshadow="false"
+     inkscape:pagecheckerboard="true"
+     units="px"
+     inkscape:window-width="1024"
+     inkscape:window-height="713"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-96.693025,-152.82562)">
+    <g
+       id="g1064">
+      <g
+         transform="matrix(0.02347075,0,0,0.02347075,94.945065,152.82562)"
+         id="g890">
+        <g
+           id="g888">
+          <g
+             id="g886">
+            <path
+               id="path878"
+               d="m 108.382,0 h 23.077 v 22.8 h 21.11 V 0 h 23.078 V 69.044 H 152.57 v -23.12 h -21.11 v 23.12 h -23.077 z"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path880"
+               d="M 205.994,22.896 H 185.678 V 0 h 63.72 v 22.896 h -20.325 v 46.148 h -23.078 z"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path882"
+               d="m 259.511,0 h 24.063 L 298.376,24.26 313.163,0 h 24.072 V 69.044 H 314.253 V 34.822 l -15.877,24.549 h -0.397 L 282.091,34.822 v 34.222 h -22.58 z"
+               inkscape:connector-curvature="0" />
+            <path
+               id="path884"
+               d="m 348.72,0 h 23.084 v 46.222 h 32.453 V 69.044 H 348.72 Z"
+               inkscape:connector-curvature="0" />
+          </g>
+        </g>
+      </g>
+      <g
+         transform="matrix(0.02347075,0,0,0.02347075,94.955908,153.00891)"
+         id="Guides_to_delete">
+        <g
+           id="g904">
+          <polygon
+             id="polygon892"
+             points="255.769,512 107.125,470.727 74.012,99.297 437.703,99.297 404.549,470.755 "
+             style="fill:#e34e26" />
+          <polygon
+             id="polygon894"
+             points="404.51,129.657 255.857,129.657 255.857,480.449 376.164,447.101 "
+             style="fill:#ef662a" />
+          <polygon
+             id="polygon896"
+             points="311.936,312.978 306.637,372.066 255.799,385.811 205.057,372.085 201.664,334.146 155.937,334.146 162.476,407.282 255.787,433.199 349.219,407.282 361.744,267.429 195.706,267.429 191.538,220.777 365.732,220.777 365.873,220.777 369.953,175.217 141.761,175.217 154.041,312.978 "
+             style="fill:#ffffff" />
+          <g
+             id="g902">
+            <polygon
+               id="polygon898"
+               points="255.857,312.978 255.857,267.429 195.706,267.429 191.538,220.777 255.857,220.777 255.857,175.217 141.761,175.217 154.041,312.978 "
+               style="fill:#ebebeb" />
+            <polygon
+               id="polygon900"
+               points="201.664,334.146 155.937,334.146 162.476,407.282 255.787,433.199 255.857,433.179 255.857,385.791 255.799,385.811 205.057,372.085 "
+               style="fill:#ebebeb" />
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

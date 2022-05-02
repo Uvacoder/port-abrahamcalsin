@@ -1,0 +1,112 @@
+.styl-col-font {
+  font-family: 'Poppins', sans-serif;
+}
+.non-mobile {
+  width: 150px;
+  font-size: 0.6em;
+  padding: 5px 10px;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+  display: none !important;
+}
+/* --------- */
+.btn-mod-boots {
+  font-family: 'Poppins', sans-serif;
+  background: #f96802;
+  border: none;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  transition: 0.3s all;
+}
+.btn-mod-boots:hover {
+  transform: translateY(-2px);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 17px 0px;
+}
+.inlin-deskt {
+  width: 200px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  padding: 7px 11px;
+}
+@media (max-width: 576px) {
+  .non-mobile {
+    display: inline !important;
+  }
+  .inlin-deskt {
+    display: none;
+  }
+}
+.modal-title {
+  color: rgba(59, 61, 68, 0.88);
+}
+/* CLOSE MODAL CONTACT */
+.close-mod-contact {
+  background: rgba(59, 61, 68, 0.88);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 0.7em;
+  letter-spacing: 0.8px;
+  font-weight: bolder;
+  padding: 10px 17px;
+}
+/* ----- */
+.contact-cont-mod {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.send-envelop {
+  color: #fff;
+  padding: 6px 10px;
+  background: rgba(59, 61, 68, 0.88);
+  align-self: start;
+  font-size: 0.9em;
+  border-radius: 3px 0 0 3px;
+}
+.contact-cont-mod a {
+  text-decoration: none;
+  width: auto;
+  color: rgba(59, 61, 68, 0.88);
+  padding: 2.3px 10px;
+  font-size: 0.9em;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  transition: 0.2s all;
+}
+.contact-cont-mod a:hover {
+  text-decoration: underline;
+  color: #f96802;
+}
+.contact-mail-send {
+  background: #e8e8e8;
+  margin-bottom: 0;
+}
+/* --------- */
+.mrgn-top-cntc {
+  margin-top: 15px;
+}
+@media (max-width: 500px) {
+  .contact-cont-mod a {
+    font-size: 0.8em;
+    padding: 2.3px 5px;
+  }
+  .send-envelop {
+    font-size: 0.7em;
+    padding: 6.3px 9px;
+  }
+}
+@media (max-width: 288px) {
+  .contact-cont-mod a {
+    font-size: 0.5em;
+    padding: 2.3px 5px;
+  }
+  .send-envelop {
+    font-size: 0.5em;
+    padding: 5.4px 8px;
+  }
+}

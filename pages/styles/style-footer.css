@@ -1,0 +1,63 @@
+/* FOOTER */
+.footer-design-site {
+  border-top: 1px solid rgba(24, 49, 83, 0.5);
+  color: rgba(24, 49, 83, 0.8);
+  padding: 35px 0;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.3s ease;
+}
+.footer-content {
+  padding: 0px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .footer-content {
+    width: 100%;
+  }
+}
+.autor-abraham-calsin {
+  font-size: 0.8rem;
+  margin: 0;
+}
+.autor-abraham-calsin::selection {
+  background-color: #183153;
+  color: #fff;
+}
+.authorAC {
+  font-weight: 600;
+}
+.authorAC::selection {
+  background-color: #183153;
+  color: #fff;
+}
+/* STYLES - BTN IR ARRIBA */
+#scroll-up img {
+  display: none;
+  width: 20px;
+  transition: 0.2s all;
+}
+#scroll-up img:hover {
+  filter: drop-shadow(0px 0px 2px #fff);
+}
+#scroll-up img::selection {
+  background-color: transparent;
+}
+@media (max-width: 516px) {
+  #scroll-up {
+    background: #183153;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 5px 5px 5px 5px;
+  }
+  #scroll-up img {
+    position: absolute;
+    display: block;
+    left: 13px;
+    top: 15px;
+  }
+}

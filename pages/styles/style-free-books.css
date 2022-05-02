@@ -1,0 +1,202 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+  padding-top: 78px;
+  font-family: 'Poppins', sans-serif;
+  background: rgba(236, 239, 252, 0.4);
+  transition: all 0.2s;
+}
+body.darkMode {
+  background-color: #1b355a;
+}
+/* CONTENT-SECTION */
+.content-section-divide {
+  background: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin-top: 100px;
+  color: #183153;
+  transition: all 0.2s;
+}
+.content-section-divide h4 {
+  font-weight: 400;
+  letter-spacing: 3.1px;
+  text-transform: uppercase;
+  border-radius: 5px 5px 0px 0px;
+  font-size: 1.5em;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+.content-section-divide h4::selection {
+  background-color: #183153;
+  color: #fff;
+}
+@media (max-width: 576px) {
+  body {
+    padding-top: 71px;
+  }
+  .content-section-divide {
+    margin-top: 70px;
+  }
+  .content-section-divide h4 {
+    font-size: 1.4em;
+  }
+}
+/* AUTHORS RIGHTS */
+.author-right-source-img {
+  margin-bottom: 20px;
+  width: 100%;
+}
+.right-source-image {
+  background: #fff;
+  box-shadow: 0 5px 4px rgba(236, 239, 252, 0.8);
+  border-radius: 5px;
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(24, 49, 83, 0.8);
+  transition: all 0.2s;
+}
+.check-icon-imp {
+  font-weight: 700;
+  font-size: 1em;
+  margin-right: 7px;
+}
+.description-important {
+  font-size: 0.8em;
+}
+.description-important::selection {
+  background: #183153;
+  color: #fff;
+}
+.description-important span {
+  font-weight: bolder;
+  font-style: italic;
+}
+.description-important span::selection {
+  background: #183153;
+  color: #fff;
+}
+@media (min-width: 1200px) {
+  .right-source-image {
+    width: 390px;
+  }
+  .description-important {
+    font-size: 1.1em;
+  }
+}
+/* DIVIDE IDENTIFIER BOOKS */
+#divide-identifier-books {
+  margin-top: 100px;
+}
+/* ----------------------- */
+/* TEXT IDENTIFY BOOKS */
+.book-identifier-by-section {
+  color: #183153;
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  transition: all 0.2s;
+}
+.book-identifier-by-section p:before {
+  content: '';
+  width: 5%;
+  padding: 0px;
+  height: 1px;
+  border-bottom: 1px solid #183153;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 6px;
+  transition: all 0.3s ease;
+}
+.book-identifier-by-section p::selection {
+  background-color: #183153;
+  color: #fff;
+}
+@media (max-width: 416px) {
+  .book-identifier-by-section {
+    font-size: 1em;
+  }
+}
+/* ------------ */
+/* FREE BOOKS */
+.free-books {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  grid-gap: 40px 40px;
+  align-items: center;
+}
+.book {
+  background: #fff;
+  box-shadow: rgba(236, 239, 252, 0.9) 0px 7px 7px;
+  transition: 0.3s all;
+  padding: 5px;
+  border-radius: 10px;
+  transition: all 0.2s;
+}
+.book:hover {
+  box-shadow: rgba(229, 234, 255, 1) 0px 9px 25px;
+  transform: translateY(-2px);
+}
+.book-image {
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+  overflow: hidden;
+  transition: 0.3s all;
+  opacity: 0.9;
+}
+.book:hover .book-image {
+  opacity: 1;
+}
+.book-image img {
+  width: 100%;
+  max-height: 100%;
+  display: block;
+}
+.book-download a {
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #f96802;
+  font-weight: bolder;
+  letter-spacing: 0.4px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 0px 0px 8px 8px;
+  transition: all 0.3s;
+}
+.book-download a:hover {
+  background: #f96802;
+  color: #fff;
+}
+@media (max-width: 992px) {
+  .free-books {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 40px 40px;
+  }
+}
+@media (max-width: 768px) {
+  .free-books {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 40px 40px;
+  }
+}
+@media (max-width: 576px) {
+  .free-books {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    grid-gap: 20px 20px;
+  }
+}

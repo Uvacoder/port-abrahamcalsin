@@ -1,0 +1,209 @@
+body.darkMode .layout-bible-verse {
+    color: #f1f1f1;
+  }
+  
+  body.darkMode .content-section-divide {
+    color: #f1f1f1;
+  }
+  
+  body.darkMode .backg-content-sectionLessons {
+    color: #f1f1f1;
+    background: #1b355a;
+  }
+  
+  body.darkMode .content-lessons-grid {
+    color: #f1f1f1;
+  }
+  
+  body.darkMode .update-pag p {
+    background: #254a7e;
+  }
+  
+  body.darkMode .content-lesson-img-dscrpt {
+    background: #254a7e;
+    box-shadow: #172e4f 0px 12px 20px;
+  }
+  
+  body.darkMode .content-lesson-img-dscrpt:hover {
+    /*box-shadow: #152a47 0px 18px 50px -10px;*/
+    box-shadow: #152a47 0px 14px 22px;
+  }
+
+  body.darkMode .downloadLesson{
+    color: #183153;
+    background: #fff;
+  }
+  
+  @media (min-width: 576px) {
+    body.darkMode .downloadLesson {
+      background: transparent;
+      color: #f1f1f1;
+    }
+
+    body.darkMode .downloadLesson:hover {
+      background: #183153;
+      color: #f1f1f1;
+    }
+  
+    body.darkMode .tooltipDown {
+      color: #183153;
+      background: #f1f1f1;
+    }
+  
+    body.darkMode .tooltipDown:after {
+      border-top-color: #f1f1f1;
+    }
+  }
+  
+  body.darkMode .containerPagination ul {
+    background-color: #254a7e;
+    box-shadow: #172e4f 0px 12px 20px;
+  }
+  
+  body.darkMode .containerPagination ul .tabSelect {
+    background-color: #f1f1f1;
+  }
+  
+  body.darkMode .containerPagination ul .tabSelect a {
+    color: #183153;
+  }
+  
+  body.darkMode .containerPagination ul li a {
+    color: #f1f1f1;
+  }
+  
+  body.darkMode .containerPagination ul li.pagsLi:hover {
+    background-color: #f1f1f1;
+  }
+  
+  body.darkMode .containerPagination ul li a:hover {
+    color: #183153;
+  }
+  
+  body.darkMode .footer-design-site {
+    border-top-color: rgba(241, 241, 241, 0.5);
+    color: #f1f1f1;
+  }
+  
+  /*--- Toggle Dark Mode ---*/
+  .toggleDarkmode {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1px;
+    margin-right: 13px;
+    color: rgba(236, 239, 252, 0.9);
+    background: #183153;
+    padding: 1px;
+    border-radius: 900px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: all 0.2s;
+  }
+  .toggleDarkmode.active {
+    background: rgba(236, 239, 252, 0.9);
+    color: #183153;
+  }
+  .toggleDarkmode.active:hover {
+    background-color: rgba(242, 245, 252, 1);
+  }
+  .toggleDarkmode span {
+    background: none;
+    font-size: 0.8rem;
+    padding-left: 1px;
+  }
+  
+  @media (min-width: 576px) {
+    .toggleDarkmode {
+      margin-left: 15px;
+    }
+  }
+  
+  /*--- Dak Mode active in Stylestyle-section.css ---*/
+  body.darkMode .select-sections div {
+    color: #f1f1f1;
+  }
+  body.darkMode .select-sections div i {
+    background-color: #214373;
+  }
+  body.darkMode .select-sections div a {
+    background-color: #254a7e;
+    color: #f1f1f1;
+  }
+  body.darkMode .select-sections div:hover {
+    box-shadow: #152a47 0px 7px 29px 0px;
+  }
+  /*------------------------------------------------*/
+  /*--- Dark Mode active in style-motivation-phrases.css ---*/
+  body.darkMode .motivational-phrase {
+    background-color: #254a7e;
+    color: #f1f1f1;
+    border-left-color: #214373;
+  }
+  body.darkMode .motivational-phrase div a {
+    color: #f1f1f1;
+  }
+  body.darkMode .motivational-phrase div a:hover {
+    color: #fff;
+  }
+  /*-------------------------------------------------------*/
+  /*--- Dark Mode active in style-free-books.css ---*/
+  body.darkMode .right-source-image {
+    color: #f1f1f1;
+    background-color: #254a7e;
+    box-shadow: 0px 7px 5px #172e4f;
+  }
+  body.darkMode .book-identifier-by-section {
+    color: #f1f1f1;
+  }
+  body.darkMode .book-identifier-by-section p:before {
+    border-bottom-color: #f1f1f1;
+  }
+  body.darkMode .book {
+    background-color: #254a7e;
+    box-shadow: #172e4f 0px 12px 20px;
+  }
+  body.darkMode .book:hover {
+    box-shadow: #152a47 0px 14px 22px;
+  }
+  body.darkMode .book-download a {
+    color: #f1f1f1;
+  }
+  /*------------------------------------------------*/
+  /*--- Dark Mode active in style-about-me-contact.css ---*/
+  body.darkMode .about-me-cont {
+    background-color: #254a7e;
+    box-shadow: 0px 7px 27px 0px #172e4f;
+  }
+  body.darkMode .profile-image {
+    box-shadow: 0px 7px 29px 0px #172e4f;
+  }
+  body.darkMode .me-abrahamcalsin {
+    color: #f1f1f1;
+  }
+  body.darkMode .front-end-about-me a i {
+    color: #f1f1f1;
+  }
+  body.darkMode .front-end-about-me {
+    color: #f1f1f1;
+  }
+  body.darkMode .skills h5 {
+    color: #f1f1f1;
+  }
+  body.darkMode .skills h5:before {
+    border-bottom-color: #f1f1f1;
+  }
+  body.darkMode .front-end-about-me a i:hover {
+    color: #fff;
+  }
+  body.darkMode .about-me {
+    color: #f1f1f1;
+  }
+  body.darkMode .skill-imgs img {
+    opacity: 1;
+  }
+  /*-------------------------------------------------------*/
