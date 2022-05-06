@@ -1,9 +1,11 @@
+import * as React from 'react'
+
 interface SocialNetworkButtonProps {
   href: string
   svgSocialNetwork: React.ReactElement
 }
 
-export const SocialNetworkButton = (props: SocialNetworkButtonProps) => {
+export function SocialNetworkButton(props: SocialNetworkButtonProps) {
   const { href, svgSocialNetwork } = props
 
   return (
