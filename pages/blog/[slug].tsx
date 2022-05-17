@@ -1,12 +1,11 @@
+import { allBlogs, Blog } from 'contentlayer/generated'
+import { GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult } from 'next'
+import ErrorPage from 'next/error'
 import Head from 'next/head'
 import { useRouter } from 'next/router'
-import ErrorPage from 'next/error'
 
-import { allBlogs, Blog } from 'contentlayer/generated'
-
-import { MainLayout } from '~/layouts'
 import { ArticleBody } from '~/components/article-body'
-import { GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult } from 'next'
+import { MainLayout } from '~/layouts'
 
 interface ArticleProps {
   article: Blog

@@ -1,9 +1,9 @@
 import dayjs from 'dayjs'
-import { dateFormat } from '~/utils'
 
-import { Tag } from '~/components/tag'
-import { ExternalLinkIcon, PackageFillIcon, OctocatFillIcon, ClockFillIcon } from '~/components/svgs/icons'
 import { PackageDownloads } from '~/components/package-downloads'
+import { ClockFillIcon,ExternalLinkIcon, OctocatFillIcon, PackageFillIcon } from '~/components/svgs/icons'
+import { Tag } from '~/components/tag'
+import { dateFormat } from '~/utils'
 
 export interface WorkItemProps {
   title?: string

@@ -1,10 +1,10 @@
 import * as React from 'react'
 
 import { DateFormatArticle } from '~/components/date-format-article'
-import { ShareArticle } from '~/components/share-article'
 import { EditArticle } from '~/components/edit-article'
-import { CoffeeStrokeIcon } from '~/components/svgs/icons'
 import { MdxComponents } from '~/components/mdx-components/mdx-components'
+import { ShareArticle } from '~/components/share-article'
+import { CoffeeStrokeIcon } from '~/components/svgs/icons'
 
 interface ArticleBodyProps {
   title: string

@@ -1,5 +1,5 @@
-import NavbarMobile from '~/components/navbar-mobile'
 import NavbarDesktop from '~/components/navbar-desktop'
+import NavbarMobile from '~/components/navbar-mobile'
 
 export default function Navbar() {
   return (

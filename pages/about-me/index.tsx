@@ -1,11 +1,11 @@
 import Link from 'next/link'
 
-import { MainLayout } from '~/layouts/main.layout'
 import { Meta } from '~/components/meta'
-import { TitleSection } from '~/components/title-section'
-import { PillTechnologies } from '~/components/pill-technologies'
 import { PillContactLink } from '~/components/pill-contact-link'
-import { OctocatStrokeIcon, LinkedinStrokeIcon, TwitterStrokeIcon, EmailStrokeIcon } from '~/components/svgs/icons'
+import { PillTechnologies } from '~/components/pill-technologies'
+import { EmailStrokeIcon,LinkedinStrokeIcon, OctocatStrokeIcon, TwitterStrokeIcon } from '~/components/svgs/icons'
+import { TitleSection } from '~/components/title-section'
+import { MainLayout } from '~/layouts/main.layout'
 
 const AboutMe = () => {
   return (

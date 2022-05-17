@@ -1,9 +1,9 @@
 import React from 'react'
 
-import { MainLayout } from '~/layouts/main.layout'
-import { Works } from '~/components/works'
 import { Meta } from '~/components/meta'
 import { TitleSection } from '~/components/title-section'
+import { Works } from '~/components/works'
+import { MainLayout } from '~/layouts/main.layout'
 
 const Projects = () => {
   return (

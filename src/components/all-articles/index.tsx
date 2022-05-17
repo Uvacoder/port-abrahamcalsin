@@ -1,6 +1,5 @@
-import Article from '~/types/article'
-
 import { ArticlePreview } from '~/components/article-preview'
+import Article from '~/types/article'
 
 interface AllArticlesProps {
   articles: Article[]

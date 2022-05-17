@@ -10,7 +10,7 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['plugin:react/recommended', 'standard', 'prettier'],
+  extends: ['plugin:react/recommended', 'standard', 'prettier', 'plugin:@yonycalsin/import-sort/react'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {

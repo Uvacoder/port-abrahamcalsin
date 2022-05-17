@@ -1,13 +1,11 @@
+import { useEffect } from 'react'
 import type { AppProps } from 'next/dist/shared/lib/router/router'
 import { useRouter } from 'next/router'
-import { useEffect } from 'react'
-
 import { ThemeProvider } from 'next-themes'
 import NProgress from 'nprogress'
 
-import * as ga from '~/lib/ga'
-
 import Navbar from '~/components/navbar'
+import * as ga from '~/lib/ga'
 
 import '~/styles/index.css'
 import '~/styles/scrollbar.css'

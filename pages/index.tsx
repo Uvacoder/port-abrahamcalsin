@@ -1,11 +1,10 @@
 import type { NextPage } from 'next'
 
 import { Meta } from '~/components/meta'
-
-import { MainLayout } from '~/layouts/main.layout'
 import QuoteAbrahamCalsin from '~/components/quote-abrahamcalsin'
 import { SocialNetworkButton } from '~/components/social-network-button'
 import { GithubSocialNetwork, LinkedinSocialNetwork } from '~/components/svgs'
+import { MainLayout } from '~/layouts/main.layout'
 
 const Home: NextPage = () => {
   return (

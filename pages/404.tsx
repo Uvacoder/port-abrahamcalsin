@@ -1,6 +1,7 @@
 import Link from 'next/link'
-import { MainLayout } from '~/layouts/main.layout'
+
 import { Meta } from '~/components/meta'
+import { MainLayout } from '~/layouts/main.layout'
 
 const custom404 = () => {
   return (

@@ -1,10 +1,10 @@
 import { allBlogs } from 'contentlayer/generated'
 
-import { Meta } from '~/components/meta'
-import { MainLayout } from '~/layouts'
 import { AllArticles } from '~/components/all-articles'
-import Article from '~/types/article'
+import { Meta } from '~/components/meta'
 import { TitleSection } from '~/components/title-section'
+import { MainLayout } from '~/layouts'
+import Article from '~/types/article'
 
 interface BlogProps {
   articles: Article[]
