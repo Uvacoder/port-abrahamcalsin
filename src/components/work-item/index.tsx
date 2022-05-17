@@ -1,7 +1,7 @@
 import dayjs from 'dayjs'
 
 import { PackageDownloads } from '~/components/package-downloads'
-import { ClockFillIcon,ExternalLinkIcon, OctocatFillIcon, PackageFillIcon } from '~/components/svgs/icons'
+import { ClockFillIcon, ExternalLinkIcon, OctocatFillIcon, PackageFillIcon } from '~/components/svgs/icons'
 import { Tag } from '~/components/tag'
 import { dateFormat } from '~/utils'
 

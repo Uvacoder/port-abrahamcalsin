@@ -5,7 +5,7 @@ import { useRouter } from 'next/router'
 
 import { DarkThemeButton } from '~/components/dark-theme-button'
 import { LogoAbrahamCalsin } from '~/components/svgs'
-import { AboutMeIcon, BlogStrokeIcon,HomeIcon, ProjectsIcon } from '~/components/svgs/icons'
+import { AboutMeIcon, BlogStrokeIcon, HomeIcon, ProjectsIcon } from '~/components/svgs/icons'
 
 function NavigationTop() {
   return (

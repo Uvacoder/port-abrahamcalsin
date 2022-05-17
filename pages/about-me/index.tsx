@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Meta } from '~/components/meta'
 import { PillContactLink } from '~/components/pill-contact-link'
 import { PillTechnologies } from '~/components/pill-technologies'
-import { EmailStrokeIcon,LinkedinStrokeIcon, OctocatStrokeIcon, TwitterStrokeIcon } from '~/components/svgs/icons'
+import { EmailStrokeIcon, LinkedinStrokeIcon, OctocatStrokeIcon, TwitterStrokeIcon } from '~/components/svgs/icons'
 import { TitleSection } from '~/components/title-section'
 import { MainLayout } from '~/layouts/main.layout'
 
