@@ -39,22 +39,6 @@ export function Works() {
         repositoryHref="https://github.com/abrahamcalsin/munay-mikhuy-anka"
       />
       <WorkItem
-        date={new Date('08/27/2021')}
-        title="Páginas Web Ganadoras"
-        tags="HTML, CSS, JavaScript"
-        description="Páginas Web Ganadoras, es un template y/o página-web open source, inspirado en (paginasganadoras.com)."
-        webHref="https://paginas-web-ganadoras.abrahamcalsin.com"
-        repositoryHref="https://github.com/abrahamcalsin/paginas-web-ganadoras"
-      />
-      <WorkItem
-        date={new Date('08/24/2021')}
-        title="Cyber Security Tech"
-        tags="HTML, CSS, JavaScript"
-        description="Cyber Security Tech, es un template y/o maqueta, open source."
-        webHref="https://cyber-security-tech.abrahamcalsin.com"
-        repositoryHref="https://github.com/abrahamcalsin/cyber-security-tech"
-      />
-      <WorkItem
         date={new Date('08/07/2021')}
         title="www.abrahamcalsin.com"
         tags="Next.js, TailwindCSS, React.js, TypeScript, Dayjs"
