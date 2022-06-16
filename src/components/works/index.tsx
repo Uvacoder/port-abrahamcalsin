@@ -58,7 +58,7 @@ export function Works() {
         title="Music Player"
         tags="Typescript, TailwindCss, Gatsby, ReactJs, Remark, Youtube Player, Spotify Api"
         description="Music player without database."
-        webHref="https://musica-adventista.abrahamcalsin.com"
+        webHref="https://www.musica-adventista.com"
       />
       <WorkItem
         date={new Date('05/13/2021')}
