@@ -11,7 +11,7 @@ export interface WorkItemProps {
   title?: string
   packageDownloads?: boolean
   description?: string
-  tags?: string
+  tags: { id: string; multi_select: { id: string; name: string; color: string }[] }
   webHref?: string
   repositoryHref?: string
   packageHref?: string
@@ -61,7 +61,7 @@ export function WorkItem(props: WorkItemProps) {
             color: 'inherit',
           }}
         >
-          {title} <PackageDownloads visible={packageDownloads} />
+          {title} {packageDownloads && <PackageDownloads visible={packageDownloads} />}
         </Heading>
         <Tag label={tags} />
         <Text fontWeight="medium">{description}</Text>

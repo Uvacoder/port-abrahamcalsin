@@ -15,7 +15,12 @@ export function TitleSection(props: TitleSectionProps) {
   const { title, externalLinkButton, href, linkText, linkTextBold } = props
 
   return (
-    <Flex flexDirection={{ base: 'column', sm: 'row' }} alignItems="flex-start" columnGap="16px" mb="16px">
+    <Flex
+      flexDirection={{ base: 'column', sm: 'row' }}
+      alignItems={{ base: 'flex-start', sm: 'center' }}
+      columnGap="16px"
+      mb="16px"
+    >
       <Heading
         as="h1"
         textColor="primary.800"
