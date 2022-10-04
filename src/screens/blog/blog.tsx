@@ -1,0 +1,22 @@
+import * as React from 'react'
+
+import { Meta } from '~/components/meta'
+import { MainLayout } from '~/layouts'
+import Article from '~/types/article'
+
+import { Content } from './components/content'
+
+export interface BlogScreenProps {
+  articles: Article[]
+}
+
+export function BlogScreen(props: BlogScreenProps) {
+  const { articles } = props
+
+  return (
+    <MainLayout>
+      <Meta title="Blog" />
+      <Content articles={articles} />
+    </MainLayout>
+  )
+}
