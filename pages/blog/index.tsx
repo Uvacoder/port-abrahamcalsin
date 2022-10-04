@@ -1,5 +1,6 @@
 import { allBlogs } from 'contentlayer/generated'
 
+import { Meta } from '~/components/meta'
 import { BlogScreen } from '~/screens/blog'
 import Article from '~/types/article'
 
@@ -12,7 +13,12 @@ function BlogPage(props: BlogPageProps) {
 
   const allArticles = articles.slice(0)
 
-  return <BlogScreen articles={allArticles} />
+  return (
+    <>
+      <Meta title="Blog" />
+      <BlogScreen articles={allArticles} />
+    </>
+  )
 }
 
 export default BlogPage

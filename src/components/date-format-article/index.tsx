@@ -1,3 +1,4 @@
+import { Text } from '@chakra-ui/react'
 import dayjs from 'dayjs'
 import en from 'dayjs/locale/en'
 
@@ -12,5 +13,9 @@ export function DateFormatArticle(props: DateFormatArticleProps) {
 
   const date = dayjs(dateArticle).locale(en).format(dateFormat.article)
 
-  return <span className="font-regular text-inherit capitalize">{date}</span>
+  return (
+    <Text as="span" fontWeight="regular" textColor="inherit" textTransform="capitalize">
+      {date}
+    </Text>
+  )
 }

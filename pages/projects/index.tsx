@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { Meta } from '~/components/meta'
 import { notion } from '~/lib/notion/notion'
 import { ProjectsScreen } from '~/screens/projects/projects'
 
@@ -10,7 +11,12 @@ export interface ProjectsPageProps<T> {
 function ProjectsPage<T extends Record<string, any>[]>(props: ProjectsPageProps<T>) {
   const { projects } = props
 
-  return <ProjectsScreen projects={projects} />
+  return (
+    <>
+      <Meta title="Projects" />
+      <ProjectsScreen projects={projects} />
+    </>
+  )
 }
 
 export async function getStaticProps() {
@@ -39,7 +45,6 @@ export async function getStaticProps() {
     props: {
       projects: response.results,
     },
-
     revalidate: 10,
   }
 }

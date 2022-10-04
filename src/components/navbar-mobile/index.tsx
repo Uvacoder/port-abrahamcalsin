@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import { Box, Container, Flex, Link, Text } from '@chakra-ui/react'
 import clsx from 'clsx'
 import RouterLink from 'next/link'
@@ -55,7 +55,7 @@ function NavigationBottom(props: NavigationBottomProps) {
         className={clsx(
           'flex justify-center items-center h-full w-7.7 text-xs border-t-4 border-primary-800 dark:border-primary-200 flex-col fill-current',
           !isActiveSelect &&
-            `text-primary-500 dark:text-primary-600 border-t-primary/0 dark:border-t-white/0 fill-transparent`,
+            'text-primary-500 dark:text-primary-600 border-t-primary/0 dark:border-t-white/0 fill-transparent',
         )}
       >
         {svgIcon}

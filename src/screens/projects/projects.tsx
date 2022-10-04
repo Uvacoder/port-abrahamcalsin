@@ -1,6 +1,5 @@
 import * as React from 'react'
 
-import { Meta } from '~/components/meta'
 import { MainLayout } from '~/layouts'
 
 import { Content } from './components/content'
@@ -14,7 +13,6 @@ export function ProjectsScreen<T extends Record<string, any>[]>(props: ProjectsS
 
   return (
     <MainLayout>
-      <Meta title="Projects" />
       <Content projects={projects} />
     </MainLayout>
   )

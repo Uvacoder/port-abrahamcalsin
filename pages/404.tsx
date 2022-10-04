@@ -36,11 +36,11 @@ const custom404 = () => {
             py="12px"
             px="18px"
             borderRadius="full"
+            boxShadow="lg"
             transitionProperty="opacity"
             _hover={{
               opacity: 0.8,
             }}
-            className="shadow-lg shadow-primary/5"
           >
             Volver a Inicio
           </Link>

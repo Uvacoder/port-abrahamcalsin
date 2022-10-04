@@ -1,6 +1,5 @@
 import * as React from 'react'
 
-import { Meta } from '~/components/meta'
 import { MainLayout } from '~/layouts'
 import Article from '~/types/article'
 
@@ -15,7 +14,6 @@ export function BlogScreen(props: BlogScreenProps) {
 
   return (
     <MainLayout>
-      <Meta title="Blog" />
       <Content articles={articles} />
     </MainLayout>
   )

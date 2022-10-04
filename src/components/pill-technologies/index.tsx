@@ -24,18 +24,18 @@ function Technology(props: TechnologyProps) {
       display="inline-flex"
       bg="primary.100"
       textColor="primary.800"
-      width={{ base: '76px', sm: '90px' }}
-      height={{ base: '36px', sm: '42px' }}
+      width={{ base: '16', sm: '20' }}
+      height="9"
       borderRadius="md"
       borderWidth="1px"
       borderColor="primary.600"
-      px={{ base: '8px', sm: '12px' }}
+      px={{ base: '2', sm: '3' }}
       transitionProperty="opacity"
       _hover={{
         opacity: 0.8,
       }}
       _dark={{
-        bg: 'transparent', // dark:bg-secondary/10
+        bg: 'transparent',
         textColor: 'primary.200',
         borderColor: 'secondary.400',
       }}
@@ -48,7 +48,7 @@ function Technology(props: TechnologyProps) {
 
 export function PillTechnologies() {
   return (
-    <Flex flexWrap="wrap" gap={{ base: '8px', sm: '12px' }} mt="3">
+    <Flex flexWrap="wrap" gap={{ base: '2', sm: '12px3' }} mt="3">
       <Technology href="https://reactjs.org" technology={<ReactjsTechnology />} />
       <Technology href="https://nextjs.org" technology={<NextjsTechnology />} />
       <Technology href="https://www.typescriptlang.org" technology={<TypescriptTechnology />} />

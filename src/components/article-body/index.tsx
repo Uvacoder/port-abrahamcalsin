@@ -21,7 +21,7 @@ export function ArticleBody(props: ArticleBodyProps) {
 
   return (
     <Box my={{ base: '0', sm: '76px' }}>
-      <Box>
+      <div>
         <Heading
           as="h1"
           fontWeight="black"
@@ -43,15 +43,15 @@ export function ArticleBody(props: ArticleBodyProps) {
             textColor: 'primary.400',
           }}
         >
-          <Box>
+          <div>
             <DateFormatArticle dateArticle={date} />
-          </Box>
+          </div>
           <Box display={{ base: 'none', sm: 'flex' }} alignItems="center" gap="8px">
             <CoffeeStrokeIcon className="w-2" />
             <span>{readingTime}</span>
           </Box>
         </Flex>
-      </Box>
+      </div>
       <Box
         w="full"
         maxWidth="none"

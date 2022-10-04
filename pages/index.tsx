@@ -1,8 +1,14 @@
 import type { NextPage } from 'next'
 
+import { Meta } from '~/components/meta'
 import { HomeScreen } from '~/screens/home'
 
 const HomePage: NextPage = () => {
-  return <HomeScreen />
+  return (
+    <>
+      <Meta />
+      <HomeScreen />
+    </>
+  )
 }
 export default HomePage
