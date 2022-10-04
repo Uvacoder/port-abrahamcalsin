@@ -1,31 +1,52 @@
 import React from 'react'
 
 import { Meta } from '~/components/meta'
-import { TitleSection } from '~/components/title-section'
-import { Works } from '~/components/works'
-import { MainLayout } from '~/layouts/main.layout'
+import { notion } from '~/lib/notion/notion'
+import { ProjectsScreen } from '~/screens/projects/projects'
 
-const Projects = () => {
+export interface ProjectsPageProps<T> {
+  projects: T[]
+}
+
+function ProjectsPage<T extends Record<string, any>[]>(props: ProjectsPageProps<T>) {
+  const { projects } = props
+
   return (
-    <MainLayout>
-      <Meta title="Proyectos" />
-
-      <div className="mt-0 mb-3.7 sm:pt-11.2 text-primary-600 dark:text-inherit">
-        <TitleSection
-          title="Proyectos"
-          externalLinkButton={true}
-          href="https://github.com/abrahamcalsin"
-          linkText="Puedes verlos todos en mi"
-          linkTextBold="GitHub"
-        />
-
-        <p className="leading-6 sm:leading-9 font-medium mt-0.7 px-0">
-          En esta sección puedes ver algunos de mis proyectos más destacados.
-        </p>
-
-        <Works />
-      </div>
-    </MainLayout>
+    <>
+      <Meta title="Projects" />
+      <ProjectsScreen projects={projects} />
+    </>
   )
 }
-export default Projects
+
+export async function getStaticProps() {
+  const response = await notion({
+    notionApiKey: process.env.NOTION_API_KEY!,
+    notionDatabaseId: process.env.NOTION_DATABASE_ID!,
+    sorts: [
+      {
+        property: 'startedAt',
+        direction: 'descending',
+      },
+    ],
+    filter: {
+      property: 'status',
+      select: { equals: 'published' },
+    },
+  })
+
+  if (!response) {
+    return {
+      notFound: true,
+    }
+  }
+
+  return {
+    props: {
+      projects: response.results,
+    },
+    revalidate: 10,
+  }
+}
+
+export default ProjectsPage
